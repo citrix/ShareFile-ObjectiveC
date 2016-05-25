@@ -1,0 +1,5 @@
+extern NSString *const kSFAURLSessionTaskRuntimeAssociationContextObject;
+extern NSString *const kSFAURLSessionTaskRuntimeAssociationHttpDelegate;
+extern NSString *const kSFAURLSessionTaskRuntimeAssociationResponseData;
+extern NSString *const kSFAURLSessionTaskRuntimeAssociationDestinationFileURL;
+extern NSString *const kSFAURLSessionTaskRuntimeAssociationOtherError;

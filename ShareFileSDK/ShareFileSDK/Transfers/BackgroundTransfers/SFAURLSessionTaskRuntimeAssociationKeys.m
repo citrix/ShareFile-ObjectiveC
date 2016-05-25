@@ -1,0 +1,7 @@
+#import "SFAURLSessionTaskRuntimeAssociationKeys.h"
+
+NSString *const kSFAURLSessionTaskRuntimeAssociationContextObject = @"SFAURLSessionTaskRuntimeAssociationContextObject";
+NSString *const kSFAURLSessionTaskRuntimeAssociationHttpDelegate = @"SFAURLSessionTaskRuntimeAssociationHttpDelegate";
+NSString *const kSFAURLSessionTaskRuntimeAssociationResponseData = @"SFAURLSessionTaskRuntimeAssociationResponseData";
+NSString *const kSFAURLSessionTaskRuntimeAssociationDestinationFileURL = @"SFAURLSessionTaskRuntimeAssociationDestinationFileURL";
+NSString *const kSFAURLSessionTaskRuntimeAssociationOtherError = @"SFAURLSessionTaskRuntimeAssociationOtherError";

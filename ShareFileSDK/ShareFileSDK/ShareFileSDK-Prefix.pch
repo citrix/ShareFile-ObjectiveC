@@ -1,0 +1,14 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import "NSObject+sfapi.h"//Needed so that compiler knows that NSObject conforms to HttpDataProvider Protocol when setting body.
+#import "SFAConstants.h"
+#import "SFAConfig.h"
+#import "SFEntitiesAndModels.h"
+#import "SFAActionStopwatch.h"
+#endif
