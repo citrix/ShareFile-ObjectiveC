@@ -24,7 +24,7 @@
     XCTAssertNotNil([session completionHandlers], @"Completion handlers container should not be nil");
     XCTAssertNotNil([session allTaskSpecificDelegates], @"Task specific delegate container should not be nil");
     
-    id completionHandler = (void (^)())completionHandler;
+	id completionHandler = (void (^)(void))completionHandler;
     [session setupBackgroundSessionWithCompletionHandler:completionHandler];
     XCTAssertTrue([session hasBackgroundSession], @"Background session should be created at this point");
     

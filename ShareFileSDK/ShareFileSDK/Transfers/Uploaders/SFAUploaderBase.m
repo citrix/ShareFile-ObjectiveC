@@ -20,7 +20,7 @@ const NSUInteger SFAMaxBufferLength = 65536; // Should be <= NSIntegerMax
         [self setupWithClient:client uploadSpecificationRequest:upSpecReq filePath:filePath asset:nil andExpirationDays:expirationDays];
     }
     return self;
-}
+	}
 
 #if TARGET_OS_IPHONE
 - (instancetype)initWithSFAClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)upSpecReq asset:(ALAsset *)asset andExpirationDays:(int)expirationDays {

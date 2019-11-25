@@ -95,7 +95,7 @@
     [self setupBackgroundSessionWithCompletionHandler:nil];
 }
 
-- (void)setupBackgroundSessionWithCompletionHandler:(void (^)())completionHandler {
+- (void)setupBackgroundSessionWithCompletionHandler:(void (^)(void))completionHandler {
     // This @synchronized is needed to prevent against a rare scenerio.
     // Two threads are simultaneously trying to setup.
     // Thread A sets up first.
@@ -111,7 +111,7 @@
     }
 }
 
-- (void)setCompletionHandlerForCurrentBackgroundSession:(void (^)())completionHandler;
+- (void)setCompletionHandlerForCurrentBackgroundSession:(void (^)(void))completionHandler;
 {
     // This @synchronized is needed so that delegate for invalidation is not executed,
     // while completion handler is being added. Both functions are synchronized.
@@ -123,7 +123,7 @@
     }
 }
 
-- (void)setForBackgroundSession:(NSURLSession *)session completionHandler:(void (^)())completionHandler;
+- (void)setForBackgroundSession:(NSURLSession *)session completionHandler:(void (^)(void))completionHandler;
 {
     if (!session) {
         return;
@@ -252,8 +252,9 @@
 
 #pragma mark - URLSessionDelegate
 
+#if TARGET_OS_IPHONE
 - (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)session {
-    void (^completionHandler)() = nil;
+	void (^completionHandler)(void) = nil;
     // Thread-safe access of thread-unsafe data structure.
     @synchronized(self)
     {
@@ -264,6 +265,7 @@
         completionHandler();
     }
 }
+#endif
 
 - (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(NSError *)error {
     // We do not want any other thread to be setting up while, this thread

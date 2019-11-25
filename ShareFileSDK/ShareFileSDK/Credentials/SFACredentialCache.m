@@ -1,7 +1,7 @@
 #import "SFACredentialCache.h"
 #import "NSURLCredential+sfapi.h"
 #import "SFACredentialCacheProtected.h"
-#import "SFAOauth2Credential.h"
+#import "SFAOAuth2Credential.h"
 
 @implementation SFACredentialAuthorityContainer
 

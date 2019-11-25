@@ -60,7 +60,7 @@ static NSString *kBackgroundSessionIdentifierKey = @"backgroundSessionIdentifier
     }
 }
 
-- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler {
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler {
     SFAClient *client = self.sampleCode.client;
     SFABackgroundSessionManager *bgSessionManager = client.backgroundSessionManager;
     if (bgSessionManager.hasBackgroundSession) {

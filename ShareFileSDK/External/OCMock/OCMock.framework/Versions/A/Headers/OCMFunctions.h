@@ -16,33 +16,12 @@
 
 #import <Foundation/Foundation.h>
 
-@class OCMockObject;
-@class OCMInvocationMatcher;
+
+#if defined(__cplusplus)
+#define OCMOCK_EXTERN extern "C"
+#else
+#define OCMOCK_EXTERN extern
+#endif
 
 
-@interface OCMRecorder : NSProxy
-{
-    OCMockObject         *mockObject;
-    OCMInvocationMatcher *invocationMatcher;
-    BOOL                 wasUsed;
-}
-
-- (instancetype)init;
-- (instancetype)initWithMockObject:(OCMockObject *)aMockObject;
-
-- (void)setMockObject:(OCMockObject *)aMockObject;
-
-- (OCMInvocationMatcher *)invocationMatcher;
-- (BOOL)wasUsed;
-
-- (id)classMethod;
-- (id)ignoringNonObjectArgs;
-
-@end
-
-@interface OCMRecorder (Properties)
-
-#define ignoringNonObjectArgs() _ignoringNonObjectArgs()
-@property (nonatomic, readonly) OCMRecorder *(^ _ignoringNonObjectArgs)(void);
-
-@end
+OCMOCK_EXTERN BOOL OCMIsObjectType(const char *objCType);

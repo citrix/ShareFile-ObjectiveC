@@ -1,7 +1,7 @@
 #import "GenericSampleCode.h"
 #if TARGET_OS_IPHONE
 
-#import "AppDelegate.h"
+#import "iOSSample/AppDelegate.h"
 #import "ViewController.h"
 #endif
 

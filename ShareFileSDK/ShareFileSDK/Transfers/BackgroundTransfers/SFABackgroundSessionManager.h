@@ -148,20 +148,20 @@ static const NSString *kSFAURLSessionTaskDelegateAdditionalInfoHttpRequestRespon
  *
  *  @param completionHandler Completion handler block provided by app delegate to be called when background session events have been handled.
  */
-- (void)setupBackgroundSessionWithCompletionHandler:(void (^)())completionHandler;
+- (void)setupBackgroundSessionWithCompletionHandler:(void (^)(void))completionHandler;
 /**
  *  Add and store completion handler for existing URLSession instance. Provide nil for removal of any existing block.
  *
  *  @param completionHandler Completion handler block provided by app delegate to be called when background session events have been handled.
  */
-- (void)setCompletionHandlerForCurrentBackgroundSession:(void (^)())completionHandler;
+- (void)setCompletionHandlerForCurrentBackgroundSession:(void (^)(void))completionHandler;
 /**
  *  Add and store completion handler for URLSession instance. Provide nil for removal of any existing block.
  *
  *  @param session           URLSession for which block is intended.
  *  @param completionHandler Completion handler block provided by app delegate to be called when background session events have been handled.
  */
-- (void)setForBackgroundSession:(NSURLSession *)session completionHandler:(void (^)())completionHandler;
+- (void)setForBackgroundSession:(NSURLSession *)session completionHandler:(void (^)(void))completionHandler;
 /**
  *  Add task specific delegate for URLSession(current background session) and task combination, identified by their respective identifier's. Passing nil will remove any existing delegate.
  *  Task specific delegates have priority over universalTaskDelegate. universalTaskDelegate only gets events in case task specific delegate fails to handle an event.

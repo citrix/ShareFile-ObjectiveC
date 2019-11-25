@@ -281,7 +281,6 @@
 		0FBB2C2D1A94B5EB0009479D /* SFAURLSessionTaskRuntimeAssociationKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBB2C101A9324300009479D /* SFAURLSessionTaskRuntimeAssociationKeys.h */; };
 		0FBB2C2E1A94B6200009479D /* SFABackgroundUploadInitiationTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBB2C141A93310D0009479D /* SFABackgroundUploadInitiationTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FCCCACC19D3F94E0019D54B /* SFABaseTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FCCCACA19D3F94E0019D54B /* SFABaseTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FCCCACD19D3F94E0019D54B /* SFABaseTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FCCCACA19D3F94E0019D54B /* SFABaseTask.h */; };
 		0FCCCACE19D3F94E0019D54B /* SFABaseTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCCACB19D3F94E0019D54B /* SFABaseTask.m */; };
 		0FCCCACF19D3F94E0019D54B /* SFABaseTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCCACB19D3F94E0019D54B /* SFABaseTask.m */; };
 		0FCCCAD119D3FA160019D54B /* SFABaseTaskProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FCCCAD019D3FA160019D54B /* SFABaseTaskProtected.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -695,7 +694,6 @@
 		F70B98A819D03E2E008E3DE7 /* SFACompositeUploaderTaskInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F70B98A319D03E2E008E3DE7 /* SFACompositeUploaderTaskInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F70B98A919D03E2E008E3DE7 /* SFACompositeUploaderTaskInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F70B98A319D03E2E008E3DE7 /* SFACompositeUploaderTaskInternal.h */; };
 		F70B98AC19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = F70B98AA19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F70B98AD19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = F70B98AA19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.h */; };
 		F70B98AE19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B98AB19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.m */; };
 		F70B98AF19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B98AB19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.m */; };
 		F70EB68B19A5DF5D0028933C /* SFAItemAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = F70EB68919A5DF5D0028933C /* SFAItemAlias.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1893,6 +1891,7 @@
 		2EC44C1E1A6CD52A002893DF /* ShareFileSDKAsyncThreadedFileUploaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareFileSDKAsyncThreadedFileUploaderTests.m; sourceTree = "<group>"; };
 		3B77781A1A1660290042B7DB /* NSArray+sfapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+sfapi.h"; sourceTree = "<group>"; };
 		3B77781B1A1660290042B7DB /* NSArray+sfapi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+sfapi.m"; sourceTree = "<group>"; };
+		777BF7DF2384A6860071CAB9 /* OCMFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMFunctions.h; sourceTree = "<group>"; };
 		925782181C51E51A00BBCFC9 /* SFRemoteUploadsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRemoteUploadsEntity.h; sourceTree = "<group>"; };
 		925782191C51E51A00BBCFC9 /* SFRemoteUploadsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRemoteUploadsEntity.m; sourceTree = "<group>"; };
 		925782201C51E55400BBCFC9 /* SFAccessControlsCloneParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAccessControlsCloneParams.h; sourceTree = "<group>"; };
@@ -2688,6 +2687,7 @@
 				0FE466CA1A444710000125F9 /* NSNotificationCenter+OCMAdditions.h */,
 				0FE466CB1A444710000125F9 /* OCMArg.h */,
 				0FE466CC1A444710000125F9 /* OCMConstraint.h */,
+				777BF7DF2384A6860071CAB9 /* OCMFunctions.h */,
 				0FE466CD1A444710000125F9 /* OCMLocation.h */,
 				0FE466CE1A444710000125F9 /* OCMMacroState.h */,
 				0FE466CF1A444710000125F9 /* OCMock.h */,
@@ -3561,7 +3561,6 @@
 				0F6379391A5AD080007A8AF0 /* SFACompositeUploaderTaskPrivate.h in Headers */,
 				F8C073D61A1D7479008F5F76 /* SFAHTTPAuthenticationChallenge.h in Headers */,
 				F8E00F711BD825C40033EA6A /* SFEntities.h in Headers */,
-				0FCCCACD19D3F94E0019D54B /* SFABaseTask.h in Headers */,
 				F8E920251A412B520010F6F3 /* SFAAuthHandling.h in Headers */,
 				0F9305D519DEB46D0058F288 /* SFODataFeed+sfapi.h in Headers */,
 				F8E012801BD825C50033EA6A /* SFSimpleSearchQuery.h in Headers */,
@@ -3708,7 +3707,6 @@
 				F8E0108B1BD825C40033EA6A /* SFAccessControlParam.h in Headers */,
 				0F6FA3481A8B4A7100653852 /* SFABackgroundSessionManager.h in Headers */,
 				0F3F8B3419A49EFA00F616D1 /* ShareFileSDK.h in Headers */,
-				F70B98AD19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.h in Headers */,
 				F891648F1A08571B00B4881F /* NSURLProtectionSpace+sfapi.h in Headers */,
 				F89164A11A0B135100B4881F /* SFAHttpResponseActionAsyncCallback.h in Headers */,
 				F8E011D21BD825C40033EA6A /* SFOutlookInformation.h in Headers */,
@@ -3742,13 +3740,11 @@
 				B867B5B21B685C950040242D /* SFAAsyncStreamedFileUploader.h in Headers */,
 				F8E012381BD825C50033EA6A /* SFSearchQuery.h in Headers */,
 				F8E0118D1BD825C40033EA6A /* SFItemProtocolLink.h in Headers */,
-				0FCCCACD19D3F94E0019D54B /* SFABaseTask.h in Headers */,
 				F7149FCC19BF151600262F1D /* SFAAsyncStandardFileUploader.h in Headers */,
 				F8E0113F1BD825C40033EA6A /* SFFileLock.h in Headers */,
 				0F1DFA2719A7859B00AF2ACF /* SFAQueryBaseProtected.h in Headers */,
 				F8E0128C1BD825C50033EA6A /* SFSSOInfo.h in Headers */,
 				F8E00F861BD825C40033EA6A /* SFGroupsEntity.h in Headers */,
-				F70B98AD19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.h in Headers */,
 				0F9047F019AC7D8A00CDEBE1 /* SFAApiRequestProtected.h in Headers */,
 				0FCCCAD219D3FA160019D54B /* SFABaseTaskProtected.h in Headers */,
 				F8E011931BD825C40033EA6A /* SFLink.h in Headers */,
@@ -4241,7 +4237,7 @@
 		0F3F8ACF19A48D0A00F616D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = ShareFile;
 				TargetAttributes = {
 					0F15FA3A1A4430DC003970F7 = {
@@ -4266,7 +4262,7 @@
 			};
 			buildConfigurationList = 0F3F8AD219A48D0A00F616D1 /* Build configuration list for PBXProject "ShareFileSDK" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -4382,7 +4378,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUT_FOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\n#For Device\nxcodebuild -target libShareFileSDK ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos clean build  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n#For Simulator i386\nxcodebuild -target libShareFileSDK -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 clean build BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n#For Simulator x86_64\nX86_64_PRODUCT_NAME=${PROJECT_NAME}-X86_64\nxcodebuild -target libShareFileSDK -configuration ${CONFIGURATION} -sdk iphonesimulator -arch x86_64 clean build BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" PRODUCT_NAME=\"$X86_64_PRODUCT_NAME\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUT_FOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"$UNIVERSAL_OUTPUT_FOLDER/lib${PROJECT_NAME}-Universal.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${X86_64_PRODUCT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\n#cp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUT_FOLDER}/\"\n# Also copy to Source Folder for convinience\n#OUTPUT_FOLDER=${SRCROOT}/Built-Products/${CONFIGURATION}-UniversalLib\n#mkdir -p \"$OUTPUT_FOLDER\"\n#cp -R \"$UNIVERSAL_OUTPUT_FOLDER/\" \"$OUTPUT_FOLDER\"\n\n#Apple Doc\n#/usr/local/bin/appledoc --verbose 6 --project-name \"${PROJECT_NAME}\" --project-company \"ShareFile\" --company-id \"com.sharefile\" --output \"$OUTPUT_FOLDER/Doc\" --install-docset --logformat xcode --keep-undocumented-objects --keep-undocumented-members --keep-intermediate-files --no-repeat-first-par --no-warn-invalid-crossref --merge-categories --exit-threshold 2 --docset-platform-family iphoneos --ignore \"*.m\" --clean-output --index-desc \"${PROJECT_DIR}/Readme.md\" \"$OUTPUT_FOLDER/include\"\n# --include \"${PROJECT_DIR}/${PROJECT_NAME}/Documentation/Images\"";
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUT_FOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\n#For Device\nxcodebuild -target libShareFileSDK ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos clean build  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n#For Simulator i386\nxcodebuild -target libShareFileSDK -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 clean build BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n#For Simulator x86_64\nX86_64_PRODUCT_NAME=${PROJECT_NAME}-X86_64\nxcodebuild -target libShareFileSDK -configuration ${CONFIGURATION} -sdk iphonesimulator -arch x86_64 clean build BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" PRODUCT_NAME=\"$X86_64_PRODUCT_NAME\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUT_FOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"$UNIVERSAL_OUTPUT_FOLDER/lib${PROJECT_NAME}-Universal.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${X86_64_PRODUCT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\n#cp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUT_FOLDER}/\"\n# Also copy to Source Folder for convinience\n#OUTPUT_FOLDER=${SRCROOT}/Built-Products/${CONFIGURATION}-UniversalLib\n#mkdir -p \"$OUTPUT_FOLDER\"\n#cp -R \"$UNIVERSAL_OUTPUT_FOLDER/\" \"$OUTPUT_FOLDER\"\n\n#Apple Doc\n#/usr/local/bin/appledoc --verbose 6 --project-name \"${PROJECT_NAME}\" --project-company \"ShareFile\" --company-id \"com.sharefile\" --output \"$OUTPUT_FOLDER/Doc\" --install-docset --logformat xcode --keep-undocumented-objects --keep-undocumented-members --keep-intermediate-files --no-repeat-first-par --no-warn-invalid-crossref --merge-categories --exit-threshold 2 --docset-platform-family iphoneos --ignore \"*.m\" --clean-output --index-desc \"${PROJECT_DIR}/Readme.md\" \"$OUTPUT_FOLDER/include\"\n# --include \"${PROJECT_DIR}/${PROJECT_NAME}/Documentation/Images\"\n";
 		};
 		22DCA2D81AA88C7200FAA1EB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -4408,7 +4404,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=ShareFileiOS\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"";
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=ShareFileiOS\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -5324,6 +5320,7 @@
 					XCTest,
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -5360,6 +5357,7 @@
 					XCTest,
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -5383,23 +5381,37 @@
 		0F3F8AFE19A48D0B00F616D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -5424,24 +5436,37 @@
 		0F3F8AFF19A48D0B00F616D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -5474,6 +5499,7 @@
 					"$(SDKROOT)/usr/lib/system",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ShareFileSDK;
 				SKIP_INSTALL = YES;
 				WARNING_CFLAGS = (
@@ -5502,6 +5528,7 @@
 					"$(SDKROOT)/usr/lib/system",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ShareFileSDK;
 				SKIP_INSTALL = YES;
 				WARNING_CFLAGS = (
@@ -5525,6 +5552,10 @@
 					"$(inherited)",
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
@@ -5533,7 +5564,6 @@
 				PUBLIC_HEADERS_FOLDER_PATH = "/include/${PRODUCT_NAME}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 				WARNING_CFLAGS = (
 					"-Wconversion",
 					"-Wshorten-64-to-32",
@@ -5550,6 +5580,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShareFileSDK/ShareFileSDK-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -5558,7 +5592,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 				WARNING_CFLAGS = (
 					"-Wconversion",
 					"-Wshorten-64-to-32",
@@ -5570,6 +5603,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacOSXSample/MacOSXSample-Prefix.pch";
@@ -5579,6 +5613,7 @@
 				);
 				INFOPLIST_FILE = "MacOSXSample/MacOSXSample-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -5588,11 +5623,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacOSXSample/MacOSXSample-Prefix.pch";
 				INFOPLIST_FILE = "MacOSXSample/MacOSXSample-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -5601,25 +5638,38 @@
 		0F69E0951A67C855003808E6 /* GCov_Build */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -5659,6 +5709,7 @@
 					"$(SDKROOT)/usr/lib/system",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ShareFileSDK;
 				SKIP_INSTALL = YES;
 				WARNING_CFLAGS = (
@@ -5682,6 +5733,10 @@
 					"$(inherited)",
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
@@ -5690,7 +5745,6 @@
 				PUBLIC_HEADERS_FOLDER_PATH = "/include/${PRODUCT_NAME}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 				WARNING_CFLAGS = (
 					"-Wconversion",
 					"-Wshorten-64-to-32",
@@ -5702,6 +5756,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacOSXSample/MacOSXSample-Prefix.pch";
@@ -5711,6 +5766,7 @@
 				);
 				INFOPLIST_FILE = "MacOSXSample/MacOSXSample-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -5734,6 +5790,7 @@
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
@@ -5741,6 +5798,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5778,6 +5836,7 @@
 				);
 				INFOPLIST_FILE = "ShareFileSDKTests/ShareFileSDKTestsMacOSX-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -5818,6 +5877,7 @@
 					XCTest,
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -5855,6 +5915,7 @@
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
@@ -5862,6 +5923,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5883,6 +5945,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSSample/iOSSample-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
@@ -5890,6 +5953,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5922,7 +5986,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
-				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -5947,7 +6010,6 @@
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = GCov_Build;
 		};
@@ -5973,7 +6035,6 @@
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
@@ -6034,6 +6095,7 @@
 				);
 				INFOPLIST_FILE = "ShareFileSDKTests/ShareFileSDKTestsMacOSX-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -6051,6 +6113,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "ShareFileSDKTests/ShareFileSDKTestsMacOSX-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
