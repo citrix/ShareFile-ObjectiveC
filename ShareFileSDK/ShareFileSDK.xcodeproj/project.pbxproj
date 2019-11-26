@@ -683,8 +683,8 @@
 		777B033D238C32C30071CAB9 /* SFRequireSubdomainResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E9A1BD825C40033EA6A /* SFRequireSubdomainResult.m */; };
 		777B033E238C32C30071CAB9 /* SFRequireWebPopResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E9C1BD825C40033EA6A /* SFRequireWebPopResult.m */; };
 		777B033F238C32C30071CAB9 /* SFSearchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E9E1BD825C40033EA6A /* SFSearchQuery.m */; };
-		777B0340238C32C30071CAB9 /* SFSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA01BD825C40033EA6A /* SFSearchResult.m */; };
-		777B0341238C32C30071CAB9 /* SFSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA21BD825C40033EA6A /* SFSearchResults.m */; };
+		777B0340238C32C30071CAB9 /* SFASearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA01BD825C40033EA6A /* SFASearchResult.m */; };
+		777B0341238C32C30071CAB9 /* SFASearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA21BD825C40033EA6A /* SFASearchResults.m */; };
 		777B0342238C32C40071CAB9 /* SFSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA41BD825C40033EA6A /* SFSession.m */; };
 		777B0343238C32C40071CAB9 /* SFShare.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA61BD825C40033EA6A /* SFShare.m */; };
 		777B0344238C32C40071CAB9 /* SFShareAccessRight.m in Sources */ = {isa = PBXBuildFile; fileRef = ED391A471C973DC300821DBA /* SFShareAccessRight.m */; };
@@ -914,8 +914,8 @@
 		777B0429238D202A0071CAB9 /* SFRequireSubdomainResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E991BD825C40033EA6A /* SFRequireSubdomainResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B042A238D202A0071CAB9 /* SFRequireWebPopResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9B1BD825C40033EA6A /* SFRequireWebPopResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B042B238D202A0071CAB9 /* SFSearchQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9D1BD825C40033EA6A /* SFSearchQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		777B042C238D202A0071CAB9 /* SFSearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9F1BD825C40033EA6A /* SFSearchResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		777B042D238D202A0071CAB9 /* SFSearchResults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA11BD825C40033EA6A /* SFSearchResults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B042C238D202A0071CAB9 /* SFASearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9F1BD825C40033EA6A /* SFASearchResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B042D238D202A0071CAB9 /* SFASearchResults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA11BD825C40033EA6A /* SFASearchResults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B042E238D202A0071CAB9 /* SFSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA31BD825C40033EA6A /* SFSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B042F238D202A0071CAB9 /* SFShare.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA51BD825C40033EA6A /* SFShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B0430238D202A0071CAB9 /* SFShareAccessRight.h in Headers */ = {isa = PBXBuildFile; fileRef = ED391A461C973DC300821DBA /* SFShareAccessRight.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1937,18 +1937,18 @@
 		F8E0123A1BD825C50033EA6A /* SFSearchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E9E1BD825C40033EA6A /* SFSearchQuery.m */; };
 		F8E0123B1BD825C50033EA6A /* SFSearchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E9E1BD825C40033EA6A /* SFSearchQuery.m */; };
 		F8E0123C1BD825C50033EA6A /* SFSearchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E9E1BD825C40033EA6A /* SFSearchQuery.m */; };
-		F8E0123D1BD825C50033EA6A /* SFSearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9F1BD825C40033EA6A /* SFSearchResult.h */; };
-		F8E0123E1BD825C50033EA6A /* SFSearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9F1BD825C40033EA6A /* SFSearchResult.h */; };
-		F8E0123F1BD825C50033EA6A /* SFSearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9F1BD825C40033EA6A /* SFSearchResult.h */; };
-		F8E012401BD825C50033EA6A /* SFSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA01BD825C40033EA6A /* SFSearchResult.m */; };
-		F8E012411BD825C50033EA6A /* SFSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA01BD825C40033EA6A /* SFSearchResult.m */; };
-		F8E012421BD825C50033EA6A /* SFSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA01BD825C40033EA6A /* SFSearchResult.m */; };
-		F8E012431BD825C50033EA6A /* SFSearchResults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA11BD825C40033EA6A /* SFSearchResults.h */; };
-		F8E012441BD825C50033EA6A /* SFSearchResults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA11BD825C40033EA6A /* SFSearchResults.h */; };
-		F8E012451BD825C50033EA6A /* SFSearchResults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA11BD825C40033EA6A /* SFSearchResults.h */; };
-		F8E012461BD825C50033EA6A /* SFSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA21BD825C40033EA6A /* SFSearchResults.m */; };
-		F8E012471BD825C50033EA6A /* SFSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA21BD825C40033EA6A /* SFSearchResults.m */; };
-		F8E012481BD825C50033EA6A /* SFSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA21BD825C40033EA6A /* SFSearchResults.m */; };
+		F8E0123D1BD825C50033EA6A /* SFASearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9F1BD825C40033EA6A /* SFASearchResult.h */; };
+		F8E0123E1BD825C50033EA6A /* SFASearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9F1BD825C40033EA6A /* SFASearchResult.h */; };
+		F8E0123F1BD825C50033EA6A /* SFASearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9F1BD825C40033EA6A /* SFASearchResult.h */; };
+		F8E012401BD825C50033EA6A /* SFASearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA01BD825C40033EA6A /* SFASearchResult.m */; };
+		F8E012411BD825C50033EA6A /* SFASearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA01BD825C40033EA6A /* SFASearchResult.m */; };
+		F8E012421BD825C50033EA6A /* SFASearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA01BD825C40033EA6A /* SFASearchResult.m */; };
+		F8E012431BD825C50033EA6A /* SFASearchResults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA11BD825C40033EA6A /* SFASearchResults.h */; };
+		F8E012441BD825C50033EA6A /* SFASearchResults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA11BD825C40033EA6A /* SFASearchResults.h */; };
+		F8E012451BD825C50033EA6A /* SFASearchResults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA11BD825C40033EA6A /* SFASearchResults.h */; };
+		F8E012461BD825C50033EA6A /* SFASearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA21BD825C40033EA6A /* SFASearchResults.m */; };
+		F8E012471BD825C50033EA6A /* SFASearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA21BD825C40033EA6A /* SFASearchResults.m */; };
+		F8E012481BD825C50033EA6A /* SFASearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA21BD825C40033EA6A /* SFASearchResults.m */; };
 		F8E012491BD825C50033EA6A /* SFSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA31BD825C40033EA6A /* SFSession.h */; };
 		F8E0124A1BD825C50033EA6A /* SFSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA31BD825C40033EA6A /* SFSession.h */; };
 		F8E0124B1BD825C50033EA6A /* SFSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA31BD825C40033EA6A /* SFSession.h */; };
@@ -2751,10 +2751,10 @@
 		F8E00E9C1BD825C40033EA6A /* SFRequireWebPopResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRequireWebPopResult.m; sourceTree = "<group>"; };
 		F8E00E9D1BD825C40033EA6A /* SFSearchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchQuery.h; sourceTree = "<group>"; };
 		F8E00E9E1BD825C40033EA6A /* SFSearchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSearchQuery.m; sourceTree = "<group>"; };
-		F8E00E9F1BD825C40033EA6A /* SFSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchResult.h; sourceTree = "<group>"; };
-		F8E00EA01BD825C40033EA6A /* SFSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSearchResult.m; sourceTree = "<group>"; };
-		F8E00EA11BD825C40033EA6A /* SFSearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchResults.h; sourceTree = "<group>"; };
-		F8E00EA21BD825C40033EA6A /* SFSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSearchResults.m; sourceTree = "<group>"; };
+		F8E00E9F1BD825C40033EA6A /* SFASearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFASearchResult.h; sourceTree = "<group>"; };
+		F8E00EA01BD825C40033EA6A /* SFASearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFASearchResult.m; sourceTree = "<group>"; };
+		F8E00EA11BD825C40033EA6A /* SFASearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFASearchResults.h; sourceTree = "<group>"; };
+		F8E00EA21BD825C40033EA6A /* SFASearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFASearchResults.m; sourceTree = "<group>"; };
 		F8E00EA31BD825C40033EA6A /* SFSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSession.h; sourceTree = "<group>"; };
 		F8E00EA41BD825C40033EA6A /* SFSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSession.m; sourceTree = "<group>"; };
 		F8E00EA51BD825C40033EA6A /* SFShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFShare.h; sourceTree = "<group>"; };
@@ -3723,10 +3723,10 @@
 				F8E00E9C1BD825C40033EA6A /* SFRequireWebPopResult.m */,
 				F8E00E9D1BD825C40033EA6A /* SFSearchQuery.h */,
 				F8E00E9E1BD825C40033EA6A /* SFSearchQuery.m */,
-				F8E00E9F1BD825C40033EA6A /* SFSearchResult.h */,
-				F8E00EA01BD825C40033EA6A /* SFSearchResult.m */,
-				F8E00EA11BD825C40033EA6A /* SFSearchResults.h */,
-				F8E00EA21BD825C40033EA6A /* SFSearchResults.m */,
+				F8E00E9F1BD825C40033EA6A /* SFASearchResult.h */,
+				F8E00EA01BD825C40033EA6A /* SFASearchResult.m */,
+				F8E00EA11BD825C40033EA6A /* SFASearchResults.h */,
+				F8E00EA21BD825C40033EA6A /* SFASearchResults.m */,
 				F8E00EA31BD825C40033EA6A /* SFSession.h */,
 				F8E00EA41BD825C40033EA6A /* SFSession.m */,
 				F8E00EA51BD825C40033EA6A /* SFShare.h */,
@@ -3839,7 +3839,7 @@
 				F8E00F6A1BD825C40033EA6A /* SFConnectorGroupsEntity.h in Headers */,
 				F8E010F01BD825C40033EA6A /* SFDeviceUser.h in Headers */,
 				F8E011BF1BD825C40033EA6A /* SFNotifyUsersParams.h in Headers */,
-				F8E0123D1BD825C50033EA6A /* SFSearchResult.h in Headers */,
+				F8E0123D1BD825C50033EA6A /* SFASearchResult.h in Headers */,
 				0F423BE119F9417D000C69DF /* SFAHttpTaskExternal.h in Headers */,
 				F8E011801BD825C40033EA6A /* SFItemDlpInfo.h in Headers */,
 				0F5D440D1A7A338000F7F13B /* SFAModelClassMapper.h in Headers */,
@@ -3912,7 +3912,7 @@
 				F8E011E91BD825C40033EA6A /* SFPlanFeatures.h in Headers */,
 				F74639A219ACA14E00690DBF /* SFAAsyncRequestProviderProtected.h in Headers */,
 				F8E011981BD825C40033EA6A /* SFMarketAnalytics.h in Headers */,
-				F8E012431BD825C50033EA6A /* SFSearchResults.h in Headers */,
+				F8E012431BD825C50033EA6A /* SFASearchResults.h in Headers */,
 				F8E0107E1BD825C40033EA6A /* SFAccessControlDomains.h in Headers */,
 				F8E0122B1BD825C50033EA6A /* SFRequireSubdomainResult.h in Headers */,
 				F78497F21A9F01D500DBF7B8 /* SFABackgroundSessionManagerInternal.h in Headers */,
@@ -4120,7 +4120,7 @@
 				F8E00F6B1BD825C40033EA6A /* SFConnectorGroupsEntity.h in Headers */,
 				F8E010F11BD825C40033EA6A /* SFDeviceUser.h in Headers */,
 				F8E011C01BD825C40033EA6A /* SFNotifyUsersParams.h in Headers */,
-				F8E0123E1BD825C50033EA6A /* SFSearchResult.h in Headers */,
+				F8E0123E1BD825C50033EA6A /* SFASearchResult.h in Headers */,
 				F783A84019C727CA00D129A4 /* SFItemsEntity+sfapi.h in Headers */,
 				F8E011811BD825C40033EA6A /* SFItemDlpInfo.h in Headers */,
 				0F1F37F019A6332D005F0709 /* SFAQueryBase.h in Headers */,
@@ -4193,7 +4193,7 @@
 				F8E011EA1BD825C40033EA6A /* SFPlanFeatures.h in Headers */,
 				0F25E00C19AB230900862036 /* SFAFilter.h in Headers */,
 				F8E011991BD825C40033EA6A /* SFMarketAnalytics.h in Headers */,
-				F8E012441BD825C50033EA6A /* SFSearchResults.h in Headers */,
+				F8E012441BD825C50033EA6A /* SFASearchResults.h in Headers */,
 				F8E0107F1BD825C40033EA6A /* SFAccessControlDomains.h in Headers */,
 				F8E0122C1BD825C50033EA6A /* SFRequireSubdomainResult.h in Headers */,
 				F7056B8D19A7263800AD7814 /* SFAWebAuthenticationHelper.h in Headers */,
@@ -4392,7 +4392,7 @@
 				F8E010741BD825C40033EA6A /* SFAccessControl.h in Headers */,
 				22DCA2BD1AA8879400FAA1EB /* SFAHttpHandleResponseReturnData.h in Headers */,
 				F8E012931BD825C50033EA6A /* SFSSOInfoEntry.h in Headers */,
-				F8E012451BD825C50033EA6A /* SFSearchResults.h in Headers */,
+				F8E012451BD825C50033EA6A /* SFASearchResults.h in Headers */,
 				22DCA2921AA8876900FAA1EB /* SFACredentialStatusTracking.h in Headers */,
 				F8E0127B1BD825C50033EA6A /* SFSimpleQuery.h in Headers */,
 				F8E010AA1BD825C40033EA6A /* SFAccountZoneUsage.h in Headers */,
@@ -4499,7 +4499,7 @@
 				F8E0118E1BD825C40033EA6A /* SFItemProtocolLink.h in Headers */,
 				F8E010D41BD825C40033EA6A /* SFConnectorGroupZone.h in Headers */,
 				F8E011B51BD825C40033EA6A /* SFNote.h in Headers */,
-				F8E0123F1BD825C50033EA6A /* SFSearchResult.h in Headers */,
+				F8E0123F1BD825C50033EA6A /* SFASearchResult.h in Headers */,
 				F8E00F5A1BD825C40033EA6A /* SFAccountsEntity.h in Headers */,
 				F8E0111C1BD825C40033EA6A /* SFEnsSubscriptionRequest.h in Headers */,
 				22DCA2601AA8872000FAA1EB /* SFAAsyncFileDownloaderInternal.h in Headers */,
@@ -4679,7 +4679,7 @@
 				777B0477238D206A0071CAB9 /* SFODataFeed+sfapi.h in Headers */,
 				777B0427238D20290071CAB9 /* SFReport.h in Headers */,
 				777B048C238D20760071CAB9 /* SFAOAuthError.h in Headers */,
-				777B042C238D202A0071CAB9 /* SFSearchResult.h in Headers */,
+				777B042C238D202A0071CAB9 /* SFASearchResult.h in Headers */,
 				777B047D238D206A0071CAB9 /* NSMutableArray+sfapi.h in Headers */,
 				777B03F4238D20240071CAB9 /* SFDiskSpace.h in Headers */,
 				777B0429238D202A0071CAB9 /* SFRequireSubdomainResult.h in Headers */,
@@ -4857,7 +4857,7 @@
 				777B0402238D20250071CAB9 /* SFFolderTemplate.h in Headers */,
 				777B04B2238D22720071CAB9 /* SFApiQuery.h in Headers */,
 				777B0431238D202B0071CAB9 /* SFShareAlias.h in Headers */,
-				777B042D238D202A0071CAB9 /* SFSearchResults.h in Headers */,
+				777B042D238D202A0071CAB9 /* SFASearchResults.h in Headers */,
 				777B049A238D20770071CAB9 /* SFAHTTPAuthenticationChallenge.h in Headers */,
 				777B0457238D205A0071CAB9 /* SFAAsyncUploaderBase.h in Headers */,
 				777B0490238D20760071CAB9 /* SFAOAuthService.h in Headers */,
@@ -5304,7 +5304,7 @@
 				F8E011CE1BD825C40033EA6A /* SFODataObject.m in Sources */,
 				0F1F35C519A61674005F0709 /* SFAHttpTask.m in Sources */,
 				F8E010C31BD825C40033EA6A /* SFCapability.m in Sources */,
-				F8E012401BD825C50033EA6A /* SFSearchResult.m in Sources */,
+				F8E012401BD825C50033EA6A /* SFASearchResult.m in Sources */,
 				F8E0111D1BD825C40033EA6A /* SFEnsSubscriptionRequest.m in Sources */,
 				F70EB6DA19A62D3D0028933C /* SFAODataParameter.m in Sources */,
 				F709A8AE19C2DC42008E2594 /* NSStream+sfapi.m in Sources */,
@@ -5416,7 +5416,7 @@
 				0FE17EE119B5EA4000DC4E78 /* SFAActionStopwatch.m in Sources */,
 				0FE17ECF19B5CCFF00DC4E78 /* SFALoggingProvider.m in Sources */,
 				ED391A4B1C973DC300821DBA /* SFIrmClassification.m in Sources */,
-				F8E012461BD825C50033EA6A /* SFSearchResults.m in Sources */,
+				F8E012461BD825C50033EA6A /* SFASearchResults.m in Sources */,
 				F8E011531BD825C40033EA6A /* SFFolder.m in Sources */,
 				F7056BBB19A7696800AD7814 /* SFAOAuthService.m in Sources */,
 				F8E012F41BD825C50033EA6A /* SFHttpMethodConstants.m in Sources */,
@@ -5553,7 +5553,7 @@
 				0F8721B419B8476400C97AE9 /* SFAWebAuthenticationError.m in Sources */,
 				F8E012951BD825C50033EA6A /* SFSSOInfoEntry.m in Sources */,
 				F89164911A08571C00B4881F /* NSURLProtectionSpace+sfapi.m in Sources */,
-				F8E012411BD825C50033EA6A /* SFSearchResult.m in Sources */,
+				F8E012411BD825C50033EA6A /* SFASearchResult.m in Sources */,
 				F8E00F7D1BD825C40033EA6A /* SFFavoriteFoldersEntity.m in Sources */,
 				F8E0113C1BD825C40033EA6A /* SFFile.m in Sources */,
 				F7962D8919B09F060074CF51 /* SFARequestProviderFactory.m in Sources */,
@@ -5633,7 +5633,7 @@
 				F8E012831BD825C50033EA6A /* SFSimpleSearchQuery.m in Sources */,
 				F8E0108E1BD825C40033EA6A /* SFAccessControlParam.m in Sources */,
 				9257821E1C51E51A00BBCFC9 /* SFRemoteUploadsEntity.m in Sources */,
-				F8E012471BD825C50033EA6A /* SFSearchResults.m in Sources */,
+				F8E012471BD825C50033EA6A /* SFASearchResults.m in Sources */,
 				F89164821A03269800B4881F /* SFABaseAuthHandler.m in Sources */,
 				F8E012591BD825C50033EA6A /* SFShareAlias.m in Sources */,
 				F8E010D01BD825C40033EA6A /* SFConnectorGroupAccessControl.m in Sources */,
@@ -5796,7 +5796,7 @@
 				F8E011D01BD825C40033EA6A /* SFODataObject.m in Sources */,
 				22DCA3831AA897CB00FAA1EB /* SFAUploaderBase.m in Sources */,
 				F8E010C51BD825C40033EA6A /* SFCapability.m in Sources */,
-				F8E012421BD825C50033EA6A /* SFSearchResult.m in Sources */,
+				F8E012421BD825C50033EA6A /* SFASearchResult.m in Sources */,
 				F8E0111F1BD825C40033EA6A /* SFEnsSubscriptionRequest.m in Sources */,
 				22DCA3841AA897CB00FAA1EB /* SFAAsyncUploaderBase.m in Sources */,
 				22DCA3851AA897CB00FAA1EB /* SFAAsyncStandardFileUploader.m in Sources */,
@@ -5908,7 +5908,7 @@
 				22DCA3B01AA897CC00FAA1EB /* SFAWebAuthenticationHelper.m in Sources */,
 				22DCA3B11AA897CC00FAA1EB /* SFABaseAuthHandler.m in Sources */,
 				ED391A4D1C973DC300821DBA /* SFIrmClassification.m in Sources */,
-				F8E012481BD825C50033EA6A /* SFSearchResults.m in Sources */,
+				F8E012481BD825C50033EA6A /* SFASearchResults.m in Sources */,
 				F8E011551BD825C40033EA6A /* SFFolder.m in Sources */,
 				22DCA3B21AA897CC00FAA1EB /* SFAuthenticationContext.m in Sources */,
 				F8E012F61BD825C50033EA6A /* SFHttpMethodConstants.m in Sources */,
@@ -6047,7 +6047,7 @@
 				777B031E238C32C30071CAB9 /* SFIrmPrimaryAccessRightParams.m in Sources */,
 				777B0330238C32C30071CAB9 /* SFOutlookInformationOptionString.m in Sources */,
 				777B0310238C32C20071CAB9 /* SFESignature.m in Sources */,
-				777B0340238C32C30071CAB9 /* SFSearchResult.m in Sources */,
+				777B0340238C32C30071CAB9 /* SFASearchResult.m in Sources */,
 				777B032A238C32C30071CAB9 /* SFNotifyUsersParams.m in Sources */,
 				777B03A0238C331A0071CAB9 /* SFASubstringFilter.m in Sources */,
 				777B03A5238C331A0071CAB9 /* SFARequestProviderFactory.m in Sources */,
@@ -6066,7 +6066,7 @@
 				777B0332238C32C30071CAB9 /* SFPowerTools.m in Sources */,
 				777B02E9238C32B60071CAB9 /* SFStorageCentersEntity.m in Sources */,
 				777B0327238C32C30071CAB9 /* SFModelConstants.m in Sources */,
-				777B0341238C32C30071CAB9 /* SFSearchResults.m in Sources */,
+				777B0341238C32C30071CAB9 /* SFASearchResults.m in Sources */,
 				777B02ED238C32C10071CAB9 /* SFAccountMessageCode.m in Sources */,
 				777B0371238C32E00071CAB9 /* SFAUploadResponse.m in Sources */,
 				777B03B6238C33240071CAB9 /* SFAODataRequestError.m in Sources */,

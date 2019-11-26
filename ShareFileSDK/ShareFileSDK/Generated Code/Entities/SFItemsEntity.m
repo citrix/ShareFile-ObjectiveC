@@ -17,7 +17,7 @@
 #import "SFSymbolicLink.h"
 #import "SFUploadSpecification.h"
 #import "SFUploadRequestParams.h"
-#import "SFSearchResults.h"
+#import "SFASearchResults.h"
 #import "SFSimpleSearchQuery.h"
 #import "SFAdvancedSearchResults.h"
 #import "SFSearchQuery.h"
@@ -479,7 +479,7 @@
 -(SFApiQuery*)searchWithQuery:(NSString*)query maxResults:(NSNumber*)maxResults skip:(NSNumber*)skip andHomeFolderOnly:(NSNumber*)homeFolderOnly
 {
 	SFApiQuery *sfApiQuery = [[SFApiQuery alloc] initWithClient:self.client];
-	sfApiQuery.responseClass = [SFSearchResults class];
+	sfApiQuery.responseClass = [SFASearchResults class];
 	sfApiQuery.isODataFeed = NO;
 
 	[sfApiQuery setFrom:kSFEntities_Items];
