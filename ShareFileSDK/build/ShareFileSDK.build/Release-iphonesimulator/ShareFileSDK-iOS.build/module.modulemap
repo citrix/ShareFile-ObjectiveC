@@ -1,6 +1,0 @@
-framework module ShareFileSDK_iOS {
-  umbrella header "ShareFileSDK_iOS.h"
-
-  export *
-  module * { export * }
-}
