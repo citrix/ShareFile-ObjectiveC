@@ -577,6 +577,504 @@
 		3B77781D1A1660290042B7DB /* NSArray+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B77781A1A1660290042B7DB /* NSArray+sfapi.h */; };
 		3B77781E1A1660290042B7DB /* NSArray+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77781B1A1660290042B7DB /* NSArray+sfapi.m */; };
 		3B77781F1A1660290042B7DB /* NSArray+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77781B1A1660290042B7DB /* NSArray+sfapi.m */; };
+		777B02CF238C31150071CAB9 /* ShareFileSDK_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 777B02CD238C31150071CAB9 /* ShareFileSDK_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B02D2238C31150071CAB9 /* ShareFileSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777B02CB238C31150071CAB9 /* ShareFileSDK_iOS.framework */; };
+		777B02D3238C31150071CAB9 /* ShareFileSDK_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 777B02CB238C31150071CAB9 /* ShareFileSDK_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		777B02D9238C31F90071CAB9 /* ShareFileSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F3F8AE819A48D0B00F616D1 /* ShareFileSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B02DA238C32B60071CAB9 /* SFRemoteUploadsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782191C51E51A00BBCFC9 /* SFRemoteUploadsEntity.m */; };
+		777B02DB238C32B60071CAB9 /* SFAccessControlsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DA51BD825C30033EA6A /* SFAccessControlsEntity.m */; };
+		777B02DC238C32B60071CAB9 /* SFAccountsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DA71BD825C30033EA6A /* SFAccountsEntity.m */; };
+		777B02DD238C32B60071CAB9 /* SFAsyncOperationsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DA91BD825C30033EA6A /* SFAsyncOperationsEntity.m */; };
+		777B02DE238C32B60071CAB9 /* SFCapabilitiesEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DAB1BD825C30033EA6A /* SFCapabilitiesEntity.m */; };
+		777B02DF238C32B60071CAB9 /* SFConnectorGroupsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DAD1BD825C30033EA6A /* SFConnectorGroupsEntity.m */; };
+		777B02E0238C32B60071CAB9 /* SFEntityConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DB01BD825C30033EA6A /* SFEntityConstants.m */; };
+		777B02E1238C32B60071CAB9 /* SFFavoriteFoldersEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DB21BD825C30033EA6A /* SFFavoriteFoldersEntity.m */; };
+		777B02E2238C32B60071CAB9 /* SFFolderTemplatesEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DB41BD825C30033EA6A /* SFFolderTemplatesEntity.m */; };
+		777B02E3238C32B60071CAB9 /* SFGroupsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DB61BD825C30033EA6A /* SFGroupsEntity.m */; };
+		777B02E4238C32B60071CAB9 /* SFItemsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DB81BD825C30033EA6A /* SFItemsEntity.m */; };
+		777B02E5238C32B60071CAB9 /* SFMetadataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DBA1BD825C30033EA6A /* SFMetadataEntity.m */; };
+		777B02E6238C32B60071CAB9 /* SFReportsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DBC1BD825C30033EA6A /* SFReportsEntity.m */; };
+		777B02E7238C32B60071CAB9 /* SFSessionsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DBE1BD825C30033EA6A /* SFSessionsEntity.m */; };
+		777B02E8238C32B60071CAB9 /* SFSharesEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DC01BD825C30033EA6A /* SFSharesEntity.m */; };
+		777B02E9238C32B60071CAB9 /* SFStorageCentersEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DC21BD825C30033EA6A /* SFStorageCentersEntity.m */; };
+		777B02EA238C32B60071CAB9 /* SFUsersEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DC41BD825C30033EA6A /* SFUsersEntity.m */; };
+		777B02EB238C32B60071CAB9 /* SFZonesEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00DC61BD825C30033EA6A /* SFZonesEntity.m */; };
+		777B02EC238C32C10071CAB9 /* SFAccessControlsCloneParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782211C51E55400BBCFC9 /* SFAccessControlsCloneParams.m */; };
+		777B02ED238C32C10071CAB9 /* SFAccountMessageCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782231C51E55400BBCFC9 /* SFAccountMessageCode.m */; };
+		777B02EE238C32C10071CAB9 /* SFRemoteUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782251C51E55400BBCFC9 /* SFRemoteUpload.m */; };
+		777B02EF238C32C10071CAB9 /* SFService.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782271C51E55400BBCFC9 /* SFService.m */; };
+		777B02F0238C32C10071CAB9 /* SFServicesCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782291C51E55400BBCFC9 /* SFServicesCollection.m */; };
+		777B02F1238C32C10071CAB9 /* SFAccessControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E071BD825C30033EA6A /* SFAccessControl.m */; };
+		777B02F2238C32C10071CAB9 /* SFAccessControlBulkResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E091BD825C30033EA6A /* SFAccessControlBulkResult.m */; };
+		777B02F3238C32C20071CAB9 /* SFAccessControlDomains.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E0B1BD825C30033EA6A /* SFAccessControlDomains.m */; };
+		777B02F4238C32C20071CAB9 /* SFAccessControlFailedEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E0D1BD825C30033EA6A /* SFAccessControlFailedEntry.m */; };
+		777B02F5238C32C20071CAB9 /* SFAccessControlParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E0F1BD825C30033EA6A /* SFAccessControlParam.m */; };
+		777B02F6238C32C20071CAB9 /* SFAccessControlsBulkParams.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E111BD825C30033EA6A /* SFAccessControlsBulkParams.m */; };
+		777B02F7238C32C20071CAB9 /* SFAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E131BD825C30033EA6A /* SFAccount.m */; };
+		777B02F8238C32C20071CAB9 /* SFAccountPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E151BD825C30033EA6A /* SFAccountPreferences.m */; };
+		777B02F9238C32C20071CAB9 /* SFAccountUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E171BD825C30033EA6A /* SFAccountUser.m */; };
+		777B02FA238C32C20071CAB9 /* SFAccountZoneUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E191BD825C30033EA6A /* SFAccountZoneUsage.m */; };
+		777B02FB238C32C20071CAB9 /* SFAdvancedSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E1B1BD825C30033EA6A /* SFAdvancedSearchResults.m */; };
+		777B02FC238C32C20071CAB9 /* SFAsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E1D1BD825C30033EA6A /* SFAsyncOperation.m */; };
+		777B02FD238C32C20071CAB9 /* SFBillingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E1F1BD825C30033EA6A /* SFBillingInfo.m */; };
+		777B02FE238C32C20071CAB9 /* SFCapability.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E211BD825C30033EA6A /* SFCapability.m */; };
+		777B02FF238C32C20071CAB9 /* SFConnectorGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E231BD825C30033EA6A /* SFConnectorGroup.m */; };
+		777B0300238C32C20071CAB9 /* SFConnectorGroupAccessControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E251BD825C30033EA6A /* SFConnectorGroupAccessControl.m */; };
+		777B0301238C32C20071CAB9 /* SFConnectorGroupZone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E271BD825C30033EA6A /* SFConnectorGroupZone.m */; };
+		777B0302238C32C20071CAB9 /* SFContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E291BD825C30033EA6A /* SFContact.m */; };
+		777B0303238C32C20071CAB9 /* SFDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2B1BD825C30033EA6A /* SFDevice.m */; };
+		777B0304238C32C20071CAB9 /* SFDeviceLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2D1BD825C30033EA6A /* SFDeviceLogEntry.m */; };
+		777B0305238C32C20071CAB9 /* SFDeviceStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2F1BD825C30033EA6A /* SFDeviceStatus.m */; };
+		777B0306238C32C20071CAB9 /* SFDeviceUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E311BD825C30033EA6A /* SFDeviceUser.m */; };
+		777B0307238C32C20071CAB9 /* SFDeviceUserWipe.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E331BD825C30033EA6A /* SFDeviceUserWipe.m */; };
+		777B0308238C32C20071CAB9 /* SFDeviceWipeReport.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E351BD825C30033EA6A /* SFDeviceWipeReport.m */; };
+		777B0309238C32C20071CAB9 /* SFDiskSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E371BD825C30033EA6A /* SFDiskSpace.m */; };
+		777B030A238C32C20071CAB9 /* SFDownloadSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E391BD825C30033EA6A /* SFDownloadSpecification.m */; };
+		777B030B238C32C20071CAB9 /* SFEditingPlatformInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E3B1BD825C40033EA6A /* SFEditingPlatformInfo.m */; };
+		777B030C238C32C20071CAB9 /* SFEnsSubscriberConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E3D1BD825C40033EA6A /* SFEnsSubscriberConfiguration.m */; };
+		777B030D238C32C20071CAB9 /* SFEnsSubscriptionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E3F1BD825C40033EA6A /* SFEnsSubscriptionRequest.m */; };
+		777B030E238C32C20071CAB9 /* SFEnsSubscriptionToken.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E411BD825C40033EA6A /* SFEnsSubscriptionToken.m */; };
+		777B030F238C32C20071CAB9 /* SFEntityTypeMap.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E431BD825C40033EA6A /* SFEntityTypeMap.m */; };
+		777B0310238C32C20071CAB9 /* SFESignature.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E451BD825C40033EA6A /* SFESignature.m */; };
+		777B0311238C32C20071CAB9 /* SFFavoriteFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E471BD825C40033EA6A /* SFFavoriteFolder.m */; };
+		777B0312238C32C20071CAB9 /* SFFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E491BD825C40033EA6A /* SFFile.m */; };
+		777B0313238C32C20071CAB9 /* SFFileLock.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E4B1BD825C40033EA6A /* SFFileLock.m */; };
+		777B0314238C32C20071CAB9 /* SFFindSubdomainParams.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E4D1BD825C40033EA6A /* SFFindSubdomainParams.m */; };
+		777B0315238C32C20071CAB9 /* SFFindSubdomainResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E4F1BD825C40033EA6A /* SFFindSubdomainResult.m */; };
+		777B0316238C32C20071CAB9 /* SFFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E511BD825C40033EA6A /* SFFolder.m */; };
+		777B0317238C32C20071CAB9 /* SFFolderTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E531BD825C40033EA6A /* SFFolderTemplate.m */; };
+		777B0318238C32C20071CAB9 /* SFFolderTemplateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E551BD825C40033EA6A /* SFFolderTemplateItem.m */; };
+		777B0319238C32C20071CAB9 /* SFGenericConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E571BD825C40033EA6A /* SFGenericConfig.m */; };
+		777B031A238C32C30071CAB9 /* SFGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E591BD825C40033EA6A /* SFGroup.m */; };
+		777B031B238C32C30071CAB9 /* SFInboxMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E5B1BD825C40033EA6A /* SFInboxMetadata.m */; };
+		777B031C238C32C30071CAB9 /* SFIndustry.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E5D1BD825C40033EA6A /* SFIndustry.m */; };
+		777B031D238C32C30071CAB9 /* SFIrmClassification.m in Sources */ = {isa = PBXBuildFile; fileRef = ED391A411C973DC300821DBA /* SFIrmClassification.m */; };
+		777B031E238C32C30071CAB9 /* SFIrmPrimaryAccessRightParams.m in Sources */ = {isa = PBXBuildFile; fileRef = ED391A431C973DC300821DBA /* SFIrmPrimaryAccessRightParams.m */; };
+		777B031F238C32C30071CAB9 /* SFItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E5F1BD825C40033EA6A /* SFItem.m */; };
+		777B0320238C32C30071CAB9 /* SFItemDlpInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E611BD825C40033EA6A /* SFItemDlpInfo.m */; };
+		777B0321238C32C30071CAB9 /* SFItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E631BD825C40033EA6A /* SFItemInfo.m */; };
+		777B0322238C32C30071CAB9 /* SFItemProtocolLink.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E651BD825C40033EA6A /* SFItemProtocolLink.m */; };
+		777B0323238C32C30071CAB9 /* SFLink.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E671BD825C40033EA6A /* SFLink.m */; };
+		777B0324238C32C30071CAB9 /* SFMarketAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E691BD825C40033EA6A /* SFMarketAnalytics.m */; };
+		777B0325238C32C30071CAB9 /* SFMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E6B1BD825C40033EA6A /* SFMetadata.m */; };
+		777B0326238C32C30071CAB9 /* SFMobileSecuritySettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E6D1BD825C40033EA6A /* SFMobileSecuritySettings.m */; };
+		777B0327238C32C30071CAB9 /* SFModelConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E6F1BD825C40033EA6A /* SFModelConstants.m */; };
+		777B0328238C32C30071CAB9 /* SFNote.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E721BD825C40033EA6A /* SFNote.m */; };
+		777B0329238C32C30071CAB9 /* SFNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E741BD825C40033EA6A /* SFNotification.m */; };
+		777B032A238C32C30071CAB9 /* SFNotifyUsersParams.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E761BD825C40033EA6A /* SFNotifyUsersParams.m */; };
+		777B032B238C32C30071CAB9 /* SFODataFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E781BD825C40033EA6A /* SFODataFeed.m */; };
+		777B032C238C32C30071CAB9 /* SFODataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E7A1BD825C40033EA6A /* SFODataObject.m */; };
+		777B032D238C32C30071CAB9 /* SFOutlookInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E7C1BD825C40033EA6A /* SFOutlookInformation.m */; };
+		777B032E238C32C30071CAB9 /* SFOutlookInformationOptionBool.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E7E1BD825C40033EA6A /* SFOutlookInformationOptionBool.m */; };
+		777B032F238C32C30071CAB9 /* SFOutlookInformationOptionInt.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E801BD825C40033EA6A /* SFOutlookInformationOptionInt.m */; };
+		777B0330238C32C30071CAB9 /* SFOutlookInformationOptionString.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E821BD825C40033EA6A /* SFOutlookInformationOptionString.m */; };
+		777B0331238C32C30071CAB9 /* SFPlanFeatures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E841BD825C40033EA6A /* SFPlanFeatures.m */; };
+		777B0332238C32C30071CAB9 /* SFPowerTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E861BD825C40033EA6A /* SFPowerTools.m */; };
+		777B0333238C32C30071CAB9 /* SFPreviewPlatformInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E881BD825C40033EA6A /* SFPreviewPlatformInfo.m */; };
+		777B0334238C32C30071CAB9 /* SFPrincipal.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E8A1BD825C40033EA6A /* SFPrincipal.m */; };
+		777B0335238C32C30071CAB9 /* SFProductDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E8C1BD825C40033EA6A /* SFProductDefaults.m */; };
+		777B0336238C32C30071CAB9 /* SFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E8E1BD825C40033EA6A /* SFQuery.m */; };
+		777B0337238C32C30071CAB9 /* SFQueryPaging.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E901BD825C40033EA6A /* SFQueryPaging.m */; };
+		777B0338238C32C30071CAB9 /* SFQuerySorting.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E921BD825C40033EA6A /* SFQuerySorting.m */; };
+		777B0339238C32C30071CAB9 /* SFRemoteUploadRequestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = ED391A451C973DC300821DBA /* SFRemoteUploadRequestParams.m */; };
+		777B033A238C32C30071CAB9 /* SFRedirection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E941BD825C40033EA6A /* SFRedirection.m */; };
+		777B033B238C32C30071CAB9 /* SFReport.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E961BD825C40033EA6A /* SFReport.m */; };
+		777B033C238C32C30071CAB9 /* SFReportRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E981BD825C40033EA6A /* SFReportRecord.m */; };
+		777B033D238C32C30071CAB9 /* SFRequireSubdomainResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E9A1BD825C40033EA6A /* SFRequireSubdomainResult.m */; };
+		777B033E238C32C30071CAB9 /* SFRequireWebPopResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E9C1BD825C40033EA6A /* SFRequireWebPopResult.m */; };
+		777B033F238C32C30071CAB9 /* SFSearchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E9E1BD825C40033EA6A /* SFSearchQuery.m */; };
+		777B0340238C32C30071CAB9 /* SFSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA01BD825C40033EA6A /* SFSearchResult.m */; };
+		777B0341238C32C30071CAB9 /* SFSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA21BD825C40033EA6A /* SFSearchResults.m */; };
+		777B0342238C32C40071CAB9 /* SFSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA41BD825C40033EA6A /* SFSession.m */; };
+		777B0343238C32C40071CAB9 /* SFShare.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA61BD825C40033EA6A /* SFShare.m */; };
+		777B0344238C32C40071CAB9 /* SFShareAccessRight.m in Sources */ = {isa = PBXBuildFile; fileRef = ED391A471C973DC300821DBA /* SFShareAccessRight.m */; };
+		777B0345238C32C40071CAB9 /* SFShareAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EA81BD825C40033EA6A /* SFShareAlias.m */; };
+		777B0346238C32C40071CAB9 /* SFShareItemHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EAA1BD825C40033EA6A /* SFShareItemHistory.m */; };
+		777B0347238C32C40071CAB9 /* SFShareRequestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EAC1BD825C40033EA6A /* SFShareRequestParams.m */; };
+		777B0348238C32C40071CAB9 /* SFShareResendParams.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EAE1BD825C40033EA6A /* SFShareResendParams.m */; };
+		777B0349238C32C40071CAB9 /* SFShareSendParams.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EB01BD825C40033EA6A /* SFShareSendParams.m */; };
+		777B034A238C32C40071CAB9 /* SFShareSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EB21BD825C40033EA6A /* SFShareSettings.m */; };
+		777B034B238C32C40071CAB9 /* SFSimpleQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EB41BD825C40033EA6A /* SFSimpleQuery.m */; };
+		777B034C238C32C40071CAB9 /* SFSimpleSearchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EB61BD825C40033EA6A /* SFSimpleSearchQuery.m */; };
+		777B034D238C32C40071CAB9 /* SFSSOAccountProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EB81BD825C40033EA6A /* SFSSOAccountProvider.m */; };
+		777B034E238C32C40071CAB9 /* SFSSOInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EBA1BD825C40033EA6A /* SFSSOInfo.m */; };
+		777B034F238C32C40071CAB9 /* SFSSOInfoEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EBC1BD825C40033EA6A /* SFSSOInfoEntry.m */; };
+		777B0350238C32C40071CAB9 /* SFStorageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EBE1BD825C40033EA6A /* SFStorageCenter.m */; };
+		777B0351238C32C40071CAB9 /* SFSymbolicLink.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EC01BD825C40033EA6A /* SFSymbolicLink.m */; };
+		777B0352238C32C40071CAB9 /* SFTenantZoneUsageReport.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EC21BD825C40033EA6A /* SFTenantZoneUsageReport.m */; };
+		777B0353238C32C40071CAB9 /* SFToolInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EC41BD825C40033EA6A /* SFToolInformation.m */; };
+		777B0354238C32C40071CAB9 /* SFUploadRequestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EC61BD825C40033EA6A /* SFUploadRequestParams.m */; };
+		777B0355238C32C40071CAB9 /* SFUploadSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EC81BD825C40033EA6A /* SFUploadSpecification.m */; };
+		777B0356238C32C40071CAB9 /* SFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00ECA1BD825C40033EA6A /* SFUser.m */; };
+		777B0357238C32C40071CAB9 /* SFUserConfirmationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00ECC1BD825C40033EA6A /* SFUserConfirmationSettings.m */; };
+		777B0358238C32C40071CAB9 /* SFUserConfirmRequirement.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00ECE1BD825C40033EA6A /* SFUserConfirmRequirement.m */; };
+		777B0359238C32C40071CAB9 /* SFUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00ED01BD825C40033EA6A /* SFUserInfo.m */; };
+		777B035A238C32C40071CAB9 /* SFUserPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00ED21BD825C40033EA6A /* SFUserPreferences.m */; };
+		777B035B238C32C40071CAB9 /* SFUserSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00ED41BD825C40033EA6A /* SFUserSecurity.m */; };
+		777B035C238C32C40071CAB9 /* SFUserUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00ED61BD825C40033EA6A /* SFUserUsage.m */; };
+		777B035D238C32C40071CAB9 /* SFZone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00ED81BD825C40033EA6A /* SFZone.m */; };
+		777B035E238C32C40071CAB9 /* SFZoneUsageBreakdown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EDA1BD825C40033EA6A /* SFZoneUsageBreakdown.m */; };
+		777B035F238C32C80071CAB9 /* SFHttpMethodConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00EDC1BD825C40033EA6A /* SFHttpMethodConstants.m */; };
+		777B0360238C32CC0071CAB9 /* SFODataEntityBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9305CB19DEB0C00058F288 /* SFODataEntityBase.m */; };
+		777B0361238C32CF0071CAB9 /* SFAFileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F7466F5B19C028C900C238D0 /* SFAFileInfo.m */; };
+		777B0362238C32D80071CAB9 /* SFABackgroundSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB2C0B1A91CD6D0009479D /* SFABackgroundSessionConfiguration.m */; };
+		777B0363238C32D80071CAB9 /* SFABackgroundSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6FA3461A8B4A7100653852 /* SFABackgroundSessionManager.m */; };
+		777B0364238C32D80071CAB9 /* SFAURLSessionTaskRuntimeAssociationKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61ABDC1AA5CC6800A201EC /* SFAURLSessionTaskRuntimeAssociationKeys.m */; };
+		777B0365238C32DB0071CAB9 /* SFAFilePart.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E7B04619BDAEBC0000869F /* SFAFilePart.m */; };
+		777B0366238C32DB0071CAB9 /* SFAFileUploaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F712C05419BDC7C500D7D000 /* SFAFileUploaderConfig.m */; };
+		777B0367238C32DB0071CAB9 /* SFAUploaderBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F712C06019BDCCDD00D7D000 /* SFAUploaderBase.m */; };
+		777B0368238C32DB0071CAB9 /* SFAAsyncUploaderBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B581719BEDD7B007E8DAD /* SFAAsyncUploaderBase.m */; };
+		777B0369238C32DB0071CAB9 /* SFAAsyncStandardFileUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = F7149FCA19BF151600262F1D /* SFAAsyncStandardFileUploader.m */; };
+		777B036A238C32DB0071CAB9 /* SFAAsyncMultiChunkFileUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B98AB19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.m */; };
+		777B036B238C32DB0071CAB9 /* SFAAsyncStreamedFileUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = B867B5AE1B685C950040242D /* SFAAsyncStreamedFileUploader.m */; };
+		777B036C238C32DC0071CAB9 /* SFAAsyncThreadedFileUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = B867B5BE1B685DF80040242D /* SFAAsyncThreadedFileUploader.m */; };
+		777B036D238C32E00071CAB9 /* SFADownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F775A63A19B72AA7003CFD34 /* SFADownloaderConfig.m */; };
+		777B036E238C32E00071CAB9 /* SFAAsyncFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F237DDE19C85D5A002347B8 /* SFAAsyncFileDownloader.m */; };
+		777B036F238C32E00071CAB9 /* SFATransferProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = F775A64019B72EA6003CFD34 /* SFATransferProgress.m */; };
+		777B0370238C32E00071CAB9 /* SFAApiResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F775A64C19B730C3003CFD34 /* SFAApiResponse.m */; };
+		777B0371238C32E00071CAB9 /* SFAUploadResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F770E3C919B8502500C5B5D7 /* SFAUploadResponse.m */; };
+		777B0372238C32E00071CAB9 /* SFAUploadSpecificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F770E3CF19B8530F00C5B5D7 /* SFAUploadSpecificationRequest.m */; };
+		777B0373238C32EA0071CAB9 /* SFALoggingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE17ECC19B5CCFF00DC4E78 /* SFALoggingProvider.m */; };
+		777B0374238C32EA0071CAB9 /* SFADefaultLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE17ED819B5D52900DC4E78 /* SFADefaultLogger.m */; };
+		777B0375238C32EA0071CAB9 /* SFAActionStopwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE17EDE19B5EA4000DC4E78 /* SFAActionStopwatch.m */; };
+		777B0376238C32EB0071CAB9 /* SFAStopwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE17EE419B5EC2000DC4E78 /* SFAStopwatch.m */; };
+		777B0377238C32EB0071CAB9 /* SFABase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F237DD819C731EF002347B8 /* SFABase64.m */; };
+		777B0378238C32EB0071CAB9 /* SFAHttpRequestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3184CE19AF429000BA6B37 /* SFAHttpRequestUtils.m */; };
+		777B0379238C32EB0071CAB9 /* SFAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F757652E19AE146A004C60C3 /* SFAUtils.m */; };
+		777B037A238C32EB0071CAB9 /* SFAJSONToODataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F56D9E519B09E93000FF8E3 /* SFAJSONToODataMapper.m */; };
+		777B037B238C32EB0071CAB9 /* SFACryptoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F237DCB19C6E564002347B8 /* SFACryptoUtils.m */; };
+		777B037C238C32EB0071CAB9 /* SFASharedThreadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F237E0319CC393C002347B8 /* SFASharedThreadManager.m */; };
+		777B037D238C32EB0071CAB9 /* SFAEventHandlerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F746398419AC7E7000690DBF /* SFAEventHandlerResponse.m */; };
+		777B037E238C32EB0071CAB9 /* NSURLCredential+SFACredential.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C181641A6E42C900DEB47E /* NSURLCredential+SFACredential.m */; };
+		777B037F238C32EB0071CAB9 /* SFODataFeed+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9305D119DEB46D0058F288 /* SFODataFeed+sfapi.m */; };
+		777B0380238C32EB0071CAB9 /* SFODataObject+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9305D319DEB46D0058F288 /* SFODataObject+sfapi.m */; };
+		777B0381238C32EB0071CAB9 /* NSString+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F25E0A119AB342900862036 /* NSString+sfapi.m */; };
+		777B0382238C32EB0071CAB9 /* NSDictionary+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9047F219ACA42300CDEBE1 /* NSDictionary+sfapi.m */; };
+		777B0383238C32EB0071CAB9 /* NSObject+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F56D9EB19B0A3BE000FF8E3 /* NSObject+sfapi.m */; };
+		777B0384238C32EB0071CAB9 /* NSDate+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F56D9F119B0A922000FF8E3 /* NSDate+sfapi.m */; };
+		777B0385238C32EB0071CAB9 /* NSMutableArray+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = F710365619D0584600A69FBC /* NSMutableArray+sfapi.m */; };
+		777B0386238C32EB0071CAB9 /* NSArray+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77781B1A1660290042B7DB /* NSArray+sfapi.m */; };
+		777B0387238C32EB0071CAB9 /* NSHTTPURLResponse+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21DF3F19B43E8C00A9CD93 /* NSHTTPURLResponse+sfapi.m */; };
+		777B0388238C32EB0071CAB9 /* NSURL+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DC0DC19B71288003E10E1 /* NSURL+sfapi.m */; };
+		777B0389238C32EB0071CAB9 /* NSStream+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = F709A8AB19C2DC42008E2594 /* NSStream+sfapi.m */; };
+		777B038A238C32EB0071CAB9 /* SFItemsEntity+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = F783A83E19C727CA00D129A4 /* SFItemsEntity+sfapi.m */; };
+		777B038B238C32EB0071CAB9 /* NSURLProtectionSpace+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = F891648D1A08571B00B4881F /* NSURLProtectionSpace+sfapi.m */; };
+		777B038C238C32EB0071CAB9 /* NSURLCredential+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C98EEC1A1D12F300628A77 /* NSURLCredential+sfapi.m */; };
+		777B038D238C32EB0071CAB9 /* ALAsset+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5A041C1A42B7D100B257C1 /* ALAsset+sfapi.m */; };
+		777B038E238C32EB0071CAB9 /* SFItemInfo+sfapi.m in Sources */ = {isa = PBXBuildFile; fileRef = F894B8BA1BE8038400E0F739 /* SFItemInfo+sfapi.m */; };
+		777B038F238C32FB0071CAB9 /* SFAConsumerConnectorAuthParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C073E01A250C44008F5F76 /* SFAConsumerConnectorAuthParser.m */; };
+		777B0390238C32FB0071CAB9 /* SFABearerAuthParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C073E21A250C44008F5F76 /* SFABearerAuthParser.m */; };
+		777B0391238C32FB0071CAB9 /* SFAOAuthResponseBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056B9419A72A9E00AD7814 /* SFAOAuthResponseBase.m */; };
+		777B0392238C32FB0071CAB9 /* SFAOAuthError.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056BA019A7565700AD7814 /* SFAOAuthError.m */; };
+		777B0393238C32FB0071CAB9 /* SFAOAuthAuthorizationCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056BA619A75D5300AD7814 /* SFAOAuthAuthorizationCode.m */; };
+		777B0394238C32FB0071CAB9 /* SFAOAuthToken.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056BAC19A75ECC00AD7814 /* SFAOAuthToken.m */; };
+		777B0395238C32FB0071CAB9 /* SFAOAuth2AuthenticationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056BB219A7609700AD7814 /* SFAOAuth2AuthenticationHelper.m */; };
+		777B0396238C32FB0071CAB9 /* SFAOAuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056BB819A7696800AD7814 /* SFAOAuthService.m */; };
+		777B0397238C32FB0071CAB9 /* SFAWebAuthenticationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7056B8B19A7263800AD7814 /* SFAWebAuthenticationHelper.m */; };
+		777B0398238C32FB0071CAB9 /* SFABaseAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F891647E1A03269800B4881F /* SFABaseAuthHandler.m */; };
+		777B0399238C32FB0071CAB9 /* SFAuthenticationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F89A6AF61A0D931800368726 /* SFAuthenticationContext.m */; };
+		777B039A238C32FB0071CAB9 /* SFASDKAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F89A6AFC1A10660700368726 /* SFASDKAuthHandler.m */; };
+		777B039B238C32FB0071CAB9 /* SFAHTTPAuthenticationChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C073D41A1D7479008F5F76 /* SFAHTTPAuthenticationChallenge.m */; };
+		777B039C238C32FB0071CAB9 /* SFAZoneAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F237DC519C3130F002347B8 /* SFAZoneAuthentication.m */; };
+		777B039D238C331A0071CAB9 /* SFAEqualToFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2CE5BA19D57C330024EB56 /* SFAEqualToFilter.m */; };
+		777B039E238C331A0071CAB9 /* SFAEndsWithFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2CE5C319D59C4C0024EB56 /* SFAEndsWithFilter.m */; };
+		777B039F238C331A0071CAB9 /* SFAStartsWithFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2CE5C919D59D0E0024EB56 /* SFAStartsWithFilter.m */; };
+		777B03A0238C331A0071CAB9 /* SFASubstringFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2CE5CF19D59D8F0024EB56 /* SFASubstringFilter.m */; };
+		777B03A1238C331A0071CAB9 /* SFATypeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E9FCC1B28F001000AD64D /* SFATypeFilter.m */; };
+		777B03A2238C331A0071CAB9 /* SFAAsyncRequestProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F746399119AC85F300690DBF /* SFAAsyncRequestProvider.m */; };
+		777B03A3238C331A0071CAB9 /* SFABaseRequestProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F708390819AB1AB100DD857F /* SFABaseRequestProvider.m */; };
+		777B03A4238C331A0071CAB9 /* SFAResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F757653419AE1A2C004C60C3 /* SFAResponse.m */; };
+		777B03A5238C331A0071CAB9 /* SFARequestProviderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7962D8519B09F060074CF51 /* SFARequestProviderFactory.m */; };
+		777B03A6238C331A0071CAB9 /* SFAODataParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EB6D819A62D3D0028933C /* SFAODataParameter.m */; };
+		777B03A7238C331A0071CAB9 /* SFAODataAction.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EB6DC19A635B20028933C /* SFAODataAction.m */; };
+		777B03A8238C331A0071CAB9 /* SFAODataParameterCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EB6E019A6361F0028933C /* SFAODataParameterCollection.m */; };
+		777B03A9238C331A0071CAB9 /* SFAQueryBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F37EE19A6332D005F0709 /* SFAQueryBase.m */; };
+		777B03AA238C331A0071CAB9 /* SFApiQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F25DFFE19AB1B8300862036 /* SFApiQuery.m */; };
+		777B03AB238C331A0071CAB9 /* SFAApiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9047E919AC7C2800CDEBE1 /* SFAApiRequest.m */; };
+		777B03AC238C331A0071CAB9 /* SFAHttpRequestResponseDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DC0E219B734AA003E10E1 /* SFAHttpRequestResponseDataContainer.m */; };
+		777B03AD238C33240071CAB9 /* SFABackgroundUploadInitiationTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB2C151A93310D0009479D /* SFABackgroundUploadInitiationTask.m */; };
+		777B03AE238C33240071CAB9 /* SFACompositeUploaderTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B98A219D03E2E008E3DE7 /* SFACompositeUploaderTask.m */; };
+		777B03AF238C33240071CAB9 /* SFAHttpTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F35BF19A61674005F0709 /* SFAHttpTask.m */; };
+		777B03B0238C33240071CAB9 /* SFAHttpHandleResponseReturnData.m in Sources */ = {isa = PBXBuildFile; fileRef = F757652719AE0247004C60C3 /* SFAHttpHandleResponseReturnData.m */; };
+		777B03B1238C33240071CAB9 /* SFAUploaderTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6F29D19C03EE900348220 /* SFAUploaderTask.m */; };
+		777B03B2238C33240071CAB9 /* SFADownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F237DE419C86016002347B8 /* SFADownloadTask.m */; };
+		777B03B3238C33240071CAB9 /* SFABaseTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCCACB19D3F94E0019D54B /* SFABaseTask.m */; };
+		777B03B4238C33240071CAB9 /* SFAHttpResponseActionAsyncCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = F891649F1A0B135100B4881F /* SFAHttpResponseActionAsyncCallback.m */; };
+		777B03B5238C33240071CAB9 /* SFABackgroundUploadInitiationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB2C271A9481620009479D /* SFABackgroundUploadInitiationResponse.m */; };
+		777B03B6238C33240071CAB9 /* SFAODataRequestError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC44C121A6CC0AA002893DF /* SFAODataRequestError.m */; };
+		777B03B7238C33240071CAB9 /* SFAAsyncOperationScheduledError.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87219E19B8476400C97AE9 /* SFAAsyncOperationScheduledError.m */; };
+		777B03B8238C33240071CAB9 /* SFAError.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8721A219B8476400C97AE9 /* SFAError.m */; };
+		777B03B9238C33240071CAB9 /* SFAWebAuthenticationError.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8721A419B8476400C97AE9 /* SFAWebAuthenticationError.m */; };
+		777B03BA238C33240071CAB9 /* SFACredentialCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F7962D8F19B0ABB60074CF51 /* SFACredentialCache.m */; };
+		777B03BB238C33240071CAB9 /* SFAOAuth2Credential.m in Sources */ = {isa = PBXBuildFile; fileRef = F783B60819B45A5300AF62F4 /* SFAOAuth2Credential.m */; };
+		777B03BC238C33240071CAB9 /* SFAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F35B819A611B1005F0709 /* SFAClient.m */; };
+		777B03BD238C33240071CAB9 /* SFAConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F7962D7919B05C130074CF51 /* SFAConfiguration.m */; };
+		777B03BE238C33240071CAB9 /* SFAModelClassMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5D440C1A7A338000F7F13B /* SFAModelClassMapper.m */; };
+		777B03C4238D201E0071CAB9 /* SFRemoteUploadsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782181C51E51A00BBCFC9 /* SFRemoteUploadsEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03C5238D201E0071CAB9 /* SFAccessControlsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DA41BD825C30033EA6A /* SFAccessControlsEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03C6238D201E0071CAB9 /* SFAccountsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DA61BD825C30033EA6A /* SFAccountsEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03C7238D201E0071CAB9 /* SFAsyncOperationsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DA81BD825C30033EA6A /* SFAsyncOperationsEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03C8238D201F0071CAB9 /* SFCapabilitiesEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DAA1BD825C30033EA6A /* SFCapabilitiesEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03C9238D201F0071CAB9 /* SFConnectorGroupsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DAC1BD825C30033EA6A /* SFConnectorGroupsEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03CA238D201F0071CAB9 /* SFEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DAE1BD825C30033EA6A /* SFEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03CB238D201F0071CAB9 /* SFEntityConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DAF1BD825C30033EA6A /* SFEntityConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03CC238D201F0071CAB9 /* SFFavoriteFoldersEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DB11BD825C30033EA6A /* SFFavoriteFoldersEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03CD238D201F0071CAB9 /* SFFolderTemplatesEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DB31BD825C30033EA6A /* SFFolderTemplatesEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03CE238D201F0071CAB9 /* SFGroupsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DB51BD825C30033EA6A /* SFGroupsEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03CF238D201F0071CAB9 /* SFItemsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DB71BD825C30033EA6A /* SFItemsEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03D0238D201F0071CAB9 /* SFMetadataEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DB91BD825C30033EA6A /* SFMetadataEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03D1238D20200071CAB9 /* SFReportsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DBB1BD825C30033EA6A /* SFReportsEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03D2238D20200071CAB9 /* SFSessionsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DBD1BD825C30033EA6A /* SFSessionsEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03D3238D20200071CAB9 /* SFSharesEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DBF1BD825C30033EA6A /* SFSharesEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03D4238D20200071CAB9 /* SFStorageCentersEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DC11BD825C30033EA6A /* SFStorageCentersEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03D5238D20200071CAB9 /* SFUsersEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DC31BD825C30033EA6A /* SFUsersEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03D6238D20200071CAB9 /* SFZonesEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00DC51BD825C30033EA6A /* SFZonesEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03D7238D20200071CAB9 /* SFAccessControlsCloneParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782201C51E55400BBCFC9 /* SFAccessControlsCloneParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03D8238D20200071CAB9 /* SFAccountMessageCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782221C51E55400BBCFC9 /* SFAccountMessageCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03D9238D20210071CAB9 /* SFRemoteUpload.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782241C51E55400BBCFC9 /* SFRemoteUpload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03DA238D20210071CAB9 /* SFService.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782261C51E55400BBCFC9 /* SFService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03DB238D20210071CAB9 /* SFServicesCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782281C51E55400BBCFC9 /* SFServicesCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03DC238D20210071CAB9 /* SFAccessControl.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E061BD825C30033EA6A /* SFAccessControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03DD238D20210071CAB9 /* SFAccessControlBulkResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E081BD825C30033EA6A /* SFAccessControlBulkResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03DE238D20210071CAB9 /* SFAccessControlDomains.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E0A1BD825C30033EA6A /* SFAccessControlDomains.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03DF238D20210071CAB9 /* SFAccessControlFailedEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E0C1BD825C30033EA6A /* SFAccessControlFailedEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03E0238D20210071CAB9 /* SFAccessControlParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E0E1BD825C30033EA6A /* SFAccessControlParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03E1238D20210071CAB9 /* SFAccessControlsBulkParams.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E101BD825C30033EA6A /* SFAccessControlsBulkParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03E2238D20210071CAB9 /* SFAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E121BD825C30033EA6A /* SFAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03E3238D20220071CAB9 /* SFAccountPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E141BD825C30033EA6A /* SFAccountPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03E4238D20220071CAB9 /* SFAccountUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E161BD825C30033EA6A /* SFAccountUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03E5238D20220071CAB9 /* SFAccountZoneUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E181BD825C30033EA6A /* SFAccountZoneUsage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03E6238D20220071CAB9 /* SFAdvancedSearchResults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E1A1BD825C30033EA6A /* SFAdvancedSearchResults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03E7238D20220071CAB9 /* SFAsyncOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E1C1BD825C30033EA6A /* SFAsyncOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03E8238D20220071CAB9 /* SFBillingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E1E1BD825C30033EA6A /* SFBillingInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03E9238D20220071CAB9 /* SFCapability.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E201BD825C30033EA6A /* SFCapability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03EA238D20220071CAB9 /* SFConnectorGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E221BD825C30033EA6A /* SFConnectorGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03EB238D20230071CAB9 /* SFConnectorGroupAccessControl.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E241BD825C30033EA6A /* SFConnectorGroupAccessControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03EC238D20230071CAB9 /* SFConnectorGroupZone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E261BD825C30033EA6A /* SFConnectorGroupZone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03ED238D20230071CAB9 /* SFContact.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E281BD825C30033EA6A /* SFContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03EE238D20230071CAB9 /* SFDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2A1BD825C30033EA6A /* SFDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03EF238D20230071CAB9 /* SFDeviceLogEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2C1BD825C30033EA6A /* SFDeviceLogEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03F0238D20230071CAB9 /* SFDeviceStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2E1BD825C30033EA6A /* SFDeviceStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03F1238D20230071CAB9 /* SFDeviceUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E301BD825C30033EA6A /* SFDeviceUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03F2238D20230071CAB9 /* SFDeviceUserWipe.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E321BD825C30033EA6A /* SFDeviceUserWipe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03F3238D20230071CAB9 /* SFDeviceWipeReport.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E341BD825C30033EA6A /* SFDeviceWipeReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03F4238D20240071CAB9 /* SFDiskSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E361BD825C30033EA6A /* SFDiskSpace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03F5238D20240071CAB9 /* SFDownloadSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E381BD825C30033EA6A /* SFDownloadSpecification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03F6238D20240071CAB9 /* SFEditingPlatformInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E3A1BD825C30033EA6A /* SFEditingPlatformInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03F7238D20240071CAB9 /* SFEnsSubscriberConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E3C1BD825C40033EA6A /* SFEnsSubscriberConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03F8238D20240071CAB9 /* SFEnsSubscriptionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E3E1BD825C40033EA6A /* SFEnsSubscriptionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03F9238D20240071CAB9 /* SFEnsSubscriptionToken.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E401BD825C40033EA6A /* SFEnsSubscriptionToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03FA238D20240071CAB9 /* SFEntityTypeMap.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E421BD825C40033EA6A /* SFEntityTypeMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03FB238D20240071CAB9 /* SFESignature.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E441BD825C40033EA6A /* SFESignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03FC238D20240071CAB9 /* SFFavoriteFolder.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E461BD825C40033EA6A /* SFFavoriteFolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03FD238D20250071CAB9 /* SFFile.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E481BD825C40033EA6A /* SFFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03FE238D20250071CAB9 /* SFFileLock.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E4A1BD825C40033EA6A /* SFFileLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03FF238D20250071CAB9 /* SFFindSubdomainParams.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E4C1BD825C40033EA6A /* SFFindSubdomainParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0400238D20250071CAB9 /* SFFindSubdomainResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E4E1BD825C40033EA6A /* SFFindSubdomainResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0401238D20250071CAB9 /* SFFolder.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E501BD825C40033EA6A /* SFFolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0402238D20250071CAB9 /* SFFolderTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E521BD825C40033EA6A /* SFFolderTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0403238D20250071CAB9 /* SFFolderTemplateItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E541BD825C40033EA6A /* SFFolderTemplateItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0404238D20250071CAB9 /* SFGenericConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E561BD825C40033EA6A /* SFGenericConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0405238D20250071CAB9 /* SFGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E581BD825C40033EA6A /* SFGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0406238D20260071CAB9 /* SFInboxMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E5A1BD825C40033EA6A /* SFInboxMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0407238D20260071CAB9 /* SFIndustry.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E5C1BD825C40033EA6A /* SFIndustry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0408238D20260071CAB9 /* SFIrmClassification.h in Headers */ = {isa = PBXBuildFile; fileRef = ED391A401C973DC300821DBA /* SFIrmClassification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0409238D20260071CAB9 /* SFIrmPrimaryAccessRightParams.h in Headers */ = {isa = PBXBuildFile; fileRef = ED391A421C973DC300821DBA /* SFIrmPrimaryAccessRightParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B040A238D20260071CAB9 /* SFItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E5E1BD825C40033EA6A /* SFItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B040B238D20260071CAB9 /* SFItemDlpInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E601BD825C40033EA6A /* SFItemDlpInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B040C238D20260071CAB9 /* SFItemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E621BD825C40033EA6A /* SFItemInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B040D238D20260071CAB9 /* SFItemProtocolLink.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E641BD825C40033EA6A /* SFItemProtocolLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B040E238D20270071CAB9 /* SFLink.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E661BD825C40033EA6A /* SFLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B040F238D20270071CAB9 /* SFMarketAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E681BD825C40033EA6A /* SFMarketAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0410238D20270071CAB9 /* SFMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E6A1BD825C40033EA6A /* SFMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0411238D20270071CAB9 /* SFMobileSecuritySettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E6C1BD825C40033EA6A /* SFMobileSecuritySettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0412238D20270071CAB9 /* SFModelConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E6E1BD825C40033EA6A /* SFModelConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0413238D20270071CAB9 /* SFModels.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E701BD825C40033EA6A /* SFModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0414238D20270071CAB9 /* SFNote.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E711BD825C40033EA6A /* SFNote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0415238D20270071CAB9 /* SFNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E731BD825C40033EA6A /* SFNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0416238D20270071CAB9 /* SFNotifyUsersParams.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E751BD825C40033EA6A /* SFNotifyUsersParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0417238D20280071CAB9 /* SFODataFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E771BD825C40033EA6A /* SFODataFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0418238D20280071CAB9 /* SFODataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E791BD825C40033EA6A /* SFODataObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0419238D20280071CAB9 /* SFOutlookInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E7B1BD825C40033EA6A /* SFOutlookInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B041A238D20280071CAB9 /* SFOutlookInformationOptionBool.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E7D1BD825C40033EA6A /* SFOutlookInformationOptionBool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B041B238D20280071CAB9 /* SFOutlookInformationOptionInt.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E7F1BD825C40033EA6A /* SFOutlookInformationOptionInt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B041C238D20280071CAB9 /* SFOutlookInformationOptionString.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E811BD825C40033EA6A /* SFOutlookInformationOptionString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B041D238D20280071CAB9 /* SFPlanFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E831BD825C40033EA6A /* SFPlanFeatures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B041E238D20280071CAB9 /* SFPowerTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E851BD825C40033EA6A /* SFPowerTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B041F238D20280071CAB9 /* SFPreviewPlatformInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E871BD825C40033EA6A /* SFPreviewPlatformInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0420238D20290071CAB9 /* SFPrincipal.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E891BD825C40033EA6A /* SFPrincipal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0421238D20290071CAB9 /* SFProductDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E8B1BD825C40033EA6A /* SFProductDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0422238D20290071CAB9 /* SFQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E8D1BD825C40033EA6A /* SFQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0423238D20290071CAB9 /* SFQueryPaging.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E8F1BD825C40033EA6A /* SFQueryPaging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0424238D20290071CAB9 /* SFQuerySorting.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E911BD825C40033EA6A /* SFQuerySorting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0425238D20290071CAB9 /* SFRemoteUploadRequestParams.h in Headers */ = {isa = PBXBuildFile; fileRef = ED391A441C973DC300821DBA /* SFRemoteUploadRequestParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0426238D20290071CAB9 /* SFRedirection.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E931BD825C40033EA6A /* SFRedirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0427238D20290071CAB9 /* SFReport.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E951BD825C40033EA6A /* SFReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0428238D20290071CAB9 /* SFReportRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E971BD825C40033EA6A /* SFReportRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0429238D202A0071CAB9 /* SFRequireSubdomainResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E991BD825C40033EA6A /* SFRequireSubdomainResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B042A238D202A0071CAB9 /* SFRequireWebPopResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9B1BD825C40033EA6A /* SFRequireWebPopResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B042B238D202A0071CAB9 /* SFSearchQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9D1BD825C40033EA6A /* SFSearchQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B042C238D202A0071CAB9 /* SFSearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E9F1BD825C40033EA6A /* SFSearchResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B042D238D202A0071CAB9 /* SFSearchResults.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA11BD825C40033EA6A /* SFSearchResults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B042E238D202A0071CAB9 /* SFSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA31BD825C40033EA6A /* SFSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B042F238D202A0071CAB9 /* SFShare.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA51BD825C40033EA6A /* SFShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0430238D202A0071CAB9 /* SFShareAccessRight.h in Headers */ = {isa = PBXBuildFile; fileRef = ED391A461C973DC300821DBA /* SFShareAccessRight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0431238D202B0071CAB9 /* SFShareAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA71BD825C40033EA6A /* SFShareAlias.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0432238D202B0071CAB9 /* SFShareItemHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EA91BD825C40033EA6A /* SFShareItemHistory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0433238D202B0071CAB9 /* SFShareRequestParams.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EAB1BD825C40033EA6A /* SFShareRequestParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0434238D202B0071CAB9 /* SFShareResendParams.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EAD1BD825C40033EA6A /* SFShareResendParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0435238D202B0071CAB9 /* SFShareSendParams.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EAF1BD825C40033EA6A /* SFShareSendParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0436238D202B0071CAB9 /* SFShareSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EB11BD825C40033EA6A /* SFShareSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0437238D202B0071CAB9 /* SFSimpleQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EB31BD825C40033EA6A /* SFSimpleQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0438238D202B0071CAB9 /* SFSimpleSearchQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EB51BD825C40033EA6A /* SFSimpleSearchQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0439238D202B0071CAB9 /* SFSSOAccountProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EB71BD825C40033EA6A /* SFSSOAccountProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B043A238D202C0071CAB9 /* SFSSOInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EB91BD825C40033EA6A /* SFSSOInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B043B238D202C0071CAB9 /* SFSSOInfoEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EBB1BD825C40033EA6A /* SFSSOInfoEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B043C238D202C0071CAB9 /* SFStorageCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EBD1BD825C40033EA6A /* SFStorageCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B043D238D202C0071CAB9 /* SFSymbolicLink.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EBF1BD825C40033EA6A /* SFSymbolicLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B043E238D202C0071CAB9 /* SFTenantZoneUsageReport.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EC11BD825C40033EA6A /* SFTenantZoneUsageReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B043F238D202C0071CAB9 /* SFToolInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EC31BD825C40033EA6A /* SFToolInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0440238D202C0071CAB9 /* SFUploadRequestParams.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EC51BD825C40033EA6A /* SFUploadRequestParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0441238D202C0071CAB9 /* SFUploadSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EC71BD825C40033EA6A /* SFUploadSpecification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0442238D202D0071CAB9 /* SFUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EC91BD825C40033EA6A /* SFUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0443238D202D0071CAB9 /* SFUserConfirmationSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00ECB1BD825C40033EA6A /* SFUserConfirmationSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0444238D202D0071CAB9 /* SFUserConfirmRequirement.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00ECD1BD825C40033EA6A /* SFUserConfirmRequirement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0445238D202D0071CAB9 /* SFUserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00ECF1BD825C40033EA6A /* SFUserInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0446238D202D0071CAB9 /* SFUserPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00ED11BD825C40033EA6A /* SFUserPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0447238D202D0071CAB9 /* SFUserSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00ED31BD825C40033EA6A /* SFUserSecurity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0448238D202D0071CAB9 /* SFUserUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00ED51BD825C40033EA6A /* SFUserUsage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0449238D202D0071CAB9 /* SFZone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00ED71BD825C40033EA6A /* SFZone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B044A238D202D0071CAB9 /* SFZoneUsageBreakdown.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00ED91BD825C40033EA6A /* SFZoneUsageBreakdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B044B238D202E0071CAB9 /* SFHttpMethodConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00EDB1BD825C40033EA6A /* SFHttpMethodConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B044C238D204B0071CAB9 /* SFODataEntityBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F9305CA19DEB0C00058F288 /* SFODataEntityBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B044D238D204B0071CAB9 /* SFAFileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F7466F5A19C028C900C238D0 /* SFAFileInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B044E238D20590071CAB9 /* SFABackgroundSessionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBB2C0A1A91CD6D0009479D /* SFABackgroundSessionConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B044F238D20590071CAB9 /* SFABackgroundSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6FA3451A8B4A7100653852 /* SFABackgroundSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0450238D205A0071CAB9 /* SFAURLSessionTaskRuntimeAssociationKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBB2C101A9324300009479D /* SFAURLSessionTaskRuntimeAssociationKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0451238D205A0071CAB9 /* SFAURLSessionTaskHttpDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBB2C111A93280C0009479D /* SFAURLSessionTaskHttpDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0452238D205A0071CAB9 /* SFABackgroundSessionManagerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F78497F01A9F01D500DBF7B8 /* SFABackgroundSessionManagerInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0453238D205A0071CAB9 /* SFAFilePart.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E7B04519BDAEBC0000869F /* SFAFilePart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0454238D205A0071CAB9 /* SFAFileUploaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F712C05319BDC7C500D7D000 /* SFAFileUploaderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0455238D205A0071CAB9 /* SFAUploaderBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F712C05F19BDCCDD00D7D000 /* SFAUploaderBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0456238D205A0071CAB9 /* SFAUploaderBaseProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = F712C06819BDCE9200D7D000 /* SFAUploaderBaseProtected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0457238D205A0071CAB9 /* SFAAsyncUploaderBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F76B581619BEDD7B007E8DAD /* SFAAsyncUploaderBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0458238D205A0071CAB9 /* SFAAsyncUploaderBaseProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = F744C99119BEE45A003E1862 /* SFAAsyncUploaderBaseProtected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0459238D205A0071CAB9 /* SFAAsyncStandardFileUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = F7149FC919BF151600262F1D /* SFAAsyncStandardFileUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B045A238D205A0071CAB9 /* SFAAsyncStandardFileUploaderPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EC44C0E1A6CBD93002893DF /* SFAAsyncStandardFileUploaderPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B045B238D205A0071CAB9 /* SFAAsyncMultiChunkFileUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = F70B98AA19D04B40008E3DE7 /* SFAAsyncMultiChunkFileUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B045C238D205A0071CAB9 /* SFAAsyncStreamedFileUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = B867B5AD1B685C950040242D /* SFAAsyncStreamedFileUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B045D238D205A0071CAB9 /* SFAAsyncThreadedFileUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = B867B5BD1B685DF80040242D /* SFAAsyncThreadedFileUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B045E238D205A0071CAB9 /* SFADownloaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F775A63919B72AA7003CFD34 /* SFADownloaderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B045F238D205A0071CAB9 /* SFAAsyncFileDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F237DDD19C85D5A002347B8 /* SFAAsyncFileDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0460238D205A0071CAB9 /* SFAAsyncFileDownloaderProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20D3F619D19406006A05B7 /* SFAAsyncFileDownloaderProtected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0461238D205A0071CAB9 /* SFAAsyncFileDownloaderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20D3F919D1960A006A05B7 /* SFAAsyncFileDownloaderInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0462238D205B0071CAB9 /* SFATransferProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = F775A63F19B72EA6003CFD34 /* SFATransferProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0463238D205B0071CAB9 /* SFAApiResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F775A64B19B730C3003CFD34 /* SFAApiResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0464238D205B0071CAB9 /* SFAUploadResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F770E3C819B8502500C5B5D7 /* SFAUploadResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0465238D205B0071CAB9 /* SFAUploadSpecificationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F770E3CE19B8530F00C5B5D7 /* SFAUploadSpecificationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0466238D20690071CAB9 /* SFALoggingProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE17ECB19B5CCFF00DC4E78 /* SFALoggingProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0467238D20690071CAB9 /* SFALogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE17ED119B5CD0F00DC4E78 /* SFALogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0468238D20690071CAB9 /* SFALogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE17ED419B5CE0000DC4E78 /* SFALogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0469238D20690071CAB9 /* SFADefaultLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE17ED719B5D52900DC4E78 /* SFADefaultLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B046A238D20690071CAB9 /* SFAActionStopwatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE17EDD19B5EA4000DC4E78 /* SFAActionStopwatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B046B238D20690071CAB9 /* SFAStopwatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE17EE319B5EC2000DC4E78 /* SFAStopwatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B046C238D20690071CAB9 /* SFABase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F237DD719C731EF002347B8 /* SFABase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B046D238D20690071CAB9 /* SFAHttpRequestUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F3184D119AF42AA00BA6B37 /* SFAHttpRequestUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B046E238D20690071CAB9 /* SFAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F757652D19AE146A004C60C3 /* SFAUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B046F238D20690071CAB9 /* SFAJSONToODataMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F56D9E419B09E93000FF8E3 /* SFAJSONToODataMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0470238D206A0071CAB9 /* SFACryptoUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F237DCA19C6E564002347B8 /* SFACryptoUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0471238D206A0071CAB9 /* SFAConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F7BD3119C9792800CFEA74 /* SFAConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0472238D206A0071CAB9 /* SFASharedThreadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F237E0219CC393C002347B8 /* SFASharedThreadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0473238D206A0071CAB9 /* SFAEventHandlerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F746398319AC7E7000690DBF /* SFAEventHandlerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0474238D206A0071CAB9 /* SFAChangeDomainCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = F7962D7E19B068460074CF51 /* SFAChangeDomainCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0475238D206A0071CAB9 /* SFAErrorCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = F7962D8119B069BA0074CF51 /* SFAErrorCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0476238D206A0071CAB9 /* NSURLCredential+SFACredential.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C181631A6E42C900DEB47E /* NSURLCredential+SFACredential.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0477238D206A0071CAB9 /* SFODataFeed+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F9305D019DEB46D0058F288 /* SFODataFeed+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0478238D206A0071CAB9 /* SFODataObject+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F9305D219DEB46D0058F288 /* SFODataObject+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0479238D206A0071CAB9 /* NSString+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F25E0A019AB342900862036 /* NSString+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B047A238D206A0071CAB9 /* NSDictionary+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F9047F119ACA42300CDEBE1 /* NSDictionary+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B047B238D206A0071CAB9 /* NSObject+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F56D9EA19B0A3BE000FF8E3 /* NSObject+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B047C238D206A0071CAB9 /* NSDate+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F56D9F019B0A922000FF8E3 /* NSDate+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B047D238D206A0071CAB9 /* NSMutableArray+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F710365519D0584600A69FBC /* NSMutableArray+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B047E238D206A0071CAB9 /* NSArray+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B77781A1A1660290042B7DB /* NSArray+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B047F238D206A0071CAB9 /* NSHTTPURLResponse+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F21DF3E19B43E8C00A9CD93 /* NSHTTPURLResponse+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0480238D206A0071CAB9 /* NSURL+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5DC0DB19B71288003E10E1 /* NSURL+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0481238D206B0071CAB9 /* NSStream+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F709A8AA19C2DC42008E2594 /* NSStream+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0482238D206B0071CAB9 /* SFItemsEntity+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F783A83D19C727CA00D129A4 /* SFItemsEntity+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0483238D206B0071CAB9 /* NSURLProtectionSpace+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F891648C1A08571B00B4881F /* NSURLProtectionSpace+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0484238D206B0071CAB9 /* NSURLCredential+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C98EEB1A1D12F300628A77 /* NSURLCredential+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0485238D206B0071CAB9 /* ALAsset+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5A041B1A42B7D100B257C1 /* ALAsset+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0486238D206B0071CAB9 /* SFItemInfo+sfapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F894B8B91BE8038400E0F739 /* SFItemInfo+sfapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0487238D20750071CAB9 /* SFAConnectionAuthParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C073EB1A250CD1008F5F76 /* SFAConnectionAuthParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0488238D20750071CAB9 /* SFAConsumerConnectorAuthParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C073DF1A250C44008F5F76 /* SFAConsumerConnectorAuthParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0489238D20750071CAB9 /* SFABearerAuthParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C073E11A250C44008F5F76 /* SFABearerAuthParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B048A238D20750071CAB9 /* SFAOAuthResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F7056B9019A7296A00AD7814 /* SFAOAuthResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B048B238D20760071CAB9 /* SFAOAuthResponseBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F7056B9319A72A9E00AD7814 /* SFAOAuthResponseBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B048C238D20760071CAB9 /* SFAOAuthError.h in Headers */ = {isa = PBXBuildFile; fileRef = F7056B9F19A7565700AD7814 /* SFAOAuthError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B048D238D20760071CAB9 /* SFAOAuthAuthorizationCode.h in Headers */ = {isa = PBXBuildFile; fileRef = F7056BA519A75D5300AD7814 /* SFAOAuthAuthorizationCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B048E238D20760071CAB9 /* SFAOAuthToken.h in Headers */ = {isa = PBXBuildFile; fileRef = F7056BAB19A75ECC00AD7814 /* SFAOAuthToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B048F238D20760071CAB9 /* SFAOAuth2AuthenticationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F7056BB119A7609700AD7814 /* SFAOAuth2AuthenticationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0490238D20760071CAB9 /* SFAOAuthService.h in Headers */ = {isa = PBXBuildFile; fileRef = F7056BB719A7696800AD7814 /* SFAOAuthService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0491238D20760071CAB9 /* SFAAuthHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = F89164741A0323B400B4881F /* SFAAuthHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0492238D20760071CAB9 /* SFAWebAuthenticationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F7056B8A19A7263800AD7814 /* SFAWebAuthenticationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0493238D20760071CAB9 /* SFABaseAuthHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = F891647D1A03269800B4881F /* SFABaseAuthHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0494238D20760071CAB9 /* SFACredentialStatusTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = F89164891A0848EB00B4881F /* SFACredentialStatusTracking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0495238D20760071CAB9 /* SFAuthenticationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = F89A6AF51A0D931800368726 /* SFAuthenticationContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0496238D20760071CAB9 /* SFASDKAuthHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = F89A6AFB1A10660700368726 /* SFASDKAuthHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0497238D20760071CAB9 /* SFABaseAuthHandlerProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = F89A6B161A1519ED00368726 /* SFABaseAuthHandlerProtected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0498238D20760071CAB9 /* SFAInteractiveAuthHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = F84CD4EC1A16ED1700575F6E /* SFAInteractiveAuthHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B0499238D20760071CAB9 /* SFASDKAuthHandlerProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = F807222C1A1BC041001653E4 /* SFASDKAuthHandlerProtected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B049A238D20770071CAB9 /* SFAHTTPAuthenticationChallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C073D31A1D7479008F5F76 /* SFAHTTPAuthenticationChallenge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B049B238D20770071CAB9 /* SFAHTTPAuthenticationChallengeProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C073D91A1D76F5008F5F76 /* SFAHTTPAuthenticationChallengeProtected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B049C238D20770071CAB9 /* SFAAuthEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = F8D5066E1A5A63E500DF27DF /* SFAAuthEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B049D238D20770071CAB9 /* SFAZoneAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F237DC419C3130F002347B8 /* SFAZoneAuthentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B049E238D20AF0071CAB9 /* SFAClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1F35B719A611B1005F0709 /* SFAClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B049F238D20AF0071CAB9 /* SFAClientProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = F783B60419B4556100AF62F4 /* SFAClientProtected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04A0238D20AF0071CAB9 /* SFAConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE17EC719B5CAD600DC4E78 /* SFAConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04A1238D20AF0071CAB9 /* SFAConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F7962D7819B05C130074CF51 /* SFAConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04A2238D20AF0071CAB9 /* SFEntitiesAndModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F48A38919DB0FAB003379BF /* SFEntitiesAndModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04A3238D20AF0071CAB9 /* SFAModelClassMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5D440B1A7A338000F7F13B /* SFAModelClassMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04A4238D21CF0071CAB9 /* SFACredentialCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F7962D8B19B0AA8D0074CF51 /* SFACredentialCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04A5238D21F20071CAB9 /* SFAOAuth2Credential.h in Headers */ = {isa = PBXBuildFile; fileRef = F783B60719B45A5300AF62F4 /* SFAOAuth2Credential.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04A6238D21FE0071CAB9 /* SFACredentialCacheProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CEFE901A6DA7C50083CE58 /* SFACredentialCacheProtected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04AE238D22710071CAB9 /* SFAODataParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = F70EB6D719A62D3D0028933C /* SFAODataParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04AF238D22710071CAB9 /* SFAODataAction.h in Headers */ = {isa = PBXBuildFile; fileRef = F70EB6DB19A635B20028933C /* SFAODataAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04B0238D22710071CAB9 /* SFAODataParameterCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = F70EB6DF19A6361F0028933C /* SFAODataParameterCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04B1238D22710071CAB9 /* SFAQueryBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1F37ED19A6332D005F0709 /* SFAQueryBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04B2238D22720071CAB9 /* SFApiQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F25DFFD19AB1B8300862036 /* SFApiQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04B3238D22720071CAB9 /* SFAApiRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F9047E819AC7C2800CDEBE1 /* SFAApiRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04B4238D22720071CAB9 /* SFAHttpBodyDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD9BB9419D96983008E5378 /* SFAHttpBodyDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04B5238D22950071CAB9 /* SFAQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1C3F1219D994CF00246D49 /* SFAQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04B6238D22C50071CAB9 /* SFAFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F25E00A19AB22E800862036 /* SFAFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04B7238D22C50071CAB9 /* SFAEqualToFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2CE5B919D57C330024EB56 /* SFAEqualToFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04B8238D22C60071CAB9 /* SFAEndsWithFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2CE5C219D59C4C0024EB56 /* SFAEndsWithFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04B9238D22C60071CAB9 /* SFAStartsWithFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2CE5C819D59D0E0024EB56 /* SFAStartsWithFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04BA238D22C60071CAB9 /* SFASubstringFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2CE5CE19D59D8F0024EB56 /* SFASubstringFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04BB238D22C60071CAB9 /* SFATypeFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = F83E9FCB1B28F001000AD64D /* SFATypeFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04BC238D22DF0071CAB9 /* SFATransferTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F237DE919C86237002347B8 /* SFATransferTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04BD238D23070071CAB9 /* SFABackgroundUploadInitiationTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBB2C141A93310D0009479D /* SFABackgroundUploadInitiationTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04BE238D23070071CAB9 /* SFACompositeUploaderTask.h in Headers */ = {isa = PBXBuildFile; fileRef = F70B98A119D03E2E008E3DE7 /* SFACompositeUploaderTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04BF238D23070071CAB9 /* SFAHttpTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1F35BE19A61674005F0709 /* SFAHttpTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04C0238D23080071CAB9 /* SFATask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1F35C019A61674005F0709 /* SFATask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04C1238D23080071CAB9 /* SFAHttpHandleResponseReturnData.h in Headers */ = {isa = PBXBuildFile; fileRef = F757652619AE0247004C60C3 /* SFAHttpHandleResponseReturnData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04C2238D23080071CAB9 /* SFAUploaderTask.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D6F29C19C03EE900348220 /* SFAUploaderTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04C3238D23080071CAB9 /* SFADownloadTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F237DE319C86016002347B8 /* SFADownloadTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04C4238D23080071CAB9 /* SFABaseTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FCCCACA19D3F94E0019D54B /* SFABaseTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04C5238D23080071CAB9 /* SFAHttpTaskExternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F423BE019F9417D000C69DF /* SFAHttpTaskExternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04C6238D23080071CAB9 /* SFAHttpResponseActionAsyncCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = F891649E1A0B135100B4881F /* SFAHttpResponseActionAsyncCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04C7238D23080071CAB9 /* SFABackgroundUploadInitiationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBB2C261A9481620009479D /* SFABackgroundUploadInitiationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04C8238D23360071CAB9 /* SFAODataRequestError.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EC44C111A6CC0AA002893DF /* SFAODataRequestError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04C9238D23370071CAB9 /* SFAAsyncOperationScheduledError.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F87219D19B8476400C97AE9 /* SFAAsyncOperationScheduledError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04CA238D23370071CAB9 /* SFAError.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F8721A119B8476400C97AE9 /* SFAError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04CB238D23370071CAB9 /* SFAWebAuthenticationError.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F8721A319B8476400C97AE9 /* SFAWebAuthenticationError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04CC238D23790071CAB9 /* SFAItemAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = F70EB68919A5DF5D0028933C /* SFAItemAlias.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04CD238D23790071CAB9 /* SFAEventHandlerResponseAction.h in Headers */ = {isa = PBXBuildFile; fileRef = F746398919AC7F0100690DBF /* SFAEventHandlerResponseAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04CE238D23A10071CAB9 /* SFAHttpRequestResponseDataContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5DC0E119B734AA003E10E1 /* SFAHttpRequestResponseDataContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04CF238D23CB0071CAB9 /* SFAAsyncRequestProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = F746399019AC85F300690DBF /* SFAAsyncRequestProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04D0238D23CB0071CAB9 /* SFABaseRequestProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = F708390719AB1AB100DD857F /* SFABaseRequestProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04D1238D23CB0071CAB9 /* SFAResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F757653319AE1A2C004C60C3 /* SFAResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04D2238D23CB0071CAB9 /* SFARequestProviderFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = F7962D8419B09F060074CF51 /* SFARequestProviderFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B04D3238D23E40071CAB9 /* SFADownloadTaskExternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F423BDA19F930F4000C69DF /* SFADownloadTaskExternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9257821A1C51E51A00BBCFC9 /* SFRemoteUploadsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782181C51E51A00BBCFC9 /* SFRemoteUploadsEntity.h */; };
 		9257821B1C51E51A00BBCFC9 /* SFRemoteUploadsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782181C51E51A00BBCFC9 /* SFRemoteUploadsEntity.h */; };
 		9257821C1C51E51A00BBCFC9 /* SFRemoteUploadsEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782181C51E51A00BBCFC9 /* SFRemoteUploadsEntity.h */; };
@@ -1667,6 +2165,13 @@
 			remoteGlobalIDString = 22DCA19D1AA8860A00FAA1EB;
 			remoteInfo = SFiOSSDK;
 		};
+		777B02D0238C31150071CAB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F3F8ACF19A48D0A00F616D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 777B02CA238C31150071CAB9;
+			remoteInfo = "ShareFileSDK-iOS";
+		};
 		F7DBBB4E19DD59D300E149D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0F3F8ACF19A48D0A00F616D1 /* Project object */;
@@ -1703,6 +2208,17 @@
 			dstSubfolderSpec = 16;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		777B02D4238C31150071CAB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				777B02D3238C31150071CAB9 /* ShareFileSDK_iOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -1891,6 +2407,9 @@
 		2EC44C1E1A6CD52A002893DF /* ShareFileSDKAsyncThreadedFileUploaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareFileSDKAsyncThreadedFileUploaderTests.m; sourceTree = "<group>"; };
 		3B77781A1A1660290042B7DB /* NSArray+sfapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+sfapi.h"; sourceTree = "<group>"; };
 		3B77781B1A1660290042B7DB /* NSArray+sfapi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+sfapi.m"; sourceTree = "<group>"; };
+		777B02CB238C31150071CAB9 /* ShareFileSDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShareFileSDK_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		777B02CD238C31150071CAB9 /* ShareFileSDK_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareFileSDK_iOS.h; sourceTree = "<group>"; };
+		777B02CE238C31150071CAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		777BF7DF2384A6860071CAB9 /* OCMFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMFunctions.h; sourceTree = "<group>"; };
 		925782181C51E51A00BBCFC9 /* SFRemoteUploadsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRemoteUploadsEntity.h; sourceTree = "<group>"; };
 		925782191C51E51A00BBCFC9 /* SFRemoteUploadsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRemoteUploadsEntity.m; sourceTree = "<group>"; };
@@ -2336,6 +2855,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FEB9B331A55830500650E32 /* libShareFileSDK.a in Frameworks */,
+				777B02D2238C31150071CAB9 /* ShareFileSDK_iOS.framework in Frameworks */,
 				0F1DE8C91A38665F00CBCACA /* AssetsLibrary.framework in Frameworks */,
 				0FEB9B321A5582FB00650E32 /* UIKit.framework in Frameworks */,
 				0FEB9B311A5582F400650E32 /* CoreGraphics.framework in Frameworks */,
@@ -2344,6 +2864,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		22DCA19B1AA8860A00FAA1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		777B02C8238C31150071CAB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2496,6 +3023,7 @@
 				0F91B35719A4B8D700987B4E /* iOSSample */,
 				0F8721D319B8642B00C97AE9 /* Misc */,
 				F7DBBB4519DD59D300E149D8 /* ShareFileSDKTests */,
+				777B02CC238C31150071CAB9 /* ShareFileSDK-iOS */,
 				0F3F8ADA19A48D0B00F616D1 /* Frameworks */,
 				0F3F8AD919A48D0B00F616D1 /* Products */,
 			);
@@ -2511,6 +3039,7 @@
 				F7DBBB4319DD59D300E149D8 /* ShareFileSDKTestsMacOSX.xctest */,
 				0F15FA3B1A4430DC003970F7 /* ShareFileSDKTestsiOS.xctest */,
 				22DCA19E1AA8860A00FAA1EB /* libShareFileiOS.a */,
+				777B02CB238C31150071CAB9 /* ShareFileSDK_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2696,6 +3225,15 @@
 				0FE466D21A444710000125F9 /* OCMStubRecorder.h */,
 			);
 			path = OCMock;
+			sourceTree = "<group>";
+		};
+		777B02CC238C31150071CAB9 /* ShareFileSDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				777B02CD238C31150071CAB9 /* ShareFileSDK_iOS.h */,
+				777B02CE238C31150071CAB9 /* Info.plist */,
+			);
+			path = "ShareFileSDK-iOS";
 			sourceTree = "<group>";
 		};
 		F7056B7F19A725EE00AD7814 /* Security */ = {
@@ -4099,6 +4637,280 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		777B02C6238C31150071CAB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				777B046E238D20690071CAB9 /* SFAUtils.h in Headers */,
+				777B0488238D20750071CAB9 /* SFAConsumerConnectorAuthParser.h in Headers */,
+				777B03FE238D20250071CAB9 /* SFFileLock.h in Headers */,
+				777B0432238D202B0071CAB9 /* SFShareItemHistory.h in Headers */,
+				777B047E238D206A0071CAB9 /* NSArray+sfapi.h in Headers */,
+				777B0400238D20250071CAB9 /* SFFindSubdomainResult.h in Headers */,
+				777B04BD238D23070071CAB9 /* SFABackgroundUploadInitiationTask.h in Headers */,
+				777B0484238D206B0071CAB9 /* NSURLCredential+sfapi.h in Headers */,
+				777B03C9238D201F0071CAB9 /* SFConnectorGroupsEntity.h in Headers */,
+				777B0451238D205A0071CAB9 /* SFAURLSessionTaskHttpDelegate.h in Headers */,
+				777B03D4238D20200071CAB9 /* SFStorageCentersEntity.h in Headers */,
+				777B04B9238D22C60071CAB9 /* SFAStartsWithFilter.h in Headers */,
+				777B03FF238D20250071CAB9 /* SFFindSubdomainParams.h in Headers */,
+				777B03EE238D20230071CAB9 /* SFDevice.h in Headers */,
+				777B03F9238D20240071CAB9 /* SFEnsSubscriptionToken.h in Headers */,
+				777B03ED238D20230071CAB9 /* SFContact.h in Headers */,
+				777B03DD238D20210071CAB9 /* SFAccessControlBulkResult.h in Headers */,
+				777B0405238D20250071CAB9 /* SFGroup.h in Headers */,
+				777B0482238D206B0071CAB9 /* SFItemsEntity+sfapi.h in Headers */,
+				777B0456238D205A0071CAB9 /* SFAUploaderBaseProtected.h in Headers */,
+				777B04C0238D23080071CAB9 /* SFATask.h in Headers */,
+				777B0486238D206B0071CAB9 /* SFItemInfo+sfapi.h in Headers */,
+				777B046C238D20690071CAB9 /* SFABase64.h in Headers */,
+				777B045D238D205A0071CAB9 /* SFAAsyncThreadedFileUploader.h in Headers */,
+				777B04CB238D23370071CAB9 /* SFAWebAuthenticationError.h in Headers */,
+				777B03FB238D20240071CAB9 /* SFESignature.h in Headers */,
+				777B04C9238D23370071CAB9 /* SFAAsyncOperationScheduledError.h in Headers */,
+				777B03E1238D20210071CAB9 /* SFAccessControlsBulkParams.h in Headers */,
+				777B0468238D20690071CAB9 /* SFALogger.h in Headers */,
+				777B042B238D202A0071CAB9 /* SFSearchQuery.h in Headers */,
+				777B0445238D202D0071CAB9 /* SFUserInfo.h in Headers */,
+				777B0453238D205A0071CAB9 /* SFAFilePart.h in Headers */,
+				777B03FA238D20240071CAB9 /* SFEntityTypeMap.h in Headers */,
+				777B0461238D205A0071CAB9 /* SFAAsyncFileDownloaderInternal.h in Headers */,
+				777B045C238D205A0071CAB9 /* SFAAsyncStreamedFileUploader.h in Headers */,
+				777B0477238D206A0071CAB9 /* SFODataFeed+sfapi.h in Headers */,
+				777B0427238D20290071CAB9 /* SFReport.h in Headers */,
+				777B048C238D20760071CAB9 /* SFAOAuthError.h in Headers */,
+				777B042C238D202A0071CAB9 /* SFSearchResult.h in Headers */,
+				777B047D238D206A0071CAB9 /* NSMutableArray+sfapi.h in Headers */,
+				777B03F4238D20240071CAB9 /* SFDiskSpace.h in Headers */,
+				777B0429238D202A0071CAB9 /* SFRequireSubdomainResult.h in Headers */,
+				777B04CF238D23CB0071CAB9 /* SFAAsyncRequestProvider.h in Headers */,
+				777B0415238D20270071CAB9 /* SFNotification.h in Headers */,
+				777B03EC238D20230071CAB9 /* SFConnectorGroupZone.h in Headers */,
+				777B03FC238D20240071CAB9 /* SFFavoriteFolder.h in Headers */,
+				777B0491238D20760071CAB9 /* SFAAuthHandling.h in Headers */,
+				777B0443238D202D0071CAB9 /* SFUserConfirmationSettings.h in Headers */,
+				777B041F238D20280071CAB9 /* SFPreviewPlatformInfo.h in Headers */,
+				777B03DF238D20210071CAB9 /* SFAccessControlFailedEntry.h in Headers */,
+				777B0422238D20290071CAB9 /* SFQuery.h in Headers */,
+				777B0460238D205A0071CAB9 /* SFAAsyncFileDownloaderProtected.h in Headers */,
+				777B045B238D205A0071CAB9 /* SFAAsyncMultiChunkFileUploader.h in Headers */,
+				777B0426238D20290071CAB9 /* SFRedirection.h in Headers */,
+				777B03C6238D201E0071CAB9 /* SFAccountsEntity.h in Headers */,
+				777B03F6238D20240071CAB9 /* SFEditingPlatformInfo.h in Headers */,
+				777B03E6238D20220071CAB9 /* SFAdvancedSearchResults.h in Headers */,
+				777B04C2238D23080071CAB9 /* SFAUploaderTask.h in Headers */,
+				777B0493238D20760071CAB9 /* SFABaseAuthHandler.h in Headers */,
+				777B0497238D20760071CAB9 /* SFABaseAuthHandlerProtected.h in Headers */,
+				777B042A238D202A0071CAB9 /* SFRequireWebPopResult.h in Headers */,
+				777B0424238D20290071CAB9 /* SFQuerySorting.h in Headers */,
+				777B0487238D20750071CAB9 /* SFAConnectionAuthParser.h in Headers */,
+				777B044D238D204B0071CAB9 /* SFAFileInfo.h in Headers */,
+				777B04A4238D21CF0071CAB9 /* SFACredentialCache.h in Headers */,
+				777B046F238D20690071CAB9 /* SFAJSONToODataMapper.h in Headers */,
+				777B03CB238D201F0071CAB9 /* SFEntityConstants.h in Headers */,
+				777B043B238D202C0071CAB9 /* SFSSOInfoEntry.h in Headers */,
+				777B04D1238D23CB0071CAB9 /* SFAResponse.h in Headers */,
+				777B03EF238D20230071CAB9 /* SFDeviceLogEntry.h in Headers */,
+				777B04C8238D23360071CAB9 /* SFAODataRequestError.h in Headers */,
+				777B0462238D205B0071CAB9 /* SFATransferProgress.h in Headers */,
+				777B040F238D20270071CAB9 /* SFMarketAnalytics.h in Headers */,
+				777B04A6238D21FE0071CAB9 /* SFACredentialCacheProtected.h in Headers */,
+				777B0401238D20250071CAB9 /* SFFolder.h in Headers */,
+				777B041E238D20280071CAB9 /* SFPowerTools.h in Headers */,
+				777B03F3238D20230071CAB9 /* SFDeviceWipeReport.h in Headers */,
+				777B049E238D20AF0071CAB9 /* SFAClient.h in Headers */,
+				777B03F7238D20240071CAB9 /* SFEnsSubscriberConfiguration.h in Headers */,
+				777B03CA238D201F0071CAB9 /* SFEntities.h in Headers */,
+				777B041C238D20280071CAB9 /* SFOutlookInformationOptionString.h in Headers */,
+				777B03E2238D20210071CAB9 /* SFAccount.h in Headers */,
+				777B03D3238D20200071CAB9 /* SFSharesEntity.h in Headers */,
+				777B0440238D202C0071CAB9 /* SFUploadRequestParams.h in Headers */,
+				777B0480238D206A0071CAB9 /* NSURL+sfapi.h in Headers */,
+				777B0473238D206A0071CAB9 /* SFAEventHandlerResponse.h in Headers */,
+				777B0420238D20290071CAB9 /* SFPrincipal.h in Headers */,
+				777B0458238D205A0071CAB9 /* SFAAsyncUploaderBaseProtected.h in Headers */,
+				777B04D0238D23CB0071CAB9 /* SFABaseRequestProvider.h in Headers */,
+				777B0465238D205B0071CAB9 /* SFAUploadSpecificationRequest.h in Headers */,
+				777B04B4238D22720071CAB9 /* SFAHttpBodyDataProvider.h in Headers */,
+				777B043C238D202C0071CAB9 /* SFStorageCenter.h in Headers */,
+				777B045E238D205A0071CAB9 /* SFADownloaderConfig.h in Headers */,
+				777B044A238D202D0071CAB9 /* SFZoneUsageBreakdown.h in Headers */,
+				777B043E238D202C0071CAB9 /* SFTenantZoneUsageReport.h in Headers */,
+				777B03CD238D201F0071CAB9 /* SFFolderTemplatesEntity.h in Headers */,
+				777B040B238D20260071CAB9 /* SFItemDlpInfo.h in Headers */,
+				777B0412238D20270071CAB9 /* SFModelConstants.h in Headers */,
+				777B0452238D205A0071CAB9 /* SFABackgroundSessionManagerInternal.h in Headers */,
+				777B03D6238D20200071CAB9 /* SFZonesEntity.h in Headers */,
+				777B046B238D20690071CAB9 /* SFAStopwatch.h in Headers */,
+				777B03E3238D20220071CAB9 /* SFAccountPreferences.h in Headers */,
+				777B04B3238D22720071CAB9 /* SFAApiRequest.h in Headers */,
+				777B042F238D202A0071CAB9 /* SFShare.h in Headers */,
+				777B03F8238D20240071CAB9 /* SFEnsSubscriptionRequest.h in Headers */,
+				777B044F238D20590071CAB9 /* SFABackgroundSessionManager.h in Headers */,
+				777B0439238D202B0071CAB9 /* SFSSOAccountProvider.h in Headers */,
+				777B0494238D20760071CAB9 /* SFACredentialStatusTracking.h in Headers */,
+				777B03E4238D20220071CAB9 /* SFAccountUser.h in Headers */,
+				777B04A2238D20AF0071CAB9 /* SFEntitiesAndModels.h in Headers */,
+				777B03EA238D20220071CAB9 /* SFConnectorGroup.h in Headers */,
+				777B04C5238D23080071CAB9 /* SFAHttpTaskExternal.h in Headers */,
+				777B0475238D206A0071CAB9 /* SFAErrorCallback.h in Headers */,
+				777B0470238D206A0071CAB9 /* SFACryptoUtils.h in Headers */,
+				777B045F238D205A0071CAB9 /* SFAAsyncFileDownloader.h in Headers */,
+				777B0474238D206A0071CAB9 /* SFAChangeDomainCallback.h in Headers */,
+				777B03E9238D20220071CAB9 /* SFCapability.h in Headers */,
+				777B0485238D206B0071CAB9 /* ALAsset+sfapi.h in Headers */,
+				777B03E0238D20210071CAB9 /* SFAccessControlParam.h in Headers */,
+				777B041D238D20280071CAB9 /* SFPlanFeatures.h in Headers */,
+				777B0483238D206B0071CAB9 /* NSURLProtectionSpace+sfapi.h in Headers */,
+				777B03DE238D20210071CAB9 /* SFAccessControlDomains.h in Headers */,
+				777B04B5238D22950071CAB9 /* SFAQuery.h in Headers */,
+				777B041B238D20280071CAB9 /* SFOutlookInformationOptionInt.h in Headers */,
+				777B04BB238D22C60071CAB9 /* SFATypeFilter.h in Headers */,
+				777B04C1238D23080071CAB9 /* SFAHttpHandleResponseReturnData.h in Headers */,
+				777B0464238D205B0071CAB9 /* SFAUploadResponse.h in Headers */,
+				777B048E238D20760071CAB9 /* SFAOAuthToken.h in Headers */,
+				777B03D9238D20210071CAB9 /* SFRemoteUpload.h in Headers */,
+				777B0442238D202D0071CAB9 /* SFUser.h in Headers */,
+				777B0438238D202B0071CAB9 /* SFSimpleSearchQuery.h in Headers */,
+				777B0472238D206A0071CAB9 /* SFASharedThreadManager.h in Headers */,
+				777B0471238D206A0071CAB9 /* SFAConstants.h in Headers */,
+				777B0409238D20260071CAB9 /* SFIrmPrimaryAccessRightParams.h in Headers */,
+				777B046A238D20690071CAB9 /* SFAActionStopwatch.h in Headers */,
+				777B03F2238D20230071CAB9 /* SFDeviceUserWipe.h in Headers */,
+				777B0479238D206A0071CAB9 /* NSString+sfapi.h in Headers */,
+				777B0437238D202B0071CAB9 /* SFSimpleQuery.h in Headers */,
+				777B04D3238D23E40071CAB9 /* SFADownloadTaskExternal.h in Headers */,
+				777B04B6238D22C50071CAB9 /* SFAFilter.h in Headers */,
+				777B047F238D206A0071CAB9 /* NSHTTPURLResponse+sfapi.h in Headers */,
+				777B0411238D20270071CAB9 /* SFMobileSecuritySettings.h in Headers */,
+				777B0446238D202D0071CAB9 /* SFUserPreferences.h in Headers */,
+				777B0444238D202D0071CAB9 /* SFUserConfirmRequirement.h in Headers */,
+				777B03E5238D20220071CAB9 /* SFAccountZoneUsage.h in Headers */,
+				777B0466238D20690071CAB9 /* SFALoggingProvider.h in Headers */,
+				777B047A238D206A0071CAB9 /* NSDictionary+sfapi.h in Headers */,
+				777B043D238D202C0071CAB9 /* SFSymbolicLink.h in Headers */,
+				777B040C238D20260071CAB9 /* SFItemInfo.h in Headers */,
+				777B044C238D204B0071CAB9 /* SFODataEntityBase.h in Headers */,
+				777B0430238D202A0071CAB9 /* SFShareAccessRight.h in Headers */,
+				777B03F5238D20240071CAB9 /* SFDownloadSpecification.h in Headers */,
+				777B0404238D20250071CAB9 /* SFGenericConfig.h in Headers */,
+				777B045A238D205A0071CAB9 /* SFAAsyncStandardFileUploaderPrivate.h in Headers */,
+				777B04CE238D23A10071CAB9 /* SFAHttpRequestResponseDataContainer.h in Headers */,
+				777B03C4238D201E0071CAB9 /* SFRemoteUploadsEntity.h in Headers */,
+				777B04D2238D23CB0071CAB9 /* SFARequestProviderFactory.h in Headers */,
+				777B0495238D20760071CAB9 /* SFAuthenticationContext.h in Headers */,
+				777B0455238D205A0071CAB9 /* SFAUploaderBase.h in Headers */,
+				777B04B8238D22C60071CAB9 /* SFAEndsWithFilter.h in Headers */,
+				777B048B238D20760071CAB9 /* SFAOAuthResponseBase.h in Headers */,
+				777B0423238D20290071CAB9 /* SFQueryPaging.h in Headers */,
+				777B04A3238D20AF0071CAB9 /* SFAModelClassMapper.h in Headers */,
+				777B0463238D205B0071CAB9 /* SFAApiResponse.h in Headers */,
+				777B049C238D20770071CAB9 /* SFAAuthEnums.h in Headers */,
+				777B04CD238D23790071CAB9 /* SFAEventHandlerResponseAction.h in Headers */,
+				777B04B7238D22C50071CAB9 /* SFAEqualToFilter.h in Headers */,
+				777B04AF238D22710071CAB9 /* SFAODataAction.h in Headers */,
+				777B04BE238D23070071CAB9 /* SFACompositeUploaderTask.h in Headers */,
+				777B04BF238D23070071CAB9 /* SFAHttpTask.h in Headers */,
+				777B04CA238D23370071CAB9 /* SFAError.h in Headers */,
+				777B0403238D20250071CAB9 /* SFFolderTemplateItem.h in Headers */,
+				777B03D5238D20200071CAB9 /* SFUsersEntity.h in Headers */,
+				777B0421238D20290071CAB9 /* SFProductDefaults.h in Headers */,
+				777B03F1238D20230071CAB9 /* SFDeviceUser.h in Headers */,
+				777B04A5238D21F20071CAB9 /* SFAOAuth2Credential.h in Headers */,
+				777B0447238D202D0071CAB9 /* SFUserSecurity.h in Headers */,
+				777B03E7238D20220071CAB9 /* SFAsyncOperation.h in Headers */,
+				777B046D238D20690071CAB9 /* SFAHttpRequestUtils.h in Headers */,
+				777B048A238D20750071CAB9 /* SFAOAuthResponse.h in Headers */,
+				777B0498238D20760071CAB9 /* SFAInteractiveAuthHandling.h in Headers */,
+				777B03DA238D20210071CAB9 /* SFService.h in Headers */,
+				777B0419238D20280071CAB9 /* SFOutlookInformation.h in Headers */,
+				777B040A238D20260071CAB9 /* SFItem.h in Headers */,
+				777B04A1238D20AF0071CAB9 /* SFAConfiguration.h in Headers */,
+				777B04B1238D22710071CAB9 /* SFAQueryBase.h in Headers */,
+				777B03D8238D20200071CAB9 /* SFAccountMessageCode.h in Headers */,
+				777B03F0238D20230071CAB9 /* SFDeviceStatus.h in Headers */,
+				777B03EB238D20230071CAB9 /* SFConnectorGroupAccessControl.h in Headers */,
+				777B040E238D20270071CAB9 /* SFLink.h in Headers */,
+				777B04CC238D23790071CAB9 /* SFAItemAlias.h in Headers */,
+				777B0469238D20690071CAB9 /* SFADefaultLogger.h in Headers */,
+				777B03C5238D201E0071CAB9 /* SFAccessControlsEntity.h in Headers */,
+				777B03D0238D201F0071CAB9 /* SFMetadataEntity.h in Headers */,
+				777B03FD238D20250071CAB9 /* SFFile.h in Headers */,
+				777B048D238D20760071CAB9 /* SFAOAuthAuthorizationCode.h in Headers */,
+				777B0407238D20260071CAB9 /* SFIndustry.h in Headers */,
+				777B044B238D202E0071CAB9 /* SFHttpMethodConstants.h in Headers */,
+				777B04C7238D23080071CAB9 /* SFABackgroundUploadInitiationResponse.h in Headers */,
+				777B0408238D20260071CAB9 /* SFIrmClassification.h in Headers */,
+				777B0478238D206A0071CAB9 /* SFODataObject+sfapi.h in Headers */,
+				777B03D7238D20200071CAB9 /* SFAccessControlsCloneParams.h in Headers */,
+				777B0476238D206A0071CAB9 /* NSURLCredential+SFACredential.h in Headers */,
+				777B040D238D20260071CAB9 /* SFItemProtocolLink.h in Headers */,
+				777B0416238D20270071CAB9 /* SFNotifyUsersParams.h in Headers */,
+				777B0489238D20750071CAB9 /* SFABearerAuthParser.h in Headers */,
+				777B04C3238D23080071CAB9 /* SFADownloadTask.h in Headers */,
+				777B0436238D202B0071CAB9 /* SFShareSettings.h in Headers */,
+				777B049D238D20770071CAB9 /* SFAZoneAuthentication.h in Headers */,
+				777B0448238D202D0071CAB9 /* SFUserUsage.h in Headers */,
+				777B03C8238D201F0071CAB9 /* SFCapabilitiesEntity.h in Headers */,
+				777B04C6238D23080071CAB9 /* SFAHttpResponseActionAsyncCallback.h in Headers */,
+				777B04BA238D22C60071CAB9 /* SFASubstringFilter.h in Headers */,
+				777B0402238D20250071CAB9 /* SFFolderTemplate.h in Headers */,
+				777B04B2238D22720071CAB9 /* SFApiQuery.h in Headers */,
+				777B0431238D202B0071CAB9 /* SFShareAlias.h in Headers */,
+				777B042D238D202A0071CAB9 /* SFSearchResults.h in Headers */,
+				777B049A238D20770071CAB9 /* SFAHTTPAuthenticationChallenge.h in Headers */,
+				777B0457238D205A0071CAB9 /* SFAAsyncUploaderBase.h in Headers */,
+				777B0490238D20760071CAB9 /* SFAOAuthService.h in Headers */,
+				777B0459238D205A0071CAB9 /* SFAAsyncStandardFileUploader.h in Headers */,
+				777B0406238D20260071CAB9 /* SFInboxMetadata.h in Headers */,
+				777B0410238D20270071CAB9 /* SFMetadata.h in Headers */,
+				777B04BC238D22DF0071CAB9 /* SFATransferTask.h in Headers */,
+				777B0428238D20290071CAB9 /* SFReportRecord.h in Headers */,
+				777B0417238D20280071CAB9 /* SFODataFeed.h in Headers */,
+				777B0433238D202B0071CAB9 /* SFShareRequestParams.h in Headers */,
+				777B03D2238D20200071CAB9 /* SFSessionsEntity.h in Headers */,
+				777B044E238D20590071CAB9 /* SFABackgroundSessionConfiguration.h in Headers */,
+				777B048F238D20760071CAB9 /* SFAOAuth2AuthenticationHelper.h in Headers */,
+				777B04C4238D23080071CAB9 /* SFABaseTask.h in Headers */,
+				777B0441238D202C0071CAB9 /* SFUploadSpecification.h in Headers */,
+				777B047B238D206A0071CAB9 /* NSObject+sfapi.h in Headers */,
+				777B0467238D20690071CAB9 /* SFALogLevel.h in Headers */,
+				777B0434238D202B0071CAB9 /* SFShareResendParams.h in Headers */,
+				777B0425238D20290071CAB9 /* SFRemoteUploadRequestParams.h in Headers */,
+				777B043A238D202C0071CAB9 /* SFSSOInfo.h in Headers */,
+				777B0496238D20760071CAB9 /* SFASDKAuthHandler.h in Headers */,
+				777B0413238D20270071CAB9 /* SFModels.h in Headers */,
+				777B0435238D202B0071CAB9 /* SFShareSendParams.h in Headers */,
+				777B03E8238D20220071CAB9 /* SFBillingInfo.h in Headers */,
+				777B0449238D202D0071CAB9 /* SFZone.h in Headers */,
+				777B042E238D202A0071CAB9 /* SFSession.h in Headers */,
+				777B049B238D20770071CAB9 /* SFAHTTPAuthenticationChallengeProtected.h in Headers */,
+				777B0481238D206B0071CAB9 /* NSStream+sfapi.h in Headers */,
+				777B03CC238D201F0071CAB9 /* SFFavoriteFoldersEntity.h in Headers */,
+				777B04B0238D22710071CAB9 /* SFAODataParameterCollection.h in Headers */,
+				777B047C238D206A0071CAB9 /* NSDate+sfapi.h in Headers */,
+				777B03DB238D20210071CAB9 /* SFServicesCollection.h in Headers */,
+				777B0454238D205A0071CAB9 /* SFAFileUploaderConfig.h in Headers */,
+				777B04AE238D22710071CAB9 /* SFAODataParameter.h in Headers */,
+				777B03D1238D20200071CAB9 /* SFReportsEntity.h in Headers */,
+				777B043F238D202C0071CAB9 /* SFToolInformation.h in Headers */,
+				777B03C7238D201E0071CAB9 /* SFAsyncOperationsEntity.h in Headers */,
+				777B0492238D20760071CAB9 /* SFAWebAuthenticationHelper.h in Headers */,
+				777B0499238D20760071CAB9 /* SFASDKAuthHandlerProtected.h in Headers */,
+				777B0450238D205A0071CAB9 /* SFAURLSessionTaskRuntimeAssociationKeys.h in Headers */,
+				777B03CE238D201F0071CAB9 /* SFGroupsEntity.h in Headers */,
+				777B041A238D20280071CAB9 /* SFOutlookInformationOptionBool.h in Headers */,
+				777B03DC238D20210071CAB9 /* SFAccessControl.h in Headers */,
+				777B0414238D20270071CAB9 /* SFNote.h in Headers */,
+				777B049F238D20AF0071CAB9 /* SFAClientProtected.h in Headers */,
+				777B03CF238D201F0071CAB9 /* SFItemsEntity.h in Headers */,
+				777B0418238D20280071CAB9 /* SFODataObject.h in Headers */,
+				777B04A0238D20AF0071CAB9 /* SFAConfig.h in Headers */,
+				777B02CF238C31150071CAB9 /* ShareFileSDK_iOS.h in Headers */,
+				777B02D9238C31F90071CAB9 /* ShareFileSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -4182,11 +4994,13 @@
 				0F91B34E19A4B8D700987B4E /* Sources */,
 				0F91B34F19A4B8D700987B4E /* Frameworks */,
 				0F91B35019A4B8D700987B4E /* Resources */,
+				777B02D4238C31150071CAB9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				0F89287D19DC34E4007E285B /* PBXTargetDependency */,
+				777B02D1238C31150071CAB9 /* PBXTargetDependency */,
 			);
 			name = iOSSample;
 			productName = iOSSample;
@@ -4211,6 +5025,24 @@
 			productName = ShareFileiOSSDK;
 			productReference = 22DCA19E1AA8860A00FAA1EB /* libShareFileiOS.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		777B02CA238C31150071CAB9 /* ShareFileSDK-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 777B02D8238C31150071CAB9 /* Build configuration list for PBXNativeTarget "ShareFileSDK-iOS" */;
+			buildPhases = (
+				777B02C6238C31150071CAB9 /* Headers */,
+				777B02C7238C31150071CAB9 /* Sources */,
+				777B02C8238C31150071CAB9 /* Frameworks */,
+				777B02C9238C31150071CAB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShareFileSDK-iOS";
+			productName = "ShareFileSDK-iOS";
+			productReference = 777B02CB238C31150071CAB9 /* ShareFileSDK_iOS.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		F7DBBB4219DD59D300E149D8 /* ShareFileSDKTestsMacOSX */ = {
 			isa = PBXNativeTarget;
@@ -4237,6 +5069,7 @@
 		0F3F8ACF19A48D0A00F616D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = ShareFile;
 				TargetAttributes = {
@@ -4254,6 +5087,10 @@
 					};
 					22DCA2E11AA8954C00FAA1EB = {
 						CreatedOnToolsVersion = 6.1.1;
+					};
+					777B02CA238C31150071CAB9 = {
+						CreatedOnToolsVersion = 11.2.1;
+						ProvisioningStyle = Automatic;
 					};
 					F7DBBB4219DD59D300E149D8 = {
 						TestTargetID = 0F3F8AD719A48D0B00F616D1;
@@ -4283,6 +5120,7 @@
 				0F15FA3A1A4430DC003970F7 /* ShareFileSDKTestsiOS */,
 				22DCA19D1AA8860A00FAA1EB /* ShareFileiOS */,
 				22DCA2E11AA8954C00FAA1EB /* ShareFileFatiOS */,
+				777B02CA238C31150071CAB9 /* ShareFileSDK-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -4326,6 +5164,13 @@
 				0FFF04BA1A3718B50020A2C6 /* ShareFileSDKSampleCred.plist in Resources */,
 				0F91B36519A4B8D700987B4E /* Main_iPhone.storyboard in Resources */,
 				0F91B35C19A4B8D700987B4E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		777B02C9238C31150071CAB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5164,6 +6009,242 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		777B02C7238C31150071CAB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				777B03B7238C33240071CAB9 /* SFAAsyncOperationScheduledError.m in Sources */,
+				777B0335238C32C30071CAB9 /* SFProductDefaults.m in Sources */,
+				777B02E7238C32B60071CAB9 /* SFSessionsEntity.m in Sources */,
+				777B036F238C32E00071CAB9 /* SFATransferProgress.m in Sources */,
+				777B0304238C32C20071CAB9 /* SFDeviceLogEntry.m in Sources */,
+				777B039B238C32FB0071CAB9 /* SFAHTTPAuthenticationChallenge.m in Sources */,
+				777B0317238C32C20071CAB9 /* SFFolderTemplate.m in Sources */,
+				777B0311238C32C20071CAB9 /* SFFavoriteFolder.m in Sources */,
+				777B0302238C32C20071CAB9 /* SFContact.m in Sources */,
+				777B037A238C32EB0071CAB9 /* SFAJSONToODataMapper.m in Sources */,
+				777B03BC238C33240071CAB9 /* SFAClient.m in Sources */,
+				777B02F4238C32C20071CAB9 /* SFAccessControlFailedEntry.m in Sources */,
+				777B03A3238C331A0071CAB9 /* SFABaseRequestProvider.m in Sources */,
+				777B02FE238C32C20071CAB9 /* SFCapability.m in Sources */,
+				777B0308238C32C20071CAB9 /* SFDeviceWipeReport.m in Sources */,
+				777B03A1238C331A0071CAB9 /* SFATypeFilter.m in Sources */,
+				777B037E238C32EB0071CAB9 /* NSURLCredential+SFACredential.m in Sources */,
+				777B032F238C32C30071CAB9 /* SFOutlookInformationOptionInt.m in Sources */,
+				777B03AD238C33240071CAB9 /* SFABackgroundUploadInitiationTask.m in Sources */,
+				777B0300238C32C20071CAB9 /* SFConnectorGroupAccessControl.m in Sources */,
+				777B0388238C32EB0071CAB9 /* NSURL+sfapi.m in Sources */,
+				777B03A6238C331A0071CAB9 /* SFAODataParameter.m in Sources */,
+				777B03B3238C33240071CAB9 /* SFABaseTask.m in Sources */,
+				777B039D238C331A0071CAB9 /* SFAEqualToFilter.m in Sources */,
+				777B0380238C32EB0071CAB9 /* SFODataObject+sfapi.m in Sources */,
+				777B02E5238C32B60071CAB9 /* SFMetadataEntity.m in Sources */,
+				777B038D238C32EB0071CAB9 /* ALAsset+sfapi.m in Sources */,
+				777B037C238C32EB0071CAB9 /* SFASharedThreadManager.m in Sources */,
+				777B0312238C32C20071CAB9 /* SFFile.m in Sources */,
+				777B0346238C32C40071CAB9 /* SFShareItemHistory.m in Sources */,
+				777B0378238C32EB0071CAB9 /* SFAHttpRequestUtils.m in Sources */,
+				777B031E238C32C30071CAB9 /* SFIrmPrimaryAccessRightParams.m in Sources */,
+				777B0330238C32C30071CAB9 /* SFOutlookInformationOptionString.m in Sources */,
+				777B0310238C32C20071CAB9 /* SFESignature.m in Sources */,
+				777B0340238C32C30071CAB9 /* SFSearchResult.m in Sources */,
+				777B032A238C32C30071CAB9 /* SFNotifyUsersParams.m in Sources */,
+				777B03A0238C331A0071CAB9 /* SFASubstringFilter.m in Sources */,
+				777B03A5238C331A0071CAB9 /* SFARequestProviderFactory.m in Sources */,
+				777B03B5238C33240071CAB9 /* SFABackgroundUploadInitiationResponse.m in Sources */,
+				777B0392238C32FB0071CAB9 /* SFAOAuthError.m in Sources */,
+				777B0375238C32EA0071CAB9 /* SFAActionStopwatch.m in Sources */,
+				777B03BB238C33240071CAB9 /* SFAOAuth2Credential.m in Sources */,
+				777B03A9238C331A0071CAB9 /* SFAQueryBase.m in Sources */,
+				777B03A2238C331A0071CAB9 /* SFAAsyncRequestProvider.m in Sources */,
+				777B0394238C32FB0071CAB9 /* SFAOAuthToken.m in Sources */,
+				777B0393238C32FB0071CAB9 /* SFAOAuthAuthorizationCode.m in Sources */,
+				777B0362238C32D80071CAB9 /* SFABackgroundSessionConfiguration.m in Sources */,
+				777B0384238C32EB0071CAB9 /* NSDate+sfapi.m in Sources */,
+				777B036B238C32DB0071CAB9 /* SFAAsyncStreamedFileUploader.m in Sources */,
+				777B0356238C32C40071CAB9 /* SFUser.m in Sources */,
+				777B0332238C32C30071CAB9 /* SFPowerTools.m in Sources */,
+				777B02E9238C32B60071CAB9 /* SFStorageCentersEntity.m in Sources */,
+				777B0327238C32C30071CAB9 /* SFModelConstants.m in Sources */,
+				777B0341238C32C30071CAB9 /* SFSearchResults.m in Sources */,
+				777B02ED238C32C10071CAB9 /* SFAccountMessageCode.m in Sources */,
+				777B0371238C32E00071CAB9 /* SFAUploadResponse.m in Sources */,
+				777B03B6238C33240071CAB9 /* SFAODataRequestError.m in Sources */,
+				777B02FF238C32C20071CAB9 /* SFConnectorGroup.m in Sources */,
+				777B02E8238C32B60071CAB9 /* SFSharesEntity.m in Sources */,
+				777B02DD238C32B60071CAB9 /* SFAsyncOperationsEntity.m in Sources */,
+				777B03AA238C331A0071CAB9 /* SFApiQuery.m in Sources */,
+				777B0348238C32C40071CAB9 /* SFShareResendParams.m in Sources */,
+				777B038F238C32FB0071CAB9 /* SFAConsumerConnectorAuthParser.m in Sources */,
+				777B03B0238C33240071CAB9 /* SFAHttpHandleResponseReturnData.m in Sources */,
+				777B032E238C32C30071CAB9 /* SFOutlookInformationOptionBool.m in Sources */,
+				777B034B238C32C40071CAB9 /* SFSimpleQuery.m in Sources */,
+				777B0333238C32C30071CAB9 /* SFPreviewPlatformInfo.m in Sources */,
+				777B0305238C32C20071CAB9 /* SFDeviceStatus.m in Sources */,
+				777B0399238C32FB0071CAB9 /* SFAuthenticationContext.m in Sources */,
+				777B030D238C32C20071CAB9 /* SFEnsSubscriptionRequest.m in Sources */,
+				777B0363238C32D80071CAB9 /* SFABackgroundSessionManager.m in Sources */,
+				777B02E6238C32B60071CAB9 /* SFReportsEntity.m in Sources */,
+				777B032C238C32C30071CAB9 /* SFODataObject.m in Sources */,
+				777B03B8238C33240071CAB9 /* SFAError.m in Sources */,
+				777B030F238C32C20071CAB9 /* SFEntityTypeMap.m in Sources */,
+				777B0367238C32DB0071CAB9 /* SFAUploaderBase.m in Sources */,
+				777B0396238C32FB0071CAB9 /* SFAOAuthService.m in Sources */,
+				777B038E238C32EB0071CAB9 /* SFItemInfo+sfapi.m in Sources */,
+				777B02E3238C32B60071CAB9 /* SFGroupsEntity.m in Sources */,
+				777B02EF238C32C10071CAB9 /* SFService.m in Sources */,
+				777B039F238C331A0071CAB9 /* SFAStartsWithFilter.m in Sources */,
+				777B0331238C32C30071CAB9 /* SFPlanFeatures.m in Sources */,
+				777B031A238C32C30071CAB9 /* SFGroup.m in Sources */,
+				777B0307238C32C20071CAB9 /* SFDeviceUserWipe.m in Sources */,
+				777B0349238C32C40071CAB9 /* SFShareSendParams.m in Sources */,
+				777B035B238C32C40071CAB9 /* SFUserSecurity.m in Sources */,
+				777B0385238C32EB0071CAB9 /* NSMutableArray+sfapi.m in Sources */,
+				777B0319238C32C20071CAB9 /* SFGenericConfig.m in Sources */,
+				777B030A238C32C20071CAB9 /* SFDownloadSpecification.m in Sources */,
+				777B036C238C32DC0071CAB9 /* SFAAsyncThreadedFileUploader.m in Sources */,
+				777B02EB238C32B60071CAB9 /* SFZonesEntity.m in Sources */,
+				777B0338238C32C30071CAB9 /* SFQuerySorting.m in Sources */,
+				777B031B238C32C30071CAB9 /* SFInboxMetadata.m in Sources */,
+				777B0382238C32EB0071CAB9 /* NSDictionary+sfapi.m in Sources */,
+				777B0347238C32C40071CAB9 /* SFShareRequestParams.m in Sources */,
+				777B0391238C32FB0071CAB9 /* SFAOAuthResponseBase.m in Sources */,
+				777B0313238C32C20071CAB9 /* SFFileLock.m in Sources */,
+				777B033C238C32C30071CAB9 /* SFReportRecord.m in Sources */,
+				777B0360238C32CC0071CAB9 /* SFODataEntityBase.m in Sources */,
+				777B02EC238C32C10071CAB9 /* SFAccessControlsCloneParams.m in Sources */,
+				777B02F2238C32C10071CAB9 /* SFAccessControlBulkResult.m in Sources */,
+				777B0365238C32DB0071CAB9 /* SFAFilePart.m in Sources */,
+				777B0325238C32C30071CAB9 /* SFMetadata.m in Sources */,
+				777B0376238C32EB0071CAB9 /* SFAStopwatch.m in Sources */,
+				777B030C238C32C20071CAB9 /* SFEnsSubscriberConfiguration.m in Sources */,
+				777B037B238C32EB0071CAB9 /* SFACryptoUtils.m in Sources */,
+				777B0370238C32E00071CAB9 /* SFAApiResponse.m in Sources */,
+				777B0386238C32EB0071CAB9 /* NSArray+sfapi.m in Sources */,
+				777B036D238C32E00071CAB9 /* SFADownloaderConfig.m in Sources */,
+				777B038B238C32EB0071CAB9 /* NSURLProtectionSpace+sfapi.m in Sources */,
+				777B0387238C32EB0071CAB9 /* NSHTTPURLResponse+sfapi.m in Sources */,
+				777B038A238C32EB0071CAB9 /* SFItemsEntity+sfapi.m in Sources */,
+				777B03A8238C331A0071CAB9 /* SFAODataParameterCollection.m in Sources */,
+				777B037F238C32EB0071CAB9 /* SFODataFeed+sfapi.m in Sources */,
+				777B0337238C32C30071CAB9 /* SFQueryPaging.m in Sources */,
+				777B0339238C32C30071CAB9 /* SFRemoteUploadRequestParams.m in Sources */,
+				777B0373238C32EA0071CAB9 /* SFALoggingProvider.m in Sources */,
+				777B0328238C32C30071CAB9 /* SFNote.m in Sources */,
+				777B032B238C32C30071CAB9 /* SFODataFeed.m in Sources */,
+				777B02E2238C32B60071CAB9 /* SFFolderTemplatesEntity.m in Sources */,
+				777B03BA238C33240071CAB9 /* SFACredentialCache.m in Sources */,
+				777B0334238C32C30071CAB9 /* SFPrincipal.m in Sources */,
+				777B033E238C32C30071CAB9 /* SFRequireWebPopResult.m in Sources */,
+				777B034C238C32C40071CAB9 /* SFSimpleSearchQuery.m in Sources */,
+				777B02FC238C32C20071CAB9 /* SFAsyncOperation.m in Sources */,
+				777B03B1238C33240071CAB9 /* SFAUploaderTask.m in Sources */,
+				777B0316238C32C20071CAB9 /* SFFolder.m in Sources */,
+				777B0344238C32C40071CAB9 /* SFShareAccessRight.m in Sources */,
+				777B0336238C32C30071CAB9 /* SFQuery.m in Sources */,
+				777B030B238C32C20071CAB9 /* SFEditingPlatformInfo.m in Sources */,
+				777B036E238C32E00071CAB9 /* SFAAsyncFileDownloader.m in Sources */,
+				777B035C238C32C40071CAB9 /* SFUserUsage.m in Sources */,
+				777B036A238C32DB0071CAB9 /* SFAAsyncMultiChunkFileUploader.m in Sources */,
+				777B03AF238C33240071CAB9 /* SFAHttpTask.m in Sources */,
+				777B02F5238C32C20071CAB9 /* SFAccessControlParam.m in Sources */,
+				777B0351238C32C40071CAB9 /* SFSymbolicLink.m in Sources */,
+				777B0309238C32C20071CAB9 /* SFDiskSpace.m in Sources */,
+				777B0329238C32C30071CAB9 /* SFNotification.m in Sources */,
+				777B02F9238C32C20071CAB9 /* SFAccountUser.m in Sources */,
+				777B02E1238C32B60071CAB9 /* SFFavoriteFoldersEntity.m in Sources */,
+				777B02F3238C32C20071CAB9 /* SFAccessControlDomains.m in Sources */,
+				777B03A7238C331A0071CAB9 /* SFAODataAction.m in Sources */,
+				777B0324238C32C30071CAB9 /* SFMarketAnalytics.m in Sources */,
+				777B03AB238C331A0071CAB9 /* SFAApiRequest.m in Sources */,
+				777B039A238C32FB0071CAB9 /* SFASDKAuthHandler.m in Sources */,
+				777B0326238C32C30071CAB9 /* SFMobileSecuritySettings.m in Sources */,
+				777B0301238C32C20071CAB9 /* SFConnectorGroupZone.m in Sources */,
+				777B034A238C32C40071CAB9 /* SFShareSettings.m in Sources */,
+				777B0314238C32C20071CAB9 /* SFFindSubdomainParams.m in Sources */,
+				777B0381238C32EB0071CAB9 /* NSString+sfapi.m in Sources */,
+				777B0345238C32C40071CAB9 /* SFShareAlias.m in Sources */,
+				777B03B4238C33240071CAB9 /* SFAHttpResponseActionAsyncCallback.m in Sources */,
+				777B0352238C32C40071CAB9 /* SFTenantZoneUsageReport.m in Sources */,
+				777B034D238C32C40071CAB9 /* SFSSOAccountProvider.m in Sources */,
+				777B037D238C32EB0071CAB9 /* SFAEventHandlerResponse.m in Sources */,
+				777B035F238C32C80071CAB9 /* SFHttpMethodConstants.m in Sources */,
+				777B0357238C32C40071CAB9 /* SFUserConfirmationSettings.m in Sources */,
+				777B0389238C32EB0071CAB9 /* NSStream+sfapi.m in Sources */,
+				777B031C238C32C30071CAB9 /* SFIndustry.m in Sources */,
+				777B031D238C32C30071CAB9 /* SFIrmClassification.m in Sources */,
+				777B02DA238C32B60071CAB9 /* SFRemoteUploadsEntity.m in Sources */,
+				777B02E0238C32B60071CAB9 /* SFEntityConstants.m in Sources */,
+				777B0377238C32EB0071CAB9 /* SFABase64.m in Sources */,
+				777B0343238C32C40071CAB9 /* SFShare.m in Sources */,
+				777B034F238C32C40071CAB9 /* SFSSOInfoEntry.m in Sources */,
+				777B0366238C32DB0071CAB9 /* SFAFileUploaderConfig.m in Sources */,
+				777B0379238C32EB0071CAB9 /* SFAUtils.m in Sources */,
+				777B02DC238C32B60071CAB9 /* SFAccountsEntity.m in Sources */,
+				777B0355238C32C40071CAB9 /* SFUploadSpecification.m in Sources */,
+				777B02FB238C32C20071CAB9 /* SFAdvancedSearchResults.m in Sources */,
+				777B0322238C32C30071CAB9 /* SFItemProtocolLink.m in Sources */,
+				777B03BD238C33240071CAB9 /* SFAConfiguration.m in Sources */,
+				777B02FA238C32C20071CAB9 /* SFAccountZoneUsage.m in Sources */,
+				777B033B238C32C30071CAB9 /* SFReport.m in Sources */,
+				777B02F7238C32C20071CAB9 /* SFAccount.m in Sources */,
+				777B030E238C32C20071CAB9 /* SFEnsSubscriptionToken.m in Sources */,
+				777B0350238C32C40071CAB9 /* SFStorageCenter.m in Sources */,
+				777B0398238C32FB0071CAB9 /* SFABaseAuthHandler.m in Sources */,
+				777B0320238C32C30071CAB9 /* SFItemDlpInfo.m in Sources */,
+				777B0342238C32C40071CAB9 /* SFSession.m in Sources */,
+				777B0374238C32EA0071CAB9 /* SFADefaultLogger.m in Sources */,
+				777B0306238C32C20071CAB9 /* SFDeviceUser.m in Sources */,
+				777B035D238C32C40071CAB9 /* SFZone.m in Sources */,
+				777B033D238C32C30071CAB9 /* SFRequireSubdomainResult.m in Sources */,
+				777B0318238C32C20071CAB9 /* SFFolderTemplateItem.m in Sources */,
+				777B033F238C32C30071CAB9 /* SFSearchQuery.m in Sources */,
+				777B0361238C32CF0071CAB9 /* SFAFileInfo.m in Sources */,
+				777B03AC238C331A0071CAB9 /* SFAHttpRequestResponseDataContainer.m in Sources */,
+				777B038C238C32EB0071CAB9 /* NSURLCredential+sfapi.m in Sources */,
+				777B02F1238C32C10071CAB9 /* SFAccessControl.m in Sources */,
+				777B02DF238C32B60071CAB9 /* SFConnectorGroupsEntity.m in Sources */,
+				777B035E238C32C40071CAB9 /* SFZoneUsageBreakdown.m in Sources */,
+				777B03AE238C33240071CAB9 /* SFACompositeUploaderTask.m in Sources */,
+				777B0395238C32FB0071CAB9 /* SFAOAuth2AuthenticationHelper.m in Sources */,
+				777B0359238C32C40071CAB9 /* SFUserInfo.m in Sources */,
+				777B0315238C32C20071CAB9 /* SFFindSubdomainResult.m in Sources */,
+				777B031F238C32C30071CAB9 /* SFItem.m in Sources */,
+				777B0368238C32DB0071CAB9 /* SFAAsyncUploaderBase.m in Sources */,
+				777B02DB238C32B60071CAB9 /* SFAccessControlsEntity.m in Sources */,
+				777B034E238C32C40071CAB9 /* SFSSOInfo.m in Sources */,
+				777B0372238C32E00071CAB9 /* SFAUploadSpecificationRequest.m in Sources */,
+				777B0364238C32D80071CAB9 /* SFAURLSessionTaskRuntimeAssociationKeys.m in Sources */,
+				777B0369238C32DB0071CAB9 /* SFAAsyncStandardFileUploader.m in Sources */,
+				777B0358238C32C40071CAB9 /* SFUserConfirmRequirement.m in Sources */,
+				777B02FD238C32C20071CAB9 /* SFBillingInfo.m in Sources */,
+				777B0353238C32C40071CAB9 /* SFToolInformation.m in Sources */,
+				777B0383238C32EB0071CAB9 /* NSObject+sfapi.m in Sources */,
+				777B039E238C331A0071CAB9 /* SFAEndsWithFilter.m in Sources */,
+				777B032D238C32C30071CAB9 /* SFOutlookInformation.m in Sources */,
+				777B03BE238C33240071CAB9 /* SFAModelClassMapper.m in Sources */,
+				777B02F0238C32C10071CAB9 /* SFServicesCollection.m in Sources */,
+				777B02F8238C32C20071CAB9 /* SFAccountPreferences.m in Sources */,
+				777B0397238C32FB0071CAB9 /* SFAWebAuthenticationHelper.m in Sources */,
+				777B0303238C32C20071CAB9 /* SFDevice.m in Sources */,
+				777B02F6238C32C20071CAB9 /* SFAccessControlsBulkParams.m in Sources */,
+				777B035A238C32C40071CAB9 /* SFUserPreferences.m in Sources */,
+				777B0323238C32C30071CAB9 /* SFLink.m in Sources */,
+				777B0354238C32C40071CAB9 /* SFUploadRequestParams.m in Sources */,
+				777B0321238C32C30071CAB9 /* SFItemInfo.m in Sources */,
+				777B02DE238C32B60071CAB9 /* SFCapabilitiesEntity.m in Sources */,
+				777B0390238C32FB0071CAB9 /* SFABearerAuthParser.m in Sources */,
+				777B03B9238C33240071CAB9 /* SFAWebAuthenticationError.m in Sources */,
+				777B033A238C32C30071CAB9 /* SFRedirection.m in Sources */,
+				777B039C238C32FB0071CAB9 /* SFAZoneAuthentication.m in Sources */,
+				777B03A4238C331A0071CAB9 /* SFAResponse.m in Sources */,
+				777B02EE238C32C10071CAB9 /* SFRemoteUpload.m in Sources */,
+				777B02E4238C32B60071CAB9 /* SFItemsEntity.m in Sources */,
+				777B03B2238C33240071CAB9 /* SFADownloadTask.m in Sources */,
+				777B02EA238C32B60071CAB9 /* SFUsersEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7DBBB3F19DD59D300E149D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5217,6 +6298,11 @@
 			isa = PBXTargetDependency;
 			target = 22DCA19D1AA8860A00FAA1EB /* ShareFileiOS */;
 			targetProxy = 22DCA2E61AA8955800FAA1EB /* PBXContainerItemProxy */;
+		};
+		777B02D1238C31150071CAB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 777B02CA238C31150071CAB9 /* ShareFileSDK-iOS */;
+			targetProxy = 777B02D0238C31150071CAB9 /* PBXContainerItemProxy */;
 		};
 		F7DBBB4F19DD59D300E149D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5796,6 +6882,7 @@
 				);
 				INFOPLIST_FILE = "iOSSample/iOSSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
@@ -5921,6 +7008,7 @@
 				);
 				INFOPLIST_FILE = "iOSSample/iOSSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
@@ -5951,6 +7039,7 @@
 				);
 				INFOPLIST_FILE = "iOSSample/iOSSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sharefile.${PRODUCT_NAME:rfc1034identifier}";
@@ -6076,6 +7165,119 @@
 				SEPARATE_STRIP = YES;
 				STRIP_STYLE = "non-global";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+			};
+			name = Release;
+		};
+		777B02D5238C31150071CAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareFileSDK/ShareFileSDK-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = "ShareFileSDK-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metronomhealth.ShareFileSDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		777B02D6238C31150071CAB9 /* GCov_Build */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareFileSDK/ShareFileSDK-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = "ShareFileSDK-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metronomhealth.ShareFileSDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = GCov_Build;
+		};
+		777B02D7238C31150071CAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareFileSDK/ShareFileSDK-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = "ShareFileSDK-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metronomhealth.ShareFileSDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -6218,6 +7420,16 @@
 				22DCA2E31AA8954D00FAA1EB /* Debug */,
 				22DCA2E41AA8954D00FAA1EB /* GCov_Build */,
 				22DCA2E51AA8954D00FAA1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		777B02D8238C31150071CAB9 /* Build configuration list for PBXNativeTarget "ShareFileSDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				777B02D5238C31150071CAB9 /* Debug */,
+				777B02D6238C31150071CAB9 /* GCov_Build */,
+				777B02D7238C31150071CAB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
