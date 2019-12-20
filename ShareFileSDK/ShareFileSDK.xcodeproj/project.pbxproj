@@ -325,7 +325,6 @@
 		0FEB9B2F1A5582EB00650E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB9B2D1A5582BA00650E32 /* Foundation.framework */; };
 		0FEB9B311A5582F400650E32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB9B301A5582F400650E32 /* CoreGraphics.framework */; };
 		0FEB9B321A5582FB00650E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB9B2B1A55829600650E32 /* UIKit.framework */; };
-		0FEB9B331A55830500650E32 /* libShareFileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3F8B0A19A48F0600F616D1 /* libShareFileSDK.a */; };
 		0FEB9B351A5583E000650E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3F8ADE19A48D0B00F616D1 /* Foundation.framework */; };
 		0FEB9B3A1A55868700650E32 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB9B371A55859100650E32 /* OCMock.framework */; };
 		0FEB9B3B1A55878A00650E32 /* ShareFileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3F8AD819A48D0B00F616D1 /* ShareFileSDK.framework */; };
@@ -2155,13 +2154,6 @@
 			remoteGlobalIDString = 0F3F8AD719A48D0B00F616D1;
 			remoteInfo = ShareFileSDK;
 		};
-		0F89287C19DC34E4007E285B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F3F8ACF19A48D0A00F616D1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0F3F8B0919A48F0600F616D1;
-			remoteInfo = libShareFileSDKiOSARM;
-		};
 		0F91B38E19A4BEF400987B4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0F3F8ACF19A48D0A00F616D1 /* Project object */;
@@ -2865,7 +2857,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FEB9B331A55830500650E32 /* libShareFileSDK.a in Frameworks */,
 				777B02D2238C31150071CAB9 /* ShareFileSDK_iOS.framework in Frameworks */,
 				0F1DE8C91A38665F00CBCACA /* AssetsLibrary.framework in Frameworks */,
 				0FEB9B321A5582FB00650E32 /* UIKit.framework in Frameworks */,
@@ -5010,7 +5001,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0F89287D19DC34E4007E285B /* PBXTargetDependency */,
 				777B02D1238C31150071CAB9 /* PBXTargetDependency */,
 			);
 			name = iOSSample;
@@ -6318,11 +6308,6 @@
 			target = 0F3F8AD719A48D0B00F616D1 /* ShareFileSDK */;
 			targetProxy = 0F1DFC4A1A1F2E3600605202 /* PBXContainerItemProxy */;
 		};
-		0F89287D19DC34E4007E285B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0F3F8B0919A48F0600F616D1 /* libShareFileSDK */;
-			targetProxy = 0F89287C19DC34E4007E285B /* PBXContainerItemProxy */;
-		};
 		0F91B38F19A4BEF400987B4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0F3F8AD719A48D0B00F616D1 /* ShareFileSDK */;
@@ -6910,7 +6895,7 @@
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)",
+					"$(SRCROOT)/**",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
@@ -7036,7 +7021,7 @@
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)",
+					"$(SRCROOT)/**",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
@@ -7067,7 +7052,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSSample/iOSSample-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)",
+					"$(SRCROOT)/**",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
