@@ -1,3 +1,6 @@
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 #import "SFAAsyncMultiChunkFileUploader.h"
 #import "SFAAsyncUploaderBaseProtected.h"
 #import "SFAUploaderBaseProtected.h"
@@ -324,3 +327,5 @@
 }
 
 @end
+
+#pragma clang diagnostic pop

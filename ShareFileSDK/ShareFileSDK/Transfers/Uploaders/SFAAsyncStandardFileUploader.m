@@ -1,3 +1,6 @@
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 #import "SFAAsyncStandardFileUploader.h"
 #import "SFAAsyncStandardFileUploaderPrivate.h"
 #import "SFAAsyncUploaderBaseProtected.h" //Inheritence
@@ -570,3 +573,5 @@
 }
 
 @end
+
+#pragma clang diagnostic pop

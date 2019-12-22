@@ -20,7 +20,10 @@
 - (instancetype)initWithSFAClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)fileUpConfig andExpirationDays:(int)expirationDays;
 
 #if TARGET_OS_IPHONE
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (instancetype)initWithSFAClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest asset:(ALAsset *)asset fileUploaderConfig:(SFAFileUploaderConfig *)fileUpConfig andExpirationDays:(int)expirationDays;
+#pragma clang diagnostic pop
 #endif
 
 - (SFApiQuery *)createUpload:(SFAUploadSpecificationRequest *)uploadSpecificationRequest;

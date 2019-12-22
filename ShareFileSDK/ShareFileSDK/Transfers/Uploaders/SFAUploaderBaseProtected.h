@@ -27,9 +27,12 @@ extern const NSUInteger SFAMaxBufferLength;
 - (NSURL *)chunkUriForStandardUploads;
 
 #if TARGET_OS_IPHONE
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @property (nonatomic, strong, readonly) ALAsset *asset;
 
 - (instancetype)initWithSFAClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)upSpecReq asset:(ALAsset *)asset andExpirationDays:(int)expirationDays;
+#pragma clang diagnostic pop
 #endif
 
 @end

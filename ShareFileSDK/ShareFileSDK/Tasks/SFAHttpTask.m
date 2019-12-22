@@ -232,6 +232,8 @@
 
 #pragma mark - Private
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (void)makeConnection {
     // Need this so that no thread can change the state while connection is being
     // setup.
@@ -267,6 +269,7 @@
         }
     }
 }
+#pragma clang diagnostic pop
 
 #pragma mark - NSURLConnectionDataDelegate NSURLConnectionDelegate Methods
 

@@ -24,6 +24,9 @@
     return self;
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 #if TARGET_OS_IPHONE
 - (instancetype)initWithSFAClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest asset:(ALAsset *)asset fileUploaderConfig:(SFAFileUploaderConfig *)fileUpConfig andExpirationDays:(int)expirationDays {
     self = [super initWithSFAClient:client uploadSpecificationRequest:uploadSpecificationRequest asset:asset andExpirationDays:expirationDays];
@@ -103,6 +106,8 @@ long long assetBytesOffset = 0;
     free(buffer);
     return [hashVal copy];
 }
+
+#pragma clang diagnostic pop
 
 - (id <SFATransferTask> )uploadAsyncWithTransferData:(NSDictionary *)transferMetadata callbackQueue:(NSOperationQueue *)callbackQueue completionCallback:(SFATaskCompletionCallback)completionCallback cancelCallback:(SFATaskCancelCallback)cancelCallback progressCallback:(SFATransferTaskProgressCallback)progressCallback {
     NSAssert(NO, @"uploadAsyncWithTransferData Implementation Not Found");

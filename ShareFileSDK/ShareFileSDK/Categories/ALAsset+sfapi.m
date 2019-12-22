@@ -1,3 +1,6 @@
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-implementations"
+
 #import "ALAsset+sfapi.h"
 
 @implementation ALAsset (sfapi)
@@ -69,3 +72,5 @@
 }
 
 @end
+
+#pragma clang diagnostic pop

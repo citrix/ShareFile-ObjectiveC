@@ -265,6 +265,8 @@
 }
 
 #if TARGET_OS_IPHONE
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (SFAAsyncUploaderBase *)asyncFileUploaderWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest asset:(ALAsset *)asset fileUploaderConfig:(SFAFileUploaderConfig *)config expirationDays:(int)expirationDays {
     switch (uploadSpecificationRequest.method) {
         case SFAUploadMethodStandard:
@@ -290,6 +292,7 @@
     return [self asyncFileUploaderWithUploadSpecificationRequest:uploadSpecificationRequest asset:asset fileUploaderConfig:config expirationDays:-1];
 }
 
+#pragma clang diagnostic pop
 #endif
 
 - (SFAAsyncFileDownloader *)asyncFileDownloaderForItem:(SFItem *)item withDownloaderConfig:(SFADownloaderConfig *)config {

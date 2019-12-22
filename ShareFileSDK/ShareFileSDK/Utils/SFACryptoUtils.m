@@ -9,6 +9,8 @@
     return [[NSData alloc] initWithBytes:cHMAC length:sizeof(cHMAC)];
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 + (NSString *)md5StringWithData:(NSData *)data {
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     CC_MD5(data.bytes, (unsigned int)data.length, result);
@@ -18,5 +20,5 @@
     }
     return output;
 }
-
+#pragma clang diagnostic pop
 @end

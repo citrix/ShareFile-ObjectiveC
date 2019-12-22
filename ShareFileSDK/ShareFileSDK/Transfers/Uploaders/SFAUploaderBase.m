@@ -22,6 +22,8 @@ const NSUInteger SFAMaxBufferLength = 65536; // Should be <= NSIntegerMax
     return self;
 	}
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 #if TARGET_OS_IPHONE
 - (instancetype)initWithSFAClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)upSpecReq asset:(ALAsset *)asset andExpirationDays:(int)expirationDays {
     self = [super init];
@@ -33,7 +35,6 @@ const NSUInteger SFAMaxBufferLength = 65536; // Should be <= NSIntegerMax
     }
     return self;
 }
-
 #endif
 
 #if !(TARGET_OS_IPHONE)
@@ -60,6 +61,7 @@ const NSUInteger SFAMaxBufferLength = 65536; // Should be <= NSIntegerMax
     self.uploadSpecificationRequest.threadCount = self.uploadSpecificationRequest.threadCount > 0 ? self.uploadSpecificationRequest.threadCount : 1;
     self.expirationDays = expirationDays;
 }
+#pragma clang diagnostic pop
 
 - (SFApiQuery *)uploadSpecificationQuery {
     SFApiQuery *query = [self.client.items uploadWithUrl:self.uploadSpecificationRequest.destinationURI
