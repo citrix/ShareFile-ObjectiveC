@@ -5274,7 +5274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# define output folder environment variable\nOUTPUT_FOLDER=${BUILD_DIR}/${CONFIGURATION}-iOS-SDK\n\n# Step 1. Build Device and Simulator versions\n#For Device\nxcodebuild -target ShareFileSDK-iOS ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos clean build  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n#For Simulator\nxcodebuild -target ShareFileSDK-iOS -configuration ${CONFIGURATION} -sdk iphonesimulator clean build BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${OUTPUT_FOLDER}/device\"\nmkdir -p \"${OUTPUT_FOLDER}/sim\"\n\n# Step 2. Copy Frameworks\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}_iOS.framework\" \"${OUTPUT_FOLDER}/device\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}_iOS.framework\" \"${OUTPUT_FOLDER}/sim\"\n\n# Step 3. Open destination foldr\nopen \"${OUTPUT_FOLDER}\"\n";
+			shellScript = "# define output folder environment variable\nOUTPUT_FOLDER=${BUILD_DIR}/${CONFIGURATION}-iOS-SDK\n\n# Step 1. Build Device and Simulator versions\n#For Device\nxcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -target ShareFileSDK-iOS ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos clean build  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n#For Simulator\nxcodebuild -target ShareFileSDK-iOS -configuration ${CONFIGURATION} -sdk iphonesimulator clean build BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${OUTPUT_FOLDER}/device\"\nmkdir -p \"${OUTPUT_FOLDER}/sim\"\n\n# Step 2. Copy Frameworks\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}_iOS.framework\" \"${OUTPUT_FOLDER}/device\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}_iOS.framework\" \"${OUTPUT_FOLDER}/sim\"\n\n# Step 3. Open destination foldr\nopen \"${OUTPUT_FOLDER}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -7216,7 +7216,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.metronomhealth.ShareFileSDK-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -7253,7 +7252,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.metronomhealth.ShareFileSDK-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
@@ -7291,7 +7289,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.metronomhealth.ShareFileSDK-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
