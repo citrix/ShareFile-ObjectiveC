@@ -612,7 +612,7 @@
 		777B02EC238C32C10071CAB9 /* SFAccessControlsCloneParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782211C51E55400BBCFC9 /* SFAccessControlsCloneParams.m */; };
 		777B02ED238C32C10071CAB9 /* SFAccountMessageCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782231C51E55400BBCFC9 /* SFAccountMessageCode.m */; };
 		777B02EE238C32C10071CAB9 /* SFRemoteUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782251C51E55400BBCFC9 /* SFRemoteUpload.m */; };
-		777B02EF238C32C10071CAB9 /* SFService.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782271C51E55400BBCFC9 /* SFService.m */; };
+		777B02EF238C32C10071CAB9 /* SFAService.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782271C51E55400BBCFC9 /* SFAService.m */; };
 		777B02F0238C32C10071CAB9 /* SFServicesCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782291C51E55400BBCFC9 /* SFServicesCollection.m */; };
 		777B02F1238C32C10071CAB9 /* SFAccessControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E071BD825C30033EA6A /* SFAccessControl.m */; };
 		777B02F2238C32C10071CAB9 /* SFAccessControlBulkResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E091BD825C30033EA6A /* SFAccessControlBulkResult.m */; };
@@ -842,7 +842,7 @@
 		777B03D7238D20200071CAB9 /* SFAccessControlsCloneParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782201C51E55400BBCFC9 /* SFAccessControlsCloneParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B03D8238D20200071CAB9 /* SFAccountMessageCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782221C51E55400BBCFC9 /* SFAccountMessageCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B03D9238D20210071CAB9 /* SFRemoteUpload.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782241C51E55400BBCFC9 /* SFRemoteUpload.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		777B03DA238D20210071CAB9 /* SFService.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782261C51E55400BBCFC9 /* SFService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03DA238D20210071CAB9 /* SFAService.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782261C51E55400BBCFC9 /* SFAService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B03DB238D20210071CAB9 /* SFServicesCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782281C51E55400BBCFC9 /* SFServicesCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B03DC238D20210071CAB9 /* SFAccessControl.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E061BD825C30033EA6A /* SFAccessControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B03DD238D20210071CAB9 /* SFAccessControlBulkResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E081BD825C30033EA6A /* SFAccessControlBulkResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1109,12 +1109,12 @@
 		925782391C51E55400BBCFC9 /* SFRemoteUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782251C51E55400BBCFC9 /* SFRemoteUpload.m */; };
 		9257823A1C51E55400BBCFC9 /* SFRemoteUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782251C51E55400BBCFC9 /* SFRemoteUpload.m */; };
 		9257823B1C51E55400BBCFC9 /* SFRemoteUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782251C51E55400BBCFC9 /* SFRemoteUpload.m */; };
-		9257823C1C51E55400BBCFC9 /* SFService.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782261C51E55400BBCFC9 /* SFService.h */; };
-		9257823D1C51E55400BBCFC9 /* SFService.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782261C51E55400BBCFC9 /* SFService.h */; };
-		9257823E1C51E55400BBCFC9 /* SFService.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782261C51E55400BBCFC9 /* SFService.h */; };
-		9257823F1C51E55400BBCFC9 /* SFService.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782271C51E55400BBCFC9 /* SFService.m */; };
-		925782401C51E55400BBCFC9 /* SFService.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782271C51E55400BBCFC9 /* SFService.m */; };
-		925782411C51E55400BBCFC9 /* SFService.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782271C51E55400BBCFC9 /* SFService.m */; };
+		9257823C1C51E55400BBCFC9 /* SFAService.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782261C51E55400BBCFC9 /* SFAService.h */; };
+		9257823D1C51E55400BBCFC9 /* SFAService.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782261C51E55400BBCFC9 /* SFAService.h */; };
+		9257823E1C51E55400BBCFC9 /* SFAService.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782261C51E55400BBCFC9 /* SFAService.h */; };
+		9257823F1C51E55400BBCFC9 /* SFAService.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782271C51E55400BBCFC9 /* SFAService.m */; };
+		925782401C51E55400BBCFC9 /* SFAService.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782271C51E55400BBCFC9 /* SFAService.m */; };
+		925782411C51E55400BBCFC9 /* SFAService.m in Sources */ = {isa = PBXBuildFile; fileRef = 925782271C51E55400BBCFC9 /* SFAService.m */; };
 		925782421C51E55400BBCFC9 /* SFServicesCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782281C51E55400BBCFC9 /* SFServicesCollection.h */; };
 		925782431C51E55400BBCFC9 /* SFServicesCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782281C51E55400BBCFC9 /* SFServicesCollection.h */; };
 		925782441C51E55400BBCFC9 /* SFServicesCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 925782281C51E55400BBCFC9 /* SFServicesCollection.h */; };
@@ -2422,8 +2422,8 @@
 		925782231C51E55400BBCFC9 /* SFAccountMessageCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAccountMessageCode.m; sourceTree = "<group>"; };
 		925782241C51E55400BBCFC9 /* SFRemoteUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRemoteUpload.h; sourceTree = "<group>"; };
 		925782251C51E55400BBCFC9 /* SFRemoteUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRemoteUpload.m; sourceTree = "<group>"; };
-		925782261C51E55400BBCFC9 /* SFService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFService.h; sourceTree = "<group>"; };
-		925782271C51E55400BBCFC9 /* SFService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFService.m; sourceTree = "<group>"; };
+		925782261C51E55400BBCFC9 /* SFAService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAService.h; sourceTree = "<group>"; };
+		925782271C51E55400BBCFC9 /* SFAService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAService.m; sourceTree = "<group>"; };
 		925782281C51E55400BBCFC9 /* SFServicesCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFServicesCollection.h; sourceTree = "<group>"; };
 		925782291C51E55400BBCFC9 /* SFServicesCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFServicesCollection.m; sourceTree = "<group>"; };
 		B867B5AD1B685C950040242D /* SFAAsyncStreamedFileUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAAsyncStreamedFileUploader.h; sourceTree = "<group>"; };
@@ -3562,8 +3562,8 @@
 				925782231C51E55400BBCFC9 /* SFAccountMessageCode.m */,
 				925782241C51E55400BBCFC9 /* SFRemoteUpload.h */,
 				925782251C51E55400BBCFC9 /* SFRemoteUpload.m */,
-				925782261C51E55400BBCFC9 /* SFService.h */,
-				925782271C51E55400BBCFC9 /* SFService.m */,
+				925782261C51E55400BBCFC9 /* SFAService.h */,
+				925782271C51E55400BBCFC9 /* SFAService.m */,
 				925782281C51E55400BBCFC9 /* SFServicesCollection.h */,
 				925782291C51E55400BBCFC9 /* SFServicesCollection.m */,
 				F8E00E061BD825C30033EA6A /* SFAccessControl.h */,
@@ -3827,7 +3827,7 @@
 				F708390A19AB1AB100DD857F /* SFABaseRequestProvider.h in Headers */,
 				F8D5066F1A5A63E500DF27DF /* SFAAuthEnums.h in Headers */,
 				F8E011621BD825C40033EA6A /* SFGenericConfig.h in Headers */,
-				9257823C1C51E55400BBCFC9 /* SFService.h in Headers */,
+				9257823C1C51E55400BBCFC9 /* SFAService.h in Headers */,
 				0F1F35B919A611B1005F0709 /* SFAClient.h in Headers */,
 				0FE17ECD19B5CCFF00DC4E78 /* SFALoggingProvider.h in Headers */,
 				F7962D7F19B068460074CF51 /* SFAChangeDomainCallback.h in Headers */,
@@ -4108,7 +4108,7 @@
 				0F25E0A319AB342900862036 /* NSString+sfapi.h in Headers */,
 				0F8721D219B8616200C97AE9 /* SFAAsyncRequestProvider.h in Headers */,
 				F8E011631BD825C40033EA6A /* SFGenericConfig.h in Headers */,
-				9257823D1C51E55400BBCFC9 /* SFService.h in Headers */,
+				9257823D1C51E55400BBCFC9 /* SFAService.h in Headers */,
 				F70EB68C19A5DF5D0028933C /* SFAItemAlias.h in Headers */,
 				B867B5C01B685DF80040242D /* SFAAsyncThreadedFileUploader.h in Headers */,
 				0F5A041D1A42B7D100B257C1 /* ALAsset+sfapi.h in Headers */,
@@ -4620,7 +4620,7 @@
 				22DCA2731AA8875700FAA1EB /* SFAChangeDomainCallback.h in Headers */,
 				22DCA25E1AA8872000FAA1EB /* SFAAsyncFileDownloader.h in Headers */,
 				22DCA2A01AA8878800FAA1EB /* SFAEndsWithFilter.h in Headers */,
-				9257823E1C51E55400BBCFC9 /* SFService.h in Headers */,
+				9257823E1C51E55400BBCFC9 /* SFAService.h in Headers */,
 				22DCA2BC1AA8879400FAA1EB /* SFATask.h in Headers */,
 				F8E011581BD825C40033EA6A /* SFFolderTemplate.h in Headers */,
 				22DCA2721AA8875700FAA1EB /* SFAEventHandlerResponse.h in Headers */,
@@ -4824,7 +4824,7 @@
 				777B046D238D20690071CAB9 /* SFAHttpRequestUtils.h in Headers */,
 				777B048A238D20750071CAB9 /* SFAOAuthResponse.h in Headers */,
 				777B0498238D20760071CAB9 /* SFAInteractiveAuthHandling.h in Headers */,
-				777B03DA238D20210071CAB9 /* SFService.h in Headers */,
+				777B03DA238D20210071CAB9 /* SFAService.h in Headers */,
 				777B0419238D20280071CAB9 /* SFOutlookInformation.h in Headers */,
 				777B040A238D20260071CAB9 /* SFItem.h in Headers */,
 				777B04A1238D20AF0071CAB9 /* SFAConfiguration.h in Headers */,
@@ -5363,7 +5363,7 @@
 				0F9305CE19DEB0C00058F288 /* SFODataEntityBase.m in Sources */,
 				F8E012D61BD825C50033EA6A /* SFUserPreferences.m in Sources */,
 				F8E00FB81BD825C40033EA6A /* SFZonesEntity.m in Sources */,
-				9257823F1C51E55400BBCFC9 /* SFService.m in Sources */,
+				9257823F1C51E55400BBCFC9 /* SFAService.m in Sources */,
 				F89A6AFF1A10660700368726 /* SFASDKAuthHandler.m in Sources */,
 				F70B98A619D03E2E008E3DE7 /* SFACompositeUploaderTask.m in Sources */,
 				F7962D9219B0ABB60074CF51 /* SFACredentialCache.m in Sources */,
@@ -5556,7 +5556,7 @@
 				F8E011BD1BD825C40033EA6A /* SFNotification.m in Sources */,
 				0F09E15919AB8199009EF88A /* SFAODataParameterCollection.m in Sources */,
 				F8E011241BD825C40033EA6A /* SFEnsSubscriptionToken.m in Sources */,
-				925782401C51E55400BBCFC9 /* SFService.m in Sources */,
+				925782401C51E55400BBCFC9 /* SFAService.m in Sources */,
 				0FE17EE819B5EC2000DC4E78 /* SFAStopwatch.m in Sources */,
 				0F2CE5C719D59C4C0024EB56 /* SFAEndsWithFilter.m in Sources */,
 				92BBBD301B14F0DB009825B2 /* NSURLCredential+SFACredential.m in Sources */,
@@ -5855,7 +5855,7 @@
 				22DCA3901AA897CB00FAA1EB /* SFAStopwatch.m in Sources */,
 				F8E012D81BD825C50033EA6A /* SFUserPreferences.m in Sources */,
 				F8E00FBA1BD825C40033EA6A /* SFZonesEntity.m in Sources */,
-				925782411C51E55400BBCFC9 /* SFService.m in Sources */,
+				925782411C51E55400BBCFC9 /* SFAService.m in Sources */,
 				22DCA3911AA897CB00FAA1EB /* SFABase64.m in Sources */,
 				22DCA3921AA897CB00FAA1EB /* SFAHttpRequestUtils.m in Sources */,
 				22DCA3931AA897CB00FAA1EB /* SFAUtils.m in Sources */,
@@ -6116,7 +6116,7 @@
 				777B0396238C32FB0071CAB9 /* SFAOAuthService.m in Sources */,
 				777B038E238C32EB0071CAB9 /* SFItemInfo+sfapi.m in Sources */,
 				777B02E3238C32B60071CAB9 /* SFGroupsEntity.m in Sources */,
-				777B02EF238C32C10071CAB9 /* SFService.m in Sources */,
+				777B02EF238C32C10071CAB9 /* SFAService.m in Sources */,
 				777B039F238C331A0071CAB9 /* SFAStartsWithFilter.m in Sources */,
 				777B0331238C32C30071CAB9 /* SFPlanFeatures.m in Sources */,
 				777B031A238C32C30071CAB9 /* SFGroup.m in Sources */,

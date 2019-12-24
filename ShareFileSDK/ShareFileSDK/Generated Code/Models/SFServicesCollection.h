@@ -7,7 +7,7 @@
 
 #import "SFODataObject.h"
 
-@class SFService;
+@class SFAService;
 
 @interface SFServicesCollection : SFODataObject
 {
@@ -16,15 +16,15 @@
 /**
    RightSignature account service
  */
-@property (nonatomic, strong) SFService *RightSignature;
+@property (nonatomic, strong) SFAService *RightSignature;
 /**
    ShareConnect account service
  */
-@property (nonatomic, strong) SFService *ShareConnect;
+@property (nonatomic, strong) SFAService *ShareConnect;
 /**
 ShareFile Legal account service
 */
-@property (nonatomic, strong) SFService *ShareFileLegal;
+@property (nonatomic, strong) SFAService *ShareFileLegal;
 
 
 @end

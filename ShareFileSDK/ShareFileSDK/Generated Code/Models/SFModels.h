@@ -16,7 +16,7 @@
 #import "SFRemoteUpload.h"
 #import "SFUploadRequestParams.h"
 #import "SFRemoteUploadRequestParams.h"
-#import "SFService.h"
+#import "SFAService.h"
 #import "SFServicesCollection.h"
 #import "SFShareAccessRight.h"
 #import "SFAccountZoneUsage.h"

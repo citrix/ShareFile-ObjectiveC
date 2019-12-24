@@ -9,7 +9,7 @@
 #import "SFServicesCollection.h"
 #import "SFODataObject.h"
 
-@class SFService;
+@class SFAService;
 
 @implementation SFServicesCollection
 

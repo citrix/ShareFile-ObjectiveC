@@ -38,8 +38,8 @@
 		[_sharedObjectMap setObject:@"SFSearchIndexAllocationDetails" forKey:@"SearchIndexAllocationDetailss"];
 		[_sharedObjectMap setObject:@"SFSearchProvider" forKey:@"SearchProvider"];
 		[_sharedObjectMap setObject:@"SFSearchProvider" forKey:@"SearchProviders"];
-		[_sharedObjectMap setObject:@"SFService" forKey:@"Service"];
-		[_sharedObjectMap setObject:@"SFService" forKey:@"Services"];
+		[_sharedObjectMap setObject:@"SFAService" forKey:@"Service"];
+		[_sharedObjectMap setObject:@"SFAService" forKey:@"Services"];
 		[_sharedObjectMap setObject:@"SFServicesCollection" forKey:@"ServicesCollection"];
 		[_sharedObjectMap setObject:@"SFServicesCollection" forKey:@"ServicesCollections"];
 		[_sharedObjectMap setObject:@"SFShareAccessRight" forKey:@"ShareAccessRight"];
