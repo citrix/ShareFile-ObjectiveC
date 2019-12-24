@@ -64,7 +64,7 @@
 #import "SFAccountPreferences.h"
 #import "SFAsyncOperation.h"
 #import "SFCapability.h"
-#import "SFDevice.h"
+#import "SFADevice.h"
 #import "SFDeviceUser.h"
 #import "SFDeviceUserWipe.h"
 #import "SFDeviceStatus.h"

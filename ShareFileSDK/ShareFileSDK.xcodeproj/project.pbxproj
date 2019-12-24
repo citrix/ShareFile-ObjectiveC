@@ -632,7 +632,7 @@
 		777B0300238C32C20071CAB9 /* SFConnectorGroupAccessControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E251BD825C30033EA6A /* SFConnectorGroupAccessControl.m */; };
 		777B0301238C32C20071CAB9 /* SFConnectorGroupZone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E271BD825C30033EA6A /* SFConnectorGroupZone.m */; };
 		777B0302238C32C20071CAB9 /* SFContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E291BD825C30033EA6A /* SFContact.m */; };
-		777B0303238C32C20071CAB9 /* SFDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2B1BD825C30033EA6A /* SFDevice.m */; };
+		777B0303238C32C20071CAB9 /* SFADevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2B1BD825C30033EA6A /* SFADevice.m */; };
 		777B0304238C32C20071CAB9 /* SFDeviceLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2D1BD825C30033EA6A /* SFDeviceLogEntry.m */; };
 		777B0305238C32C20071CAB9 /* SFDeviceStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2F1BD825C30033EA6A /* SFDeviceStatus.m */; };
 		777B0306238C32C20071CAB9 /* SFDeviceUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E311BD825C30033EA6A /* SFDeviceUser.m */; };
@@ -862,7 +862,7 @@
 		777B03EB238D20230071CAB9 /* SFConnectorGroupAccessControl.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E241BD825C30033EA6A /* SFConnectorGroupAccessControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B03EC238D20230071CAB9 /* SFConnectorGroupZone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E261BD825C30033EA6A /* SFConnectorGroupZone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B03ED238D20230071CAB9 /* SFContact.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E281BD825C30033EA6A /* SFContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		777B03EE238D20230071CAB9 /* SFDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2A1BD825C30033EA6A /* SFDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		777B03EE238D20230071CAB9 /* SFADevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2A1BD825C30033EA6A /* SFADevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B03EF238D20230071CAB9 /* SFDeviceLogEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2C1BD825C30033EA6A /* SFDeviceLogEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B03F0238D20230071CAB9 /* SFDeviceStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2E1BD825C30033EA6A /* SFDeviceStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777B03F1238D20230071CAB9 /* SFDeviceUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E301BD825C30033EA6A /* SFDeviceUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1596,12 +1596,12 @@
 		F8E010DB1BD825C40033EA6A /* SFContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E291BD825C30033EA6A /* SFContact.m */; };
 		F8E010DC1BD825C40033EA6A /* SFContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E291BD825C30033EA6A /* SFContact.m */; };
 		F8E010DD1BD825C40033EA6A /* SFContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E291BD825C30033EA6A /* SFContact.m */; };
-		F8E010DE1BD825C40033EA6A /* SFDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2A1BD825C30033EA6A /* SFDevice.h */; };
-		F8E010DF1BD825C40033EA6A /* SFDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2A1BD825C30033EA6A /* SFDevice.h */; };
-		F8E010E01BD825C40033EA6A /* SFDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2A1BD825C30033EA6A /* SFDevice.h */; };
-		F8E010E11BD825C40033EA6A /* SFDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2B1BD825C30033EA6A /* SFDevice.m */; };
-		F8E010E21BD825C40033EA6A /* SFDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2B1BD825C30033EA6A /* SFDevice.m */; };
-		F8E010E31BD825C40033EA6A /* SFDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2B1BD825C30033EA6A /* SFDevice.m */; };
+		F8E010DE1BD825C40033EA6A /* SFADevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2A1BD825C30033EA6A /* SFADevice.h */; };
+		F8E010DF1BD825C40033EA6A /* SFADevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2A1BD825C30033EA6A /* SFADevice.h */; };
+		F8E010E01BD825C40033EA6A /* SFADevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2A1BD825C30033EA6A /* SFADevice.h */; };
+		F8E010E11BD825C40033EA6A /* SFADevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2B1BD825C30033EA6A /* SFADevice.m */; };
+		F8E010E21BD825C40033EA6A /* SFADevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2B1BD825C30033EA6A /* SFADevice.m */; };
+		F8E010E31BD825C40033EA6A /* SFADevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E00E2B1BD825C30033EA6A /* SFADevice.m */; };
 		F8E010E41BD825C40033EA6A /* SFDeviceLogEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2C1BD825C30033EA6A /* SFDeviceLogEntry.h */; };
 		F8E010E51BD825C40033EA6A /* SFDeviceLogEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2C1BD825C30033EA6A /* SFDeviceLogEntry.h */; };
 		F8E010E61BD825C40033EA6A /* SFDeviceLogEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E00E2C1BD825C30033EA6A /* SFDeviceLogEntry.h */; };
@@ -2637,8 +2637,8 @@
 		F8E00E271BD825C30033EA6A /* SFConnectorGroupZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFConnectorGroupZone.m; sourceTree = "<group>"; };
 		F8E00E281BD825C30033EA6A /* SFContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFContact.h; sourceTree = "<group>"; };
 		F8E00E291BD825C30033EA6A /* SFContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFContact.m; sourceTree = "<group>"; };
-		F8E00E2A1BD825C30033EA6A /* SFDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDevice.h; sourceTree = "<group>"; };
-		F8E00E2B1BD825C30033EA6A /* SFDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDevice.m; sourceTree = "<group>"; };
+		F8E00E2A1BD825C30033EA6A /* SFADevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFADevice.h; sourceTree = "<group>"; };
+		F8E00E2B1BD825C30033EA6A /* SFADevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFADevice.m; sourceTree = "<group>"; };
 		F8E00E2C1BD825C30033EA6A /* SFDeviceLogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDeviceLogEntry.h; sourceTree = "<group>"; };
 		F8E00E2D1BD825C30033EA6A /* SFDeviceLogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDeviceLogEntry.m; sourceTree = "<group>"; };
 		F8E00E2E1BD825C30033EA6A /* SFDeviceStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDeviceStatus.h; sourceTree = "<group>"; };
@@ -3602,8 +3602,8 @@
 				F8E00E271BD825C30033EA6A /* SFConnectorGroupZone.m */,
 				F8E00E281BD825C30033EA6A /* SFContact.h */,
 				F8E00E291BD825C30033EA6A /* SFContact.m */,
-				F8E00E2A1BD825C30033EA6A /* SFDevice.h */,
-				F8E00E2B1BD825C30033EA6A /* SFDevice.m */,
+				F8E00E2A1BD825C30033EA6A /* SFADevice.h */,
+				F8E00E2B1BD825C30033EA6A /* SFADevice.m */,
 				F8E00E2C1BD825C30033EA6A /* SFDeviceLogEntry.h */,
 				F8E00E2D1BD825C30033EA6A /* SFDeviceLogEntry.m */,
 				F8E00E2E1BD825C30033EA6A /* SFDeviceStatus.h */,
@@ -3942,7 +3942,7 @@
 				0F237DE519C86016002347B8 /* SFADownloadTask.h in Headers */,
 				F70B98A419D03E2E008E3DE7 /* SFACompositeUploaderTask.h in Headers */,
 				F7D6F29E19C03EE900348220 /* SFAUploaderTask.h in Headers */,
-				F8E010DE1BD825C40033EA6A /* SFDevice.h in Headers */,
+				F8E010DE1BD825C40033EA6A /* SFADevice.h in Headers */,
 				ED391A5A1C973DC300821DBA /* SFShareAccessRight.h in Headers */,
 				F8E00FA91BD825C40033EA6A /* SFStorageCentersEntity.h in Headers */,
 				F7962D8619B09F060074CF51 /* SFARequestProviderFactory.h in Headers */,
@@ -4223,7 +4223,7 @@
 				0FE17ECE19B5CCFF00DC4E78 /* SFALoggingProvider.h in Headers */,
 				F7962D7B19B05C130074CF51 /* SFAConfiguration.h in Headers */,
 				F7962D8019B068460074CF51 /* SFAChangeDomainCallback.h in Headers */,
-				F8E010DF1BD825C40033EA6A /* SFDevice.h in Headers */,
+				F8E010DF1BD825C40033EA6A /* SFADevice.h in Headers */,
 				ED391A5B1C973DC300821DBA /* SFShareAccessRight.h in Headers */,
 				F8E00FAA1BD825C40033EA6A /* SFStorageCentersEntity.h in Headers */,
 				F746398619AC7E7000690DBF /* SFAEventHandlerResponse.h in Headers */,
@@ -4587,7 +4587,7 @@
 				22DCA2891AA8876900FAA1EB /* SFAOAuthResponseBase.h in Headers */,
 				F8E011CD1BD825C40033EA6A /* SFODataObject.h in Headers */,
 				22DCA2841AA8875C00FAA1EB /* ALAsset+sfapi.h in Headers */,
-				F8E010E01BD825C40033EA6A /* SFDevice.h in Headers */,
+				F8E010E01BD825C40033EA6A /* SFADevice.h in Headers */,
 				F8E010F81BD825C40033EA6A /* SFDeviceUserWipe.h in Headers */,
 				22DCA2761AA8875C00FAA1EB /* SFODataFeed+sfapi.h in Headers */,
 				22DCA2821AA8875C00FAA1EB /* NSURLProtectionSpace+sfapi.h in Headers */,
@@ -4656,7 +4656,7 @@
 				777B03D4238D20200071CAB9 /* SFStorageCentersEntity.h in Headers */,
 				777B04B9238D22C60071CAB9 /* SFAStartsWithFilter.h in Headers */,
 				777B03FF238D20250071CAB9 /* SFFindSubdomainParams.h in Headers */,
-				777B03EE238D20230071CAB9 /* SFDevice.h in Headers */,
+				777B03EE238D20230071CAB9 /* SFADevice.h in Headers */,
 				777B03F9238D20240071CAB9 /* SFEnsSubscriptionToken.h in Headers */,
 				777B03ED238D20230071CAB9 /* SFContact.h in Headers */,
 				777B03DD238D20210071CAB9 /* SFAccessControlBulkResult.h in Headers */,
@@ -5354,7 +5354,7 @@
 				F8E012881BD825C50033EA6A /* SFSSOAccountProvider.m in Sources */,
 				F8E011351BD825C40033EA6A /* SFFavoriteFolder.m in Sources */,
 				0FCCCACE19D3F94E0019D54B /* SFABaseTask.m in Sources */,
-				F8E010E11BD825C40033EA6A /* SFDevice.m in Sources */,
+				F8E010E11BD825C40033EA6A /* SFADevice.m in Sources */,
 				F8E011E01BD825C40033EA6A /* SFOutlookInformationOptionInt.m in Sources */,
 				F8E011951BD825C40033EA6A /* SFLink.m in Sources */,
 				F8E00F5B1BD825C40033EA6A /* SFAccountsEntity.m in Sources */,
@@ -5713,7 +5713,7 @@
 				F8C073EA1A250C45008F5F76 /* SFABearerAuthParser.m in Sources */,
 				F8E00F5C1BD825C40033EA6A /* SFAccountsEntity.m in Sources */,
 				0F237DE819C86016002347B8 /* SFADownloadTask.m in Sources */,
-				F8E010E21BD825C40033EA6A /* SFDevice.m in Sources */,
+				F8E010E21BD825C40033EA6A /* SFADevice.m in Sources */,
 				F7466F5F19C028C900C238D0 /* SFAFileInfo.m in Sources */,
 				F8E010881BD825C40033EA6A /* SFAccessControlFailedEntry.m in Sources */,
 				F8C98EF01A1D12F300628A77 /* NSURLCredential+sfapi.m in Sources */,
@@ -5846,7 +5846,7 @@
 				F8E0128A1BD825C50033EA6A /* SFSSOAccountProvider.m in Sources */,
 				F8E011371BD825C40033EA6A /* SFFavoriteFolder.m in Sources */,
 				22DCA38F1AA897CB00FAA1EB /* SFAActionStopwatch.m in Sources */,
-				F8E010E31BD825C40033EA6A /* SFDevice.m in Sources */,
+				F8E010E31BD825C40033EA6A /* SFADevice.m in Sources */,
 				F8E011E21BD825C40033EA6A /* SFOutlookInformationOptionInt.m in Sources */,
 				F8E011971BD825C40033EA6A /* SFLink.m in Sources */,
 				F8E00F5D1BD825C40033EA6A /* SFAccountsEntity.m in Sources */,
@@ -6250,7 +6250,7 @@
 				777B02F0238C32C10071CAB9 /* SFServicesCollection.m in Sources */,
 				777B02F8238C32C20071CAB9 /* SFAccountPreferences.m in Sources */,
 				777B0397238C32FB0071CAB9 /* SFAWebAuthenticationHelper.m in Sources */,
-				777B0303238C32C20071CAB9 /* SFDevice.m in Sources */,
+				777B0303238C32C20071CAB9 /* SFADevice.m in Sources */,
 				777B02F6238C32C20071CAB9 /* SFAccessControlsBulkParams.m in Sources */,
 				777B035A238C32C40071CAB9 /* SFUserPreferences.m in Sources */,
 				777B0323238C32C30071CAB9 /* SFLink.m in Sources */,

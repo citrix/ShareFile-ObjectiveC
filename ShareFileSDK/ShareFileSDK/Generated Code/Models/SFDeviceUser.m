@@ -11,7 +11,7 @@
 
 @class SFAccount;
 @class SFUser;
-@class SFDevice;
+@class SFADevice;
 
 @implementation SFDeviceUser
 

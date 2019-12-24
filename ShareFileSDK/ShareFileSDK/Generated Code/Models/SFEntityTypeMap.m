@@ -175,8 +175,8 @@
 		[_sharedObjectMap setObject:@"SFAsyncOperation" forKey:@"AsyncOperations"];
 		[_sharedObjectMap setObject:@"SFCapability" forKey:@"Capability"];
 		[_sharedObjectMap setObject:@"SFCapability" forKey:@"Capabilities"];
-		[_sharedObjectMap setObject:@"SFDevice" forKey:@"Device"];
-		[_sharedObjectMap setObject:@"SFDevice" forKey:@"Devices"];
+		[_sharedObjectMap setObject:@"SFADevice" forKey:@"Device"];
+		[_sharedObjectMap setObject:@"SFADevice" forKey:@"Devices"];
 		[_sharedObjectMap setObject:@"SFDeviceUser" forKey:@"DeviceUser"];
 		[_sharedObjectMap setObject:@"SFDeviceUser" forKey:@"DeviceUsers"];
 		[_sharedObjectMap setObject:@"SFDeviceUserWipe" forKey:@"DeviceUserWipe"];

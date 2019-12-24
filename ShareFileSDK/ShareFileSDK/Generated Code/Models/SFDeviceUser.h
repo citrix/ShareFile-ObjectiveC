@@ -9,7 +9,7 @@
 
 @class SFAccount;
 @class SFUser;
-@class SFDevice;
+@class SFADevice;
 
 @interface SFDeviceUser : SFODataObject
 {
@@ -17,7 +17,7 @@
 
 @property (nonatomic, strong) SFAccount *Account;
 @property (nonatomic, strong) SFUser *User;
-@property (nonatomic, strong) SFDevice *Device;
+@property (nonatomic, strong) SFADevice *Device;
 @property (nonatomic, strong) NSNumber *IsOwner;
 @property (nonatomic, strong) NSString *FriendlyName;
 @property (nonatomic, strong) NSNumber *Wipe;
