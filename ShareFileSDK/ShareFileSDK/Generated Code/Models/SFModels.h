@@ -102,7 +102,7 @@
 #import "SFASearchResults.h"
 #import "SFAdvancedSearchResults.h"
 #import "SFASearchResult.h"
-#import "SFSession.h"
+#import "SFASession.h"
 #import "SFShare.h"
 #import "SFShareAlias.h"
 #import "SFShareRequestParams.h"

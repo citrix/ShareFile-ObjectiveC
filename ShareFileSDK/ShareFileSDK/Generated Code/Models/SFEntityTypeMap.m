@@ -251,8 +251,8 @@
 		[_sharedObjectMap setObject:@"SFAzureSBTopicsEndPointInfo" forKey:@"AzureSBTopicsEndPointInfos"];
 		[_sharedObjectMap setObject:@"SFAzureSBTopicsResponse" forKey:@"AzureSBTopicsResponse"];
 		[_sharedObjectMap setObject:@"SFAzureSBTopicsResponse" forKey:@"AzureSBTopicsResponses"];
-		[_sharedObjectMap setObject:@"SFSession" forKey:@"Session"];
-		[_sharedObjectMap setObject:@"SFSession" forKey:@"Sessions"];
+		[_sharedObjectMap setObject:@"SFASession" forKey:@"Session"];
+		[_sharedObjectMap setObject:@"SFASession" forKey:@"Sessions"];
 		[_sharedObjectMap setObject:@"SFShare" forKey:@"Share"];
 		[_sharedObjectMap setObject:@"SFShare" forKey:@"Shares"];
 		[_sharedObjectMap setObject:@"SFShareAlias" forKey:@"ShareAlias"];

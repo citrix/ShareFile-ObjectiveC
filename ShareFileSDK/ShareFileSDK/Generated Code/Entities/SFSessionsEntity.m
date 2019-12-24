@@ -9,13 +9,13 @@
 #import "SFEntityConstants.h"
 #import "SFSessionsEntity.h"
 #import "SFODataEntityBase.h"
-#import "SFSession.h"
+#import "SFASession.h"
 
 
 @implementation SFSessionsEntity
 - (SFApiQuery *)get {
     SFApiQuery *sfApiQuery = [[SFApiQuery alloc] initWithClient:self.client];
-    sfApiQuery.responseClass = [SFSession class];
+    sfApiQuery.responseClass = [SFASession class];
     sfApiQuery.isODataFeed = NO;
     
     [sfApiQuery setFrom:kSFEntities_Sessions];
@@ -33,7 +33,7 @@
 
 - (SFApiQuery *)loginWithAuthmethod:(NSString *)authmethod andAuthcomparison:(NSString *)authcomparison {
     SFApiQuery *sfApiQuery = [[SFApiQuery alloc] initWithClient:self.client];
-    sfApiQuery.responseClass = [SFSession class];
+    sfApiQuery.responseClass = [SFASession class];
     sfApiQuery.isODataFeed = NO;
     
     [sfApiQuery setFrom:kSFEntities_Sessions];
@@ -46,7 +46,7 @@
 
 - (SFApiQuery *)acs {
     SFApiQuery *sfApiQuery = [[SFApiQuery alloc] initWithClient:self.client];
-    sfApiQuery.responseClass = [SFSession class];
+    sfApiQuery.responseClass = [SFASession class];
     sfApiQuery.isODataFeed = NO;
     
     [sfApiQuery setFrom:kSFEntities_Sessions];

@@ -121,10 +121,10 @@ static BOOL useBackgroundUploadDownload = NO;
                      if (error) {
                          NSLog(@"Error Is:%@", error);
                      }
-                     else if ([returnValue isKindOfClass:[SFSession class]]) {
+                     else if ([returnValue isKindOfClass:[SFASession class]]) {
                          NSLog(@"*********************Session "
                                "Started**********************************");
-                         NSLog(@"Authenticated as:%@", ((SFSession *)returnValue).Principal.Email);
+                         NSLog(@"Authenticated as:%@", ((SFASession *)returnValue).Principal.Email);
                          NSLog(@"***************************************************************"
                                "*******");
                          [self defaultFolder];
