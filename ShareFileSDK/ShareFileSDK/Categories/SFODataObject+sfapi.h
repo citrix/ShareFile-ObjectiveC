@@ -1,3 +1,0 @@
-@interface SFODataObject (sfapi)
-
-@end

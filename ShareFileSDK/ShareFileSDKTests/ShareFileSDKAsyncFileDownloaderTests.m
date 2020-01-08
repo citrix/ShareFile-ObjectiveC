@@ -15,7 +15,7 @@
 @implementation ShareFileSDKAsyncFileDownloaderTests
 
 - (void)testQueryCreation {
-    SFItem *item = [SFItem new];
+    SFIItem *item = [SFIItem new];
     item.url = [NSURL URLWithString:@"https://subdomain.domain/hash"];
     SFAAsyncFileDownloader *downloader = [[SFAAsyncFileDownloader alloc] initWithItem:item withSFAClient:self.client andDownloaderConfig:nil];
     SFApiQuery *query = [downloader createDownloadQuery];
@@ -47,7 +47,7 @@
 }
 
 - (void)testBackgroundTaskInitializer {
-    SFItem *item = [SFItem new];
+    SFIItem *item = [SFIItem new];
     item.url = [NSURL URLWithString:@"https://subdomain.domain/hash"];
     NSString *expectedUrl = [NSString stringWithFormat:@"%@/Download", item.url];
     SFAAsyncFileDownloader *downloader = [[SFAAsyncFileDownloader alloc] initWithItem:item withSFAClient:self.client andDownloaderConfig:nil];

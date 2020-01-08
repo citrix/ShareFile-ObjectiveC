@@ -320,13 +320,13 @@
     id contextObject = self.contextObject;
     
     // Call out so we can parse this challenge
-    [self.delegate task:self receivedAuthChallenge:challenge httpRequestResponseDataContainer:container usingContextObject:&contextObject completionHandler: ^(SFURLAuthChallengeDisposition disp, NSURLCredential *cred) {
+    [self.delegate task:self receivedAuthChallenge:challenge httpRequestResponseDataContainer:container usingContextObject:&contextObject completionHandler: ^(SFIURLAuthChallengeDisposition disp, NSURLCredential *cred) {
          switch (disp) {
-             case SFURLAuthChallengeUseCredential:
+             case SFIURLAuthChallengeUseCredential:
                  [challenge.sender useCredential:cred forAuthenticationChallenge:challenge];
                  break;
                  
-             case SFURLAuthChallengeCancelAuthenticationChallenge:
+             case SFIURLAuthChallengeCancelAuthenticationChallenge:
                  [challenge.sender cancelAuthenticationChallenge:challenge];
                  break;
                  

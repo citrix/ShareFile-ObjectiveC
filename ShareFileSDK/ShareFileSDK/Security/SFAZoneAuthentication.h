@@ -3,7 +3,7 @@
 
 @interface SFAZoneAuthentication : NSObject
 
-@property (nonatomic, strong) SFZone *zone;
+@property (nonatomic, strong) SFIZone *zone;
 @property (nonatomic, strong) NSString *opId;
 @property (nonatomic, strong) NSString *userId;
 

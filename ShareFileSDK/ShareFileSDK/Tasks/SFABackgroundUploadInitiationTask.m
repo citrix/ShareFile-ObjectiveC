@@ -18,7 +18,7 @@
     // Alternate 2) Make redirection tasks of type SFAHttpTask. But SFABackgroundUploadInitiationTask is same as SFAHttpTask without backgroundUploadInitiationTaskDelegate
     // Making redirection task of type:SFAHttpTask would have required copy/paste code. Which we avoided here.
     // Hence for redirection tasks backgroundUploadInitiationTaskDelegate will not be set and only root level task will be able to intiate URL Session Task.
-    if (self.backgroundUploadInitiationTaskDelegate && !self.isCancelled && [retVal isKindOfClass:[SFUploadSpecification class]]) {
+    if (self.backgroundUploadInitiationTaskDelegate && !self.isCancelled && [retVal isKindOfClass:[SFIUploadSpecification class]]) {
         NSArray *returnValues = [self.backgroundUploadInitiationTaskDelegate backgroundUploadInitiationTask:self didReceiveUploadSepcification:retVal];
         NSURLSession *session = nil;
         NSURLSessionUploadTask *uploaderTask = nil;

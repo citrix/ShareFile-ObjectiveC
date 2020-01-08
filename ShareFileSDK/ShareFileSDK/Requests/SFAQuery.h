@@ -16,7 +16,7 @@
  */
 @property (nonatomic, strong) Class responseClass;
 /**
- *  BOOL specifying if expected response is SFODataFeed. In this case responseClass is Class of objects inside SFODataFeed.
+ *  BOOL specifying if expected response is SFIODataFeed. In this case responseClass is Class of objects inside SFIODataFeed.
  */
 @property (nonatomic) BOOL isODataFeed;
 

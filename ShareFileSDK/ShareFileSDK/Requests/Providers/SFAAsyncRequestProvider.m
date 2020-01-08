@@ -50,7 +50,7 @@
     return redirectRequest;
 }
 
-- (void)task:(SFAHttpTask *)task receivedAuthChallenge:(NSURLAuthenticationChallenge *)challenge httpRequestResponseDataContainer:(SFAHttpRequestResponseDataContainer *)httpRequestResponseDataContainer usingContextObject:(NSMutableDictionary **)contextObject completionHandler:(void (^)(SFURLAuthChallengeDisposition, NSURLCredential *))completionHandler {
+- (void)task:(SFAHttpTask *)task receivedAuthChallenge:(NSURLAuthenticationChallenge *)challenge httpRequestResponseDataContainer:(SFAHttpRequestResponseDataContainer *)httpRequestResponseDataContainer usingContextObject:(NSMutableDictionary **)contextObject completionHandler:(void (^)(SFIURLAuthChallengeDisposition, NSURLCredential *))completionHandler {
     [self _task:task receivedAuthChallenge:challenge httpRequestResponseDataContainer:httpRequestResponseDataContainer usingContextObject:contextObject completionHandler:completionHandler];
 }
 
@@ -111,11 +111,11 @@
     
     SFAResponse *resp = [self handleResponseForQuery:query apiRequest:apiRequest httpRequestResponseDataContainer:httpRequestResponseDataContainer retryCount:retryCount++];
     // Can return resp with action or value(could be ODataObject subclass,
-    // SFError...etc)
+    // SFIError...etc)
     if (resp.value != nil) {
-        if ([resp.value isKindOfClass:[SFODataObject class]]) {
-            if ([resp.value isKindOfClass:[SFRedirection class]] && ![query.responseClass isSubclassOfClass:[SFRedirection class]]) {
-                SFRedirection *redirection = (SFRedirection *)resp.value;
+        if ([resp.value isKindOfClass:[SFIODataObject class]]) {
+            if ([resp.value isKindOfClass:[SFIRedirection class]] && ![query.responseClass isSubclassOfClass:[SFIRedirection class]]) {
+                SFIRedirection *redirection = (SFIRedirection *)resp.value;
                 if (![[httpRequestResponseDataContainer.request.URL getAuthority] isEqualToString:[redirection.Uri getAuthority]]) {
                     action = [self.sfaClient onChangeDomainWithRequest:httpRequestResponseDataContainer.request redirection:redirection];
                 }
@@ -127,7 +127,7 @@
                 return [[SFAHttpHandleResponseReturnData alloc] initWithReturnValue:resp.value andHttpHandleResponseAction:SFAHttpHandleResponseActionComplete];
             }
         }
-        else { // if anything else including SFError
+        else { // if anything else including SFIError
             return [[SFAHttpHandleResponseReturnData alloc] initWithReturnValue:resp.value andHttpHandleResponseAction:SFAHttpHandleResponseActionComplete];
         }
     }
@@ -194,12 +194,12 @@
         
         if ([parsedModelName isEqualToString:@"Redirection"]) {
             // caller should know how to handle redirection, even if it expected some other object type
-            SFRedirection *redirection = [[SFAModelClassMapper mappedModelClassForDefaultModelClass:[SFRedirection class]] new];
+            SFIRedirection *redirection = [[SFAModelClassMapper mappedModelClassForDefaultModelClass:[SFIRedirection class]] new];
             [redirection setPropertiesWithJSONDictionary:jsonDictionary];
             obj = redirection;
         }
         else if (query.isODataFeed) {
-            obj = [[SFAModelClassMapper mappedModelClassForDefaultModelClass:[SFODataFeed class]] new];
+            obj = [[SFAModelClassMapper mappedModelClassForDefaultModelClass:[SFIODataFeed class]] new];
             [obj setPropertiesWithJSONDictionary:jsonDictionary];
         }
         else {
@@ -287,7 +287,7 @@
         NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:container.data options:kNilOptions error:&jsonError];
         //
         NSString *rawString = [[NSString alloc] initWithData:container.data encoding:NSUTF8StringEncoding];
-        if (!jsonError && (query.responseClass == nil || [query.responseClass isSubclassOfClass:[SFODataObject class]])) {
+        if (!jsonError && (query.responseClass == nil || [query.responseClass isSubclassOfClass:[SFIODataObject class]])) {
             errorToReturn = [SFAODataRequestError errorWithDictionary:jsonDictionary response:container.response];
         }
         //
@@ -316,7 +316,7 @@
             NSError *jsonError;
             NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:container.data options:kNilOptions error:&jsonError];
             if (!jsonError) {
-                SFAsyncOperation *operation = [SFAsyncOperation new];
+                SFIAsyncOperation *operation = [SFIAsyncOperation new];
                 [operation setPropertiesWithJSONDictionary:jsonDictionary];
                 return [SFAAsyncOperationScheduledError errorWithScheduleAsyncOperation:operation];
             }
@@ -382,7 +382,7 @@
     return [httpRequestMessage copy];
 }
 
-- (void)_task:(id)task receivedAuthChallenge:(NSURLAuthenticationChallenge *)challenge httpRequestResponseDataContainer:(SFAHttpRequestResponseDataContainer *)httpRequestResponseDataContainer usingContextObject:(NSMutableDictionary **)contextObject completionHandler:(void (^)(SFURLAuthChallengeDisposition, NSURLCredential *))completionHandler {
+- (void)_task:(id)task receivedAuthChallenge:(NSURLAuthenticationChallenge *)challenge httpRequestResponseDataContainer:(SFAHttpRequestResponseDataContainer *)httpRequestResponseDataContainer usingContextObject:(NSMutableDictionary **)contextObject completionHandler:(void (^)(SFIURLAuthChallengeDisposition, NSURLCredential *))completionHandler {
     NSMutableDictionary *dict = *contextObject;
     
     [self.sfaClient.authHandler handleAuthChallenge:challenge httpContainer:httpRequestResponseDataContainer authContext:[SFAUtils nilForNSNull:dict[SFAAuthContextKey]] completionHandler:completionHandler];

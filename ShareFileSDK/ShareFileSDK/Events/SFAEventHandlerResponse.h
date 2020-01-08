@@ -9,17 +9,17 @@
  */
 @property (nonatomic) SFAEventHandlerResponseAction action;
 /**
- *  SFRedirection object.
+ *  SFIRedirection object.
  */
-@property (nonatomic, strong) SFRedirection *redirection;
+@property (nonatomic, strong) SFIRedirection *redirection;
 /**
  *  Initializes SFAEventHandlerResponse with provided parameters.
  *
- *  @param redir SFRedirection object.
+ *  @param redir SFIRedirection object.
  *
  *  @return Returns initialized SFAEventHandlerResponse object or nil if an object could not be created for some reason.
  */
-+ (SFAEventHandlerResponse *)eventHandlerResponseWithRedirection:(SFRedirection *)redir;
++ (SFAEventHandlerResponse *)eventHandlerResponseWithRedirection:(SFIRedirection *)redir;
 /**
  *  Initializes SFAEventHandlerResponse with provided paramters.
  *

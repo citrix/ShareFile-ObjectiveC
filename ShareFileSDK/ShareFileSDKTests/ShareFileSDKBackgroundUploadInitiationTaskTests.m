@@ -7,7 +7,7 @@
 #import "ShareFileSDKTestsProtected.h"
 #import "SFAHttpTaskProtected.h"
 #import "SFABaseTaskProtected.h"
-#import "SFUploadSpecification.h"
+#import "SFIUploadSpecification.h"
 #import "SFAAsyncStandardFileUploader.h"
 #import "SFABackgroundUploadInitiationTaskInternal.h"
 
@@ -31,7 +31,7 @@
     id mockClient = OCMClassMock([SFAClient class]);
     id mockBackgroundTaskDelegate = OCMClassMock([SFAAsyncStandardFileUploader class]);
     
-    SFUploadSpecification *uploadSpecification = [[SFUploadSpecification alloc] init];
+    SFIUploadSpecification *uploadSpecification = [[SFIUploadSpecification alloc] init];
     uploadSpecification.IsResume = [NSNumber numberWithBool:YES];
     uploadSpecification.ResumeOffset = [NSNumber numberWithUnsignedLongLong:10];
     uploadSpecification.ResumeIndex = [NSNumber numberWithUnsignedLongLong:1];

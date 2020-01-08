@@ -9,7 +9,7 @@ extern NSString *const kSFOdataModelPrefix;
 
 @interface SFAJSONToODataMapper : NSObject
 
-+ (SFODataObject *)ODataObjectWithJSONDictionaryRepresentation:(NSDictionary *)JSONDictionaryRepresentation;
++ (SFIODataObject *)ODataObjectWithJSONDictionaryRepresentation:(NSDictionary *)JSONDictionaryRepresentation;
 + (NSMutableDictionary *)metadataDictionaryWithStringValue:(NSString *)uriStringRepresentation;
 + (NSMutableDictionary *)metadataDictionaryWithURI:(NSURL *)uri;
 

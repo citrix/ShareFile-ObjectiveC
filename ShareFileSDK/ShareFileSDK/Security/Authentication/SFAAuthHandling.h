@@ -37,7 +37,7 @@
                                     
 /**
  *  Handle a 401 response from a finished connection. We are using our own
- *  SFHTTPAuthChallenge and SFCredential objects here rather than defaults because we
+ *  SFIHTTPAuthChallenge and SFICredential objects here rather than defaults because we
  *  support more forms of auth, such as OAuth and PCC.
  *
  *  @param container         Current HTTP response container
@@ -60,7 +60,7 @@
 - (void)handleAuthChallenge:(NSURLAuthenticationChallenge *)challenge
               httpContainer:(SFAHttpRequestResponseDataContainer *)container
                 authContext:(SFAuthenticationContext *)authContext
-          completionHandler:(void (^)(SFURLAuthChallengeDisposition disposition, NSURLCredential *credential))completionHandler;
+          completionHandler:(void (^)(SFIURLAuthChallengeDisposition disposition, NSURLCredential *credential))completionHandler;
           
 @optional
 

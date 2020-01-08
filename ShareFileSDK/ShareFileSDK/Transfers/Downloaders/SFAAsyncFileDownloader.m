@@ -56,7 +56,7 @@
 
 #pragma mark - Internal
 
-- (instancetype)initWithItem:(SFItem *)item withSFAClient:(SFAClient *)client andDownloaderConfig:(SFADownloaderConfig *)config {
+- (instancetype)initWithItem:(SFIItem *)item withSFAClient:(SFAClient *)client andDownloaderConfig:(SFADownloaderConfig *)config {
     self = [super initWithSFAClient:client];
     if (self) {
         self.item = item;
@@ -71,7 +71,7 @@
     return downloader;
 }
 
-+ (instancetype)downloaderForURLSessionTaskHTTPDelegateWithItem:(SFItem *)item client:(SFAClient *)client config:(SFADownloaderConfig *)config {
++ (instancetype)downloaderForURLSessionTaskHTTPDelegateWithItem:(SFIItem *)item client:(SFAClient *)client config:(SFADownloaderConfig *)config {
     return [[[self class] alloc] initWithItem:item withSFAClient:client andDownloaderConfig:config];
 }
 
@@ -140,7 +140,7 @@
     return downloadTask;
 }
 
-- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task receivedAuthChallenge:(NSURLAuthenticationChallenge *)challenge httpRequestResponseDataContainer:(SFAHttpRequestResponseDataContainer *)httpRequestResponseDataContainer usingContextObject:(NSMutableDictionary *__autoreleasing *)contextObject completionHandler:(void (^)(SFURLAuthChallengeDisposition, NSURLCredential *))completionHandler {
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task receivedAuthChallenge:(NSURLAuthenticationChallenge *)challenge httpRequestResponseDataContainer:(SFAHttpRequestResponseDataContainer *)httpRequestResponseDataContainer usingContextObject:(NSMutableDictionary *__autoreleasing *)contextObject completionHandler:(void (^)(SFIURLAuthChallengeDisposition, NSURLCredential *))completionHandler {
     [self _task:task receivedAuthChallenge:challenge httpRequestResponseDataContainer:httpRequestResponseDataContainer usingContextObject:contextObject completionHandler:completionHandler];
 }
 

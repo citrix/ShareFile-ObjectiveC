@@ -76,7 +76,7 @@
     SFAUploadSpecificationRequest *req = [SFAUploadSpecificationRequest new];
     req.destinationURI = [NSURL URLWithString:@"http://tests/someparentfolder"];
     SFAAsyncThreadedFileUploader *uploader = [[SFAAsyncThreadedFileUploader alloc] initWithSFAClient:self.client uploadSpecificationRequest:req filePath:path];
-    SFUploadSpecification *uploadSpec = [[SFUploadSpecification alloc] init];
+    SFIUploadSpecification *uploadSpec = [[SFIUploadSpecification alloc] init];
     uploadSpec.IsResume = [NSNumber numberWithBool:YES];
     uploadSpec.ResumeOffset = [NSNumber numberWithUnsignedLongLong:10];
     uploadSpec.ResumeIndex = [NSNumber numberWithUnsignedLongLong:1];
@@ -170,7 +170,7 @@
     XCTAssertTrue([[SFACryptoUtils md5StringWithData:request.HTTPBody] isEqualToString:@"b9618d25d35b99e270b860f2c1bf10aa"], @"*2 Unexpected data hash.");
     
     // Test Finish Call
-    uploader.uploadSpecification = [SFUploadSpecification new];
+    uploader.uploadSpecification = [SFIUploadSpecification new];
     uploader.uploadSpecification.FinishUri = [NSURL URLWithString:@"http://www.xyz.abc?k=1"];
     [contextObject removeAllObjects];
     request = [uploader task:nil needsRequestForQuery:nil usingContextObject:&contextObject];
@@ -248,7 +248,7 @@
     part.offset = 0;
     part.length = fileInfo.fileSize.unsignedIntegerValue;
     [OCMStub([mockRep getBytes:[OCMArg anyPointer] fromOffset:0 length:SFAMaxBufferLength error:[OCMArg anyObjectRef]]) andDo:blockCB];
-    uploader.uploadSpecification = [SFUploadSpecification new];
+    uploader.uploadSpecification = [SFIUploadSpecification new];
     uploader.uploadSpecification.FinishUri = [NSURL URLWithString:@"http://www.xyz.abc?k=1"];
     [contextObject removeAllObjects];
     request = [uploader task:nil needsRequestForQuery:nil usingContextObject:&contextObject];

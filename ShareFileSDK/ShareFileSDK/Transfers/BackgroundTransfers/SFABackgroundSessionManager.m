@@ -461,17 +461,17 @@
                 receivedAuthChallenge:challenge
      httpRequestResponseDataContainer:container
                    usingContextObject:&contextObject
-                    completionHandler: ^(SFURLAuthChallengeDisposition disp, NSURLCredential *cred) {
+                    completionHandler: ^(SFIURLAuthChallengeDisposition disp, NSURLCredential *cred) {
          if (![originalContextObject isEqual:contextObject]) {
              objc_setAssociatedObject(task, [kSFAURLSessionTaskRuntimeAssociationContextObject UTF8String], contextObject, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
              [weakSelf notifyContextUpdateForSession:session task:task contextObject:contextObject];
          }
          switch (disp) {
-             case SFURLAuthChallengeUseCredential:
+             case SFIURLAuthChallengeUseCredential:
                  completionHandler(NSURLSessionAuthChallengeUseCredential, cred);
                  break;
                  
-             case SFURLAuthChallengeCancelAuthenticationChallenge:
+             case SFIURLAuthChallengeCancelAuthenticationChallenge:
                  completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
                  break;
                  

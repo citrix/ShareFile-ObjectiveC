@@ -17,6 +17,6 @@
 
 + (instancetype)uploaderForURLSessionTaskDefaultHTTPDelegateWithClient:(SFAClient *)client;
 
-+ (instancetype)uploaderForURLSessionTaskDelegateWithClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config andExpirationDays:(int)expirationDays uploadSpecification:(SFUploadSpecification *)uploadSpecification;
++ (instancetype)uploaderForURLSessionTaskDelegateWithClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config andExpirationDays:(int)expirationDays uploadSpecification:(SFIUploadSpecification *)uploadSpecification;
 
 @end

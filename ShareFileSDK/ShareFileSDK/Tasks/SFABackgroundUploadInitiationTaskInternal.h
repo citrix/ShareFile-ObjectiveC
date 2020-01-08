@@ -3,7 +3,7 @@
 @protocol SFABackgroundUploadInitiationTaskDelegate <NSObject>
 
 // Array of 2. 1st is session, 2nd is uploadTask.
-- (NSArray *)backgroundUploadInitiationTask:(SFABackgroundUploadInitiationTask *)task didReceiveUploadSepcification:(SFUploadSpecification *)val;
+- (NSArray *)backgroundUploadInitiationTask:(SFABackgroundUploadInitiationTask *)task didReceiveUploadSepcification:(SFIUploadSpecification *)val;
 
 @end
 

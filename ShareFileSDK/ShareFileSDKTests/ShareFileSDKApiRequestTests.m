@@ -44,7 +44,7 @@
     [query addUrl:[NSURL URLWithString:[NSString stringWithFormat:@"https://secure.sf-api.com/sf/v3/Items/(%@)", idString]]];
     [query setAction:@"CreateFolder"];
     query.httpMethod = @"POST";
-    query.body = [SFFolder new];
+    query.body = [SFIFolder new];
     
     SFAApiRequest *apiRequest = [SFAApiRequest apiRequestFromQuery:(SFAQueryBase *)query];
     XCTAssertEqual(apiRequest.body, query.body, @"Body should not be nil");
@@ -58,7 +58,7 @@
     SFApiQuery *query = [[SFApiQuery alloc] initWithClient:self.client];
     [query addUrl:[NSURL URLWithString:[NSString stringWithFormat:@"https://secure.sf-api.com/sf/v3/Items/(%@)", idString]]];
     [query setAction:@"CreateFolder"];
-    query.body = [SFFolder new];
+    query.body = [SFIFolder new];
     
     SFAApiRequest *apiRequest = [SFAApiRequest apiRequestFromQuery:(SFAQueryBase *)query];
     XCTAssertEqual(apiRequest.body, query.body, @"Body should not be nil");

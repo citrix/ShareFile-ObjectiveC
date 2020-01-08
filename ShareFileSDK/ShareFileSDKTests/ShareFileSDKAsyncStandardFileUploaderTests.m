@@ -74,7 +74,7 @@
     SFAUploadSpecificationRequest *req = [SFAUploadSpecificationRequest new];
     req.destinationURI = [NSURL URLWithString:@"http://tests/someparentfolder"];
     SFAAsyncStandardFileUploader *uploader = [[SFAAsyncStandardFileUploader alloc] initWithSFAClient:self.client uploadSpecificationRequest:req filePath:path];
-    SFUploadSpecification *uploadSpec = [[SFUploadSpecification alloc] init];
+    SFIUploadSpecification *uploadSpec = [[SFIUploadSpecification alloc] init];
     uploadSpec.IsResume = [NSNumber numberWithBool:YES];
     uploadSpec.ResumeOffset = [NSNumber numberWithUnsignedLongLong:10];
     uploadSpec.ResumeIndex = [NSNumber numberWithUnsignedLongLong:1];
@@ -207,7 +207,7 @@
 - (void)testBackgroundUploadTaskRequest {
     id mockClient = OCMClassMock([SFAClient class]);
     SFAUploadSpecificationRequest *req = [SFAUploadSpecificationRequest new];
-    SFUploadSpecification *uploadSpec = [[SFUploadSpecification alloc] init];
+    SFIUploadSpecification *uploadSpec = [[SFIUploadSpecification alloc] init];
     uploadSpec.ChunkUri = [NSURL URLWithString:@"http://sub.domain.com?q=1"];
     SFABackgroundSessionManager *session = [[SFABackgroundSessionManager alloc] initWithClient:mockClient];
     NSString *filepath = [[NSBundle bundleForClass:[self class]] pathForResource:@"TestFile" ofType:@"txt"];

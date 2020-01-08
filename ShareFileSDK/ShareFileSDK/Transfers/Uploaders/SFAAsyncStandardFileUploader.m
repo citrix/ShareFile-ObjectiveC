@@ -68,7 +68,7 @@
     return uploader;
 }
 
-+ (instancetype)uploaderForURLSessionTaskDelegateWithClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config andExpirationDays:(int)expirationDays uploadSpecification:(SFUploadSpecification *)uploadSpecification {
++ (instancetype)uploaderForURLSessionTaskDelegateWithClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config andExpirationDays:(int)expirationDays uploadSpecification:(SFIUploadSpecification *)uploadSpecification {
     NSAssert(uploadSpecification != nil, @"Passed parameter uploadSpecification can not be nil.");
     SFAAsyncStandardFileUploader *uploader = [[[self class] alloc] initWithSFAClient:client uploadSpecificationRequest:uploadSpecificationRequest filePath:filePath fileUploaderConfig:config andExpirationDays:expirationDays];
     uploader.hasStartedTask = YES;
@@ -171,7 +171,7 @@
 
 #pragma mark - SFABackgroundUploaderSpecificationTaskDelegate
 
-- (NSArray *)backgroundUploadInitiationTask:(SFABackgroundUploadInitiationTask *)task didReceiveUploadSepcification:(SFUploadSpecification *)val {
+- (NSArray *)backgroundUploadInitiationTask:(SFABackgroundUploadInitiationTask *)task didReceiveUploadSepcification:(SFIUploadSpecification *)val {
     [self initializeUploadSpecificationRequest:val];
     SFABackgroundSessionManager *sessionManager = self.client.backgroundSessionManager;
     NSURLSession *session = sessionManager.backgroundSession;
@@ -194,7 +194,7 @@
 
 #pragma mark - CompositeTaskDelegate
 
-- (void)compositeTask:(SFACompositeUploaderTask *)task finishedSpecificationTaskWithUploadSpec:(SFUploadSpecification *)val {
+- (void)compositeTask:(SFACompositeUploaderTask *)task finishedSpecificationTaskWithUploadSpec:(SFIUploadSpecification *)val {
     [self initializeUploadSpecificationRequest:val];
 }
 
@@ -423,7 +423,7 @@
 
 #pragma mark - Private Methods Other methods
 
-- (void)initializeUploadSpecificationRequest:(SFUploadSpecification *)val {
+- (void)initializeUploadSpecificationRequest:(SFIUploadSpecification *)val {
     if (!self.prepared) {
         self.uploadSpecification = val;
         [self checkResumeAsync];

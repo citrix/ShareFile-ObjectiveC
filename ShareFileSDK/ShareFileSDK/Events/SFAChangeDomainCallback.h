@@ -6,8 +6,8 @@
  *
  * `request`: NSURLRequest for which change domain event occured.
  *
- * `redirect`: SFRedirection object representing the redirection.
+ * `redirect`: SFIRedirection object representing the redirection.
  *
  * Returns object of SFAEventHandlerResponse.
  */
-typedef SFAEventHandlerResponse * (^SFAChangeDomainCallback)(NSURLRequest *request, SFRedirection *redirect);
+typedef SFAEventHandlerResponse * (^SFAChangeDomainCallback)(NSURLRequest *request, SFIRedirection *redirect);

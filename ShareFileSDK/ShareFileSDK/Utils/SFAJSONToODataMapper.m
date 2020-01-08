@@ -14,7 +14,7 @@ NSString *const kSFOdataModelPrefix = @"ShareFile.Api.Models.";
 
 #pragma mark - Public
 
-+ (SFODataObject *)ODataObjectWithJSONDictionaryRepresentation:(NSDictionary *)JSONDictionaryRepresentation {
++ (SFIODataObject *)ODataObjectWithJSONDictionaryRepresentation:(NSDictionary *)JSONDictionaryRepresentation {
     if ([JSONDictionaryRepresentation isKindOfClass:[NSDictionary class]]) {
         NSString *type = [JSONDictionaryRepresentation objectForKey:SFAODataTypeKey andClass:[NSString class]];
         NSString *metadata = [JSONDictionaryRepresentation objectForKey:SFAOdataMetadataKey andClass:[NSString class]];
@@ -130,7 +130,7 @@ NSString *const kSFOdataModelPrefix = @"ShareFile.Api.Models.";
 
 #pragma mark - Internal
 
-+ (SFODataObject *)objectWithMetadata:(NSString *)metadata andJSONDictionaryRepresentation:(NSDictionary *)JSONDictionaryRepresentation {
++ (SFIODataObject *)objectWithMetadata:(NSString *)metadata andJSONDictionaryRepresentation:(NSDictionary *)JSONDictionaryRepresentation {
     // e.g. "https://example.sharefile.com/sf/v3/$metadata#Items/ShareFile.Api.Models.Folder@Element"
     if (metadata.length > 0) {
         @autoreleasepool
@@ -141,7 +141,7 @@ NSString *const kSFOdataModelPrefix = @"ShareFile.Api.Models.";
             modelName = [metadataDictionary objectForKey:kSFOdataMetadataKey_Model andClass:[NSString class]];
             
             if (modelName.length > 0) {
-                Class matchingClass = NSClassFromString([[SFEntityTypeMap getModelTypes] objectForKey:modelName]);
+                Class matchingClass = NSClassFromString([[SFIEntityTypeMap getModelTypes] objectForKey:modelName]);
                 if (!matchingClass) {
                     matchingClass = NSClassFromString(modelName);
                 }
@@ -154,13 +154,13 @@ NSString *const kSFOdataModelPrefix = @"ShareFile.Api.Models.";
     return nil;
 }
 
-+ (SFODataObject *)objectWithType:(NSString *)type andJSONDictionaryRepresentation:(NSDictionary *)JSONDictionaryRepresentation {
++ (SFIODataObject *)objectWithType:(NSString *)type andJSONDictionaryRepresentation:(NSDictionary *)JSONDictionaryRepresentation {
     if (type.length > 0) {
         @autoreleasepool
         {
             NSString *modelName = [type stringByReplacingOccurrencesOfString:kSFOdataModelPrefix withString:@""];
             if (modelName.length > 0) {
-                Class matchingClass = NSClassFromString([[SFEntityTypeMap getModelTypes] objectForKey:modelName]);
+                Class matchingClass = NSClassFromString([[SFIEntityTypeMap getModelTypes] objectForKey:modelName]);
                 if (!matchingClass) {
                     matchingClass = NSClassFromString(modelName);
                 }
@@ -173,9 +173,9 @@ NSString *const kSFOdataModelPrefix = @"ShareFile.Api.Models.";
     return nil;
 }
 
-+ (SFODataObject *)objectWithClass:(Class)class andJSONDictionaryRepresentation:(NSDictionary *)JSONDictionaryRepresentation {
++ (SFIODataObject *)objectWithClass:(Class)class andJSONDictionaryRepresentation:(NSDictionary *)JSONDictionaryRepresentation {
     Class mappedClass = [SFAModelClassMapper mappedModelClassForDefaultModelClass:class];
-    SFODataObject *result = [mappedClass new];
+    SFIODataObject *result = [mappedClass new];
     [result setPropertiesWithJSONDictionary:JSONDictionaryRepresentation];
     return result;
 }

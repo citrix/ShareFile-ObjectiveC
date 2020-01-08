@@ -1,3 +1,0 @@
-@interface SFODataFeed (sfapi)
-
-@end

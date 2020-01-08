@@ -6,7 +6,7 @@
 
 @protocol SFACompositeTaskDelegate
 
-- (void)compositeTask:(SFACompositeUploaderTask *)task finishedSpecificationTaskWithUploadSpec:(SFUploadSpecification *)val;
+- (void)compositeTask:(SFACompositeUploaderTask *)task finishedSpecificationTaskWithUploadSpec:(SFIUploadSpecification *)val;
 
 @end
 

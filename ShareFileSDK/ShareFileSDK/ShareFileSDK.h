@@ -11,8 +11,8 @@
 #import "SFAOAuth2Credential.h"
 //--
 
-//--SFEntitiesAndModels
-#import "SFEntitiesAndModels.h"
+//--SFIEntitiesAndModels
+#import "SFIEntitiesAndModels.h"
 //--
 
 //-- FileSystem
@@ -62,7 +62,7 @@
 //--
 
 //-- Categories
-#import "SFItemsEntity+sfapi.h"
+#import "SFIItemsEntity+sfapi.h"
 #import "NSString+sfapi.h"
 #if TARGET_OS_IPHONE
 #import "ALAsset+sfapi.h"

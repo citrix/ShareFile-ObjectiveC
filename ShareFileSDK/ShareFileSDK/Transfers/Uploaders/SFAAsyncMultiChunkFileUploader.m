@@ -12,7 +12,7 @@
 #import "NSString+sfapi.h"
 #import "SFACompositeUploaderTaskInternal.h"
 #import "SFAUtils.h"
-#import "SFModelConstants.h"
+#import "SFIModelConstants.h"
 
 @interface SFAAsyncMultiChunkFileUploader () <SFACompositeTaskDelegate>
 
@@ -316,7 +316,7 @@
     return [request copy];
 }
 
-- (void)compositeTask:(SFACompositeUploaderTask *)task finishedSpecificationTaskWithUploadSpec:(SFUploadSpecification *)val {
+- (void)compositeTask:(SFACompositeUploaderTask *)task finishedSpecificationTaskWithUploadSpec:(SFIUploadSpecification *)val {
     if (!self.prepared) {
         self.uploadSpecification = val;
         [self checkResumeAsync];

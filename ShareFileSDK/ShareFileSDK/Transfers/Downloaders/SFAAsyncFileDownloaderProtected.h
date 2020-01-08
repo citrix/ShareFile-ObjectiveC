@@ -3,7 +3,7 @@
 
 @interface SFAAsyncFileDownloader ()
 
-@property (nonatomic, strong) SFItem *item;
+@property (nonatomic, strong) SFIItem *item;
 
 - (SFApiQuery *)createDownloadQuery;
 

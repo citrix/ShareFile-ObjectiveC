@@ -121,21 +121,21 @@ static NSDateFormatter *_utcFormatter;
     return nil;
 }
 
-+ (SFTick)UTCTicks {
++ (SFITick)UTCTicks {
     NSInteger epochSecondsGMT = (NSInteger)[[NSDate date] timeIntervalSince1970];
     return [NSDate ticksFromEpochSeconds:epochSecondsGMT];
 }
 
-+ (SFTick)nowTicks {
++ (SFITick)nowTicks {
     NSInteger epochSecondsGMT = (NSInteger)[[NSDate date] timeIntervalSince1970];
     NSInteger secondsDiff = [[NSTimeZone localTimeZone] secondsFromGMT];
     NSInteger epochSecondsZulu = epochSecondsGMT + secondsDiff;
     return [NSDate ticksFromEpochSeconds:epochSecondsZulu];
 }
 
-+ (SFTick)ticksFromEpochSeconds:(NSInteger)epochSeconds {
++ (SFITick)ticksFromEpochSeconds:(NSInteger)epochSeconds {
     long long ticksFromEpoch = ((long long)epochSeconds) * SFATicksPerSecond;
-    SFTick ticks = (SFTick)(SFAEpochTicks + ticksFromEpoch);
+    SFITick ticks = (SFITick)(SFAEpochTicks + ticksFromEpoch);
     return ticks;
 }
 

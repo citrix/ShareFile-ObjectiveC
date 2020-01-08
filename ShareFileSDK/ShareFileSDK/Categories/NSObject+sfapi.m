@@ -4,9 +4,9 @@
 #import "SFAJSONToODataMapper.h"
 #import <objc/message.h>
 
-#pragma mark - SFObjectPropertyContainer
+#pragma mark - SFIObjectPropertyContainer
 
-@interface SFObjectPropertyContainer : NSObject
+@interface SFIObjectPropertyContainer : NSObject
 {
 }
 
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation SFObjectPropertyContainer
+@implementation SFIObjectPropertyContainer
 
 @end
 
@@ -27,7 +27,7 @@
 
 @dynamic defaultModel;
 
-#pragma mark - SFODataObject mapping support
+#pragma mark - SFIODataObject mapping support
 
 - (void)setDefaultModel:(NSString *)defaultModel {
     objc_setAssociatedObject(self, @selector(defaultModel), defaultModel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -96,10 +96,10 @@ static NSMutableDictionary *__strong _odataModelCache;
     NSMutableArray *result;
     
     NSString *className = NSStringFromClass([self class]);
-    SFObjectPropertyContainer *classPropertyContainer = [_odataModelCache objectForKey:className];
+    SFIObjectPropertyContainer *classPropertyContainer = [_odataModelCache objectForKey:className];
     
     if (!classPropertyContainer) {
-        classPropertyContainer = [[SFObjectPropertyContainer alloc] init];
+        classPropertyContainer = [[SFIObjectPropertyContainer alloc] init];
     }
     
     NSMutableArray *parentPropertyNames = nil;
@@ -178,7 +178,7 @@ static NSMutableDictionary *__strong _odataModelCache;
     
     NSMutableDictionary *result = nil;
     NSMutableArray *allPropertyNames = [self propertyNames];
-    SFObjectPropertyContainer *classPropContainer = nil;
+    SFIObjectPropertyContainer *classPropContainer = nil;
     NSString *className = NSStringFromClass([self class]);
     
     if (className.length > 0) {
@@ -477,7 +477,7 @@ static NSMutableDictionary *__strong _odataModelCache;
             NSDictionary *dict = [self prepareParsingDictionaryFromItem:item returningIsMappingPossible:&isMappingPossible];
             
             if (isMappingPossible) {
-                SFODataObject *o = [SFAJSONToODataMapper ODataObjectWithJSONDictionaryRepresentation:dict];
+                SFIODataObject *o = [SFAJSONToODataMapper ODataObjectWithJSONDictionaryRepresentation:dict];
                 if (o) {
                     [result setObject:o forKey:key];
                 }
@@ -507,7 +507,7 @@ static NSMutableDictionary *__strong _odataModelCache;
             NSDictionary *dict = [self prepareParsingDictionaryFromItem:item returningIsMappingPossible:&isMappingPossible];
             
             if (isMappingPossible) {
-                SFODataObject *o = [SFAJSONToODataMapper ODataObjectWithJSONDictionaryRepresentation:dict];
+                SFIODataObject *o = [SFAJSONToODataMapper ODataObjectWithJSONDictionaryRepresentation:dict];
                 if (o) {
                     [result addObject:o];
                 }
@@ -588,7 +588,7 @@ static NSMutableDictionary *__strong _odataModelCache;
         [ignoredPropertyNames addObjectsFromArray:excludedPropertyNames];
         [ignoredPropertyNames addObjectsFromArray:[self propertyNamesIgnoredByJSONSerializer]];
         
-        BOOL isOdataObject = [self isKindOfClass:[SFODataObject class]];
+        BOOL isOdataObject = [self isKindOfClass:[SFIODataObject class]];
         
         for (NSString *propName in propNames) {
             if ([allDictionaryRepKeys containsObject:propName]) {
@@ -662,7 +662,7 @@ static NSMutableDictionary *__strong _odataModelCache;
                                 }
                             }
                         }
-                        else if ([acceptedPropValueClass isSubclassOfClass:[SFODataObject class]]) {
+                        else if ([acceptedPropValueClass isSubclassOfClass:[SFIODataObject class]]) {
                             if ([[propValue class] isSubclassOfClass:[NSDictionary class]] || [propValue isMemberOfClass:[NSDictionary class]]) {
                                 [self setValue:[SFAJSONToODataMapper ODataObjectWithJSONDictionaryRepresentation:(NSDictionary *)propValue] forKey:propName];
                                 [unmappedDictionaryKeys removeObject:propName];

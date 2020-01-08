@@ -14,7 +14,7 @@
 
 - (void)testOnDomainChangeRaised {
     __block BOOL changeDomainRaised = NO;
-    SFAChangeDomainCallback handler = ^SFAEventHandlerResponse * (NSURLRequest *request, SFRedirection *redirect)
+    SFAChangeDomainCallback handler = ^SFAEventHandlerResponse * (NSURLRequest *request, SFIRedirection *redirect)
     {
         changeDomainRaised = YES;
         return [SFAEventHandlerResponse eventHandlerResponseWithRedirection:redirect];
@@ -22,7 +22,7 @@
     [self.client addChangeDomainHandler:handler];
     XCTAssertTrue([self.client.changeDomainHandlers containsObject:handler], @"Expected handler to be in handlers");
     SFApiQuery *query = [[SFApiQuery alloc] initWithClient:self.client];                             // Mock what a task would send to Request Provider
-    query.responseClass = [SFItem class];                                                            // We are expecting some thing else.
+    query.responseClass = [SFIItem class];                                                            // We are expecting some thing else.
     SFAAsyncRequestProvider *prov = [[SFAAsyncRequestProvider alloc] initWithSFAClient:self.client]; // Request Provider
     SFAHttpRequestResponseDataContainer *container = [self containerForRedirection];                 // Mock Response
     id contextObject = [NSMutableDictionary dictionary];                                             // Mock what a task would send to Request Provider
@@ -86,18 +86,18 @@
 
 - (void)testODataFeedParsing {
     SFApiQuery *query = [[SFApiQuery alloc] initWithClient:self.client];                             // Mock what a task would send to Request Provider
-    query.responseClass = [SFContact class];
+    query.responseClass = [SFIContact class];
     query.isODataFeed = YES;
     SFAAsyncRequestProvider *prov = [[SFAAsyncRequestProvider alloc] initWithSFAClient:self.client]; // Request Provider
     SFAHttpRequestResponseDataContainer *container = [self containerForODataFeed];                   // Mock Response
     id contextObject = @{};                                                                          // Mock what a task would send to Request Provider
     SFAHttpHandleResponseReturnData *returnedData = [prov task:nil needsResponseHandlingForQuery:query httpRequestResponseDataContainer:container usingContextObject:&(contextObject)];
-    if ([returnedData.returnValue isKindOfClass:[SFODataFeed class]]) {
-        SFODataFeed *feed = (SFODataFeed *)returnedData.returnValue;
+    if ([returnedData.returnValue isKindOfClass:[SFIODataFeed class]]) {
+        SFIODataFeed *feed = (SFIODataFeed *)returnedData.returnValue;
         XCTAssertTrue(feed.count.intValue == 2, @"* Expected Count to be 2");
         XCTAssertTrue(feed.value.count == 2, @"** Expected Count to be 2");
         for (NSObject *obj in feed.value) {
-            XCTAssertTrue([obj isKindOfClass:[SFContact class]], @"Expected value objects to be SFContact");
+            XCTAssertTrue([obj isKindOfClass:[SFIContact class]], @"Expected value objects to be SFIContact");
         }
         NSDictionary *dictFromFeed = [feed JSONDictionaryRepresentation];
         NSDictionary *dictFromString = [self dictionaryForODataFeedResponse];
@@ -192,7 +192,7 @@
 #pragma mark - Helper Method(s)
 
 - (SFAHttpRequestResponseDataContainer *)containerForRedirection {
-    SFRedirection *redirection = [SFRedirection new];
+    SFIRedirection *redirection = [SFIRedirection new];
     redirection.Uri = [NSURL URLWithString:@"https://newhost.sharefile.com/sf/v3/"];
     redirection.metadata = @"https://newhost.sharefile.com/sf/v3/$metadata#ShareFile.Api.Models.Redirection@Element";
     NSDictionary *responseDict = [redirection JSONDictionaryRepresentation];
@@ -204,7 +204,7 @@
 }
 
 - (SFAHttpRequestResponseDataContainer *)containerForAsyncOperationScheduled {
-    SFAsyncOperation *op = [SFAsyncOperation new];
+    SFIAsyncOperation *op = [SFIAsyncOperation new];
     op.BatchID = @"123123";
     op.BatchSourceID = @"789789";
     op.BatchProgress = [NSNumber numberWithInt:0];
@@ -236,13 +236,13 @@
 }
 
 - (SFAHttpRequestResponseDataContainer *)containerForODataFeed {
-    SFODataFeed *feed = [SFODataFeed new];
+    SFIODataFeed *feed = [SFIODataFeed new];
     feed.count = @2;
     feed.metadata = @"https://abc.sf-api.com/sf/v3/$metadata#Contacts";
     feed.url = [NSURL URLWithString:@"https://abc.sf-api.com/sf/v3/Contacts"];
     NSMutableArray *value = [NSMutableArray new];
     for (int i = 0; i < feed.count.intValue; i++) {
-        SFContact *contact = [SFContact new];
+        SFIContact *contact = [SFIContact new];
         contact.Name = [NSString stringWithFormat:@"Doe, John%d", i + 1];
         NSString *Id = [NSString stringWithFormat:@"%d-%d", i, i];
         contact.Id = Id;

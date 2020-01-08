@@ -4,7 +4,7 @@
 #import "SFAUploadSpecificationRequest.h"
 #import "SFATransferProgress.h"
 #import "SFAQuery.h"
-#import "SFUploadSpecification.h"
+#import "SFIUploadSpecification.h"
 #import "SFAFileInfo.h"
 
 #if TARGET_OS_IPHONE
@@ -15,7 +15,7 @@
 
 extern const NSUInteger SFAMaxBufferLength;
 
-@property (nonatomic, strong) SFUploadSpecification *uploadSpecification;
+@property (nonatomic, strong) SFIUploadSpecification *uploadSpecification;
 @property (nonatomic, strong) SFAUploadSpecificationRequest *uploadSpecificationRequest;
 @property (nonatomic, weak) SFAClient *client;
 @property (nonatomic) int expirationDays;

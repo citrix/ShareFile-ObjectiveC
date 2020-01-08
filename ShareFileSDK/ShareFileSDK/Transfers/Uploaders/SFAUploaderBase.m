@@ -1,6 +1,6 @@
 #import "SFAUploaderBaseProtected.h"
 #import "NSString+sfapi.h"
-#import "SFModelConstants.h"
+#import "SFIModelConstants.h"
 
 @implementation SFAUploaderBase
 

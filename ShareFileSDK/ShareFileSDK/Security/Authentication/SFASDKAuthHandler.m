@@ -94,15 +94,15 @@
                       authContext:(SFAuthenticationContext *)authContext
                 completionHandler:(void (^)(SFAAuthHandling_ResponseResult))completionHandler {
     if ([authContext.interactiveHandler respondsToSelector:@selector(canHandleInteractiveUnauthorizedResponse:authContext:)]) {
-        return [authContext.interactiveHandler handleInteractiveUnauthorizedResponse:httpContainer authContext:authContext completionHandler: ^(SFURLAuthChallengeDisposition disposition, NSURLCredential *credential) {
+        return [authContext.interactiveHandler handleInteractiveUnauthorizedResponse:httpContainer authContext:authContext completionHandler: ^(SFIURLAuthChallengeDisposition disposition, NSURLCredential *credential) {
                     SFAAuthHandling_ResponseResult handlerResult = SFAAuthHandling_Continue;
                     switch (disposition) {
-                        case SFURLAuthChallengeUseCredential:
+                        case SFIURLAuthChallengeUseCredential:
                             [authContext.interactiveCredentialCache addCredential:credential forUrl:httpContainer.request.URL authType:nil];
                             handlerResult = SFAAuthHandling_Retry;
                             break;
                             
-                        case SFURLAuthChallengeCancelAuthenticationChallenge:
+                        case SFIURLAuthChallengeCancelAuthenticationChallenge:
                             handlerResult = SFAAuthHandling_Cancel;
                             break;
                             

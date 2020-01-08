@@ -1,0 +1,3 @@
+@interface SFIODataObject (sfapi)
+
+@end
