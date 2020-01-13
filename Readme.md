@@ -12,6 +12,7 @@ All code is licensed under the [MIT-License](https://github.com/citrix/ShareFile
 
 * Before continuing, familiarize yourself with the [ShareFile API](https://api.sharefile.com/rest) and it's methodology.
 * Please make sure you are running XCode version 7.2+
+* If using XCode 11, an unofficial fork that adds support can be found here: https://github.com/FabienLydoire/ShareFile-ObjectiveC/tree/Fix-for-Xcode-11
 
 <br />
 
