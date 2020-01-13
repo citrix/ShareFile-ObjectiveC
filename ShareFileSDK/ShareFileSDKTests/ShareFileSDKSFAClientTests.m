@@ -72,10 +72,10 @@
 
 - (void)testChangeDomainHandlers {
     id mockRequest = OCMClassMock([NSURLRequest class]);
-    id mockRedirection = OCMClassMock([SFRedirection class]);
-    id mockRedirection2 = OCMClassMock([SFRedirection class]);
+    id mockRedirection = OCMClassMock([SFIRedirection class]);
+    id mockRedirection2 = OCMClassMock([SFIRedirection class]);
     __block BOOL changeDomain1Raised = NO;
-    SFAChangeDomainCallback handler1 = ^SFAEventHandlerResponse * (NSURLRequest *request, SFRedirection *redirect)
+    SFAChangeDomainCallback handler1 = ^SFAEventHandlerResponse * (NSURLRequest *request, SFIRedirection *redirect)
     {
         if ([mockRequest isEqual:request] && [mockRedirection isEqual:redirect]) {
             changeDomain1Raised = YES;
@@ -83,7 +83,7 @@
         return [SFAEventHandlerResponse ignoreEventResponseHandler];
     };
     __block BOOL changeDomain2Raised = NO;
-    SFAChangeDomainCallback handler2 = ^SFAEventHandlerResponse * (NSURLRequest *request, SFRedirection *redirect)
+    SFAChangeDomainCallback handler2 = ^SFAEventHandlerResponse * (NSURLRequest *request, SFIRedirection *redirect)
     {
         if ([mockRequest isEqual:request] && [mockRedirection isEqual:redirect]) {
             changeDomain2Raised = YES;
@@ -103,7 +103,7 @@
     changeDomain1Raised = NO;
     changeDomain2Raised = NO;
     __block BOOL changeDomain3Raised = NO;
-    SFAChangeDomainCallback handler3 = ^SFAEventHandlerResponse * (NSURLRequest *request, SFRedirection *redirect)
+    SFAChangeDomainCallback handler3 = ^SFAEventHandlerResponse * (NSURLRequest *request, SFIRedirection *redirect)
     {
         if ([mockRequest isEqual:request] && [mockRedirection isEqual:redirect]) {
             changeDomain3Raised = YES;
@@ -111,7 +111,7 @@
         return [SFAEventHandlerResponse eventHandlerResponseWithRedirection:mockRedirection2];
     };
     __block BOOL changeDomain4Raised = NO;
-    SFAChangeDomainCallback handler4 = ^SFAEventHandlerResponse * (NSURLRequest *request, SFRedirection *redirect)
+    SFAChangeDomainCallback handler4 = ^SFAEventHandlerResponse * (NSURLRequest *request, SFIRedirection *redirect)
     {
         changeDomain4Raised = YES;
         return [SFAEventHandlerResponse ignoreEventResponseHandler];
@@ -163,7 +163,7 @@
 }
 
 - (void)testDownloaderInitialization {
-    id mockItem = OCMClassMock([SFItem class]);
+    id mockItem = OCMClassMock([SFIItem class]);
     id mockDownloaderConfig = OCMClassMock([SFADownloaderConfig class]);
     SFAAsyncFileDownloader *downloader = [self.client asyncFileDownloaderForItem:mockItem withDownloaderConfig:mockDownloaderConfig];
     XCTAssertEqual(self.client, downloader.sfaClient, @"Client should be same as the one from which downloader is created.");

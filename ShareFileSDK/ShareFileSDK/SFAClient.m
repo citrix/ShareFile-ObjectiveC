@@ -74,27 +74,27 @@
     if (self) {
         self.baseUrl = [NSURL URLWithString:baseUrl];
         self.configuration = configuration ? configuration :[SFAConfiguration defaultConfiguration];
-        _accessControls = [[SFAccessControlsEntity alloc] initWithClient:self];
-        _asyncOperations = [[SFAsyncOperationsEntity alloc] initWithClient:self];
-        _capabilities = [[SFCapabilitiesEntity alloc] initWithClient:self];
-        _connectorGroups = [[SFConnectorGroupsEntity alloc] initWithClient:self];
-        _favoriteFolders = [[SFFavoriteFoldersEntity alloc] initWithClient:self];
-        _groups = [[SFGroupsEntity alloc] initWithClient:self];
-        _metadata = [[SFMetadataEntity alloc] initWithClient:self];
-        _sessions = [[SFSessionsEntity alloc] initWithClient:self];
-        _shares = [[SFSharesEntity alloc] initWithClient:self];
-        _users = [[SFUsersEntity alloc] initWithClient:self];
-        _items = [[SFItemsEntity alloc] initWithClient:self];
-        _storageCenters = [[SFStorageCentersEntity alloc] initWithClient:self];
-        _zones = [[SFZonesEntity alloc] initWithClient:self];
+        _accessControls = [[SFIAccessControlsEntity alloc] initWithClient:self];
+        _asyncOperations = [[SFIAsyncOperationsEntity alloc] initWithClient:self];
+        _capabilities = [[SFICapabilitiesEntity alloc] initWithClient:self];
+        _connectorGroups = [[SFIConnectorGroupsEntity alloc] initWithClient:self];
+        _favoriteFolders = [[SFIFavoriteFoldersEntity alloc] initWithClient:self];
+        _groups = [[SFIGroupsEntity alloc] initWithClient:self];
+        _metadata = [[SFIMetadataEntity alloc] initWithClient:self];
+        _sessions = [[SFISessionsEntity alloc] initWithClient:self];
+        _shares = [[SFISharesEntity alloc] initWithClient:self];
+        _users = [[SFIUsersEntity alloc] initWithClient:self];
+        _items = [[SFIItemsEntity alloc] initWithClient:self];
+        _storageCenters = [[SFIStorageCentersEntity alloc] initWithClient:self];
+        _zones = [[SFIZonesEntity alloc] initWithClient:self];
 #if ShareFile
-        _devices = [[SFDevicesEntityInternal alloc] initWithClient:self];
-        _configs = [[SFConfigsEntityInternal alloc] initWithClient:self];
-        _accounts = [[SFAccountsEntityInternal alloc] initWithClient:self];
-        _oAuthClients = [[SFOAuthClientsEntityInternal alloc] initWithClient:self];
-        _fileLocks = [[SFFileLockEntityInternal alloc] initWithClient:self];
+        _devices = [[SFIDevicesEntityInternal alloc] initWithClient:self];
+        _configs = [[SFIConfigsEntityInternal alloc] initWithClient:self];
+        _accounts = [[SFIAccountsEntityInternal alloc] initWithClient:self];
+        _oAuthClients = [[SFIOAuthClientsEntityInternal alloc] initWithClient:self];
+        _fileLocks = [[SFIFileLockEntityInternal alloc] initWithClient:self];
 #else
-        _accounts = [[SFAccountsEntity alloc] initWithClient:self];
+        _accounts = [[SFIAccountsEntity alloc] initWithClient:self];
 #endif
         [self registerRequestProviders];
         _loggingProvider = [[SFALoggingProvider alloc] initWithLogger:configuration.logger];
@@ -197,7 +197,7 @@
     return [SFAEventHandlerResponse failWithErrorEventResponseHandler];
 }
 
-- (SFAEventHandlerResponse *)onChangeDomainWithRequest:(NSURLRequest *)requestMessage redirection:(SFRedirection *)redirection {
+- (SFAEventHandlerResponse *)onChangeDomainWithRequest:(NSURLRequest *)requestMessage redirection:(SFIRedirection *)redirection {
     NSArray *handlers = self.changeDomainHandlers;
     for (SFAChangeDomainCallback handler in handlers) {
         SFAEventHandlerResponse *action = handler(requestMessage, redirection);
@@ -246,7 +246,7 @@
     return nil;
 }
 
-- (id <SFAURLSessionTaskHttpDelegate> )recreateURLSessionTaskHttpDelegateWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config expirationDays:(int)expirationDays uploadSpecification:(SFUploadSpecification *)uploadSpecification {
+- (id <SFAURLSessionTaskHttpDelegate> )recreateURLSessionTaskHttpDelegateWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config expirationDays:(int)expirationDays uploadSpecification:(SFIUploadSpecification *)uploadSpecification {
     if (uploadSpecificationRequest.method != SFAUploadMethodStandard) {
         NSAssert(NO, @"Standard Upload is the only supported method.");
         return nil;
@@ -260,11 +260,13 @@
     return [self asyncFileUploaderWithUploadSpecificationRequest:uploadSpecificationRequest filePath:filePath fileUploaderConfig:config expirationDays:-1];
 }
 
-- (id <SFAURLSessionTaskHttpDelegate> )recreateURLSessionTaskHttpDelegateWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config uploadSpecification:(SFUploadSpecification *)uploadSpecification {
+- (id <SFAURLSessionTaskHttpDelegate> )recreateURLSessionTaskHttpDelegateWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config uploadSpecification:(SFIUploadSpecification *)uploadSpecification {
     return [self recreateURLSessionTaskHttpDelegateWithUploadSpecificationRequest:uploadSpecificationRequest filePath:filePath fileUploaderConfig:config expirationDays:-1 uploadSpecification:uploadSpecification];
 }
 
 #if TARGET_OS_IPHONE
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (SFAAsyncUploaderBase *)asyncFileUploaderWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest asset:(ALAsset *)asset fileUploaderConfig:(SFAFileUploaderConfig *)config expirationDays:(int)expirationDays {
     switch (uploadSpecificationRequest.method) {
         case SFAUploadMethodStandard:
@@ -290,13 +292,14 @@
     return [self asyncFileUploaderWithUploadSpecificationRequest:uploadSpecificationRequest asset:asset fileUploaderConfig:config expirationDays:-1];
 }
 
+#pragma clang diagnostic pop
 #endif
 
-- (SFAAsyncFileDownloader *)asyncFileDownloaderForItem:(SFItem *)item withDownloaderConfig:(SFADownloaderConfig *)config {
+- (SFAAsyncFileDownloader *)asyncFileDownloaderForItem:(SFIItem *)item withDownloaderConfig:(SFADownloaderConfig *)config {
     return [[SFAAsyncFileDownloader alloc] initWithItem:item withSFAClient:self andDownloaderConfig:config];
 }
 
-- (SFAAsyncFileDownloader *)recreateURLSessionTaskHttpDelegateForDownloadingItem:(SFItem *)item withDownloaderConfig:(SFADownloaderConfig *)config {
+- (SFAAsyncFileDownloader *)recreateURLSessionTaskHttpDelegateForDownloadingItem:(SFIItem *)item withDownloaderConfig:(SFADownloaderConfig *)config {
     return [SFAAsyncFileDownloader downloaderForURLSessionTaskHTTPDelegateWithItem:item client:self config:config];
 }
 

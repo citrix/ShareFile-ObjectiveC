@@ -174,92 +174,92 @@ static NSString *const SFAFalseString = @"False";
 /**
  *  All Shared / Shared With Me
  */
-static NSString *const SFFolderID_AllShared = @"allshared";
+static NSString *const SFIFolderID_AllShared = @"allshared";
 /**
  *  Top Folder
  */
-static NSString *const SFFolderID_TopFolder = @"top";
+static NSString *const SFIFolderID_TopFolder = @"top";
 /**
  *  File Box
  */
-static NSString *const SFFolderID_FileBox = @"box";
+static NSString *const SFIFolderID_FileBox = @"box";
 /**
  *  Favorited Folders
  */
-static NSString *const SFFolderID_Favorites = @"favorites";
+static NSString *const SFIFolderID_Favorites = @"favorites";
 
 // Connectors
 /**
  *  Network Shares (CIFS) folderId (new Connector Group design)
  */
-static NSString *const SFFolderID_NetworkShares = @"c-cifs";
+static NSString *const SFIFolderID_NetworkShares = @"c-cifs";
 /**
  *  SharePoint folderId (new Connector Group design)
  */
-static NSString *const SFFolderID_SharePointShares = @"c-sp";
+static NSString *const SFIFolderID_SharePointShares = @"c-sp";
 /**
  *  Network Shares (CIFS) folderId (pre-Connector Groups design - can still be present in some V1 calls)
  */
-static NSString *const SFFolderID_NetworkShares_legacy = @"networkshareconnectors";
+static NSString *const SFIFolderID_NetworkShares_legacy = @"networkshareconnectors";
 /**
  *  SharePoint folderId (pre-Connector Groups design - can still be present in some V1 calls)
  */
-static NSString *const SFFolderID_SharePointShares_legacy = @"sharepointconnectors";
+static NSString *const SFIFolderID_SharePointShares_legacy = @"sharepointconnectors";
 
 /**
  *  Connector Groups folderId
  */
-static NSString *const SFFolderID_ConnectorGroups = @"connectors";
+static NSString *const SFIFolderID_ConnectorGroups = @"connectors";
 
 // Personal Cloud connectors
 /**
  *  Personal Cloud 'pseudo folder' folderId
  */
-static NSString *const SFFolderID_PersonalCloud = @"c-pcc";
+static NSString *const SFIFolderID_PersonalCloud = @"c-pcc";
 /**
  *  Box folderId (Personal Cloud)
  */
-static NSString *const SFFolderID_BoxConnector = @"c-Box";
+static NSString *const SFIFolderID_BoxConnector = @"c-Box";
 /**
  *  Dropbox folderId (Personal Cloud)
  */
-static NSString *const SFFolderID_Dropbox = @"c-Dropbox";
+static NSString *const SFIFolderID_Dropbox = @"c-Dropbox";
 /**
  *  OneDrive folderId (Personal Cloud)
  */
-static NSString *const SFFolderID_OneDrive = @"c-OneDrive";
+static NSString *const SFIFolderID_OneDrive = @"c-OneDrive";
 /**
  *  GoogleDrive folderId (Personal Cloud)
  */
-static NSString *const SFFolderID_GoogleDrive = @"c-GoogleDrive";
+static NSString *const SFIFolderID_GoogleDrive = @"c-GoogleDrive";
 
 // Office 365 connectors
 /**
  *  Office 365 'pseudo folder' folderId
  */
-static NSString *const SFFolderID_Office365 = @"c-office365";
+static NSString *const SFIFolderID_Office365 = @"c-office365";
 /**
  *  SharePointOnline folderId (Office 365)
  */
-static NSString *const SFFolderID_SharePointOnline = @"c-sp365";
+static NSString *const SFIFolderID_SharePointOnline = @"c-sp365";
 /**
  *  OneDrive for Business folderId (Office 365)
  */
-static NSString *const SFFolderID_OneDriveBusiness = @"c-odb365";
+static NSString *const SFIFolderID_OneDriveBusiness = @"c-odb365";
 /**
  *  ShareConnect
  */
-static NSString *const SFFolderID_ShareConnect = @"c-shareconnect";
+static NSString *const SFIFolderID_ShareConnect = @"c-shareconnect";
 /**
  *  ShareConnectMac
  */
-static NSString *const SFFolderID_ShareConnectMac = @"fohMac";
+static NSString *const SFIFolderID_ShareConnectMac = @"fohMac";
 /**
  *  ShareConnectPC
  */
-static NSString *const SFFolderID_ShareConnectPC = @"fohPC";
+static NSString *const SFIFolderID_ShareConnectPC = @"fohPC";
 /**
  *  ShareConnectRootFolderId
  * "c2Nyb290" is base64 value of "scroot" and this is not expected to change
  */
-static NSString *const SFFolderID_ShareConnectRoot = @"c2Nyb290";
+static NSString *const SFIFolderID_ShareConnectRoot = @"c2Nyb290";

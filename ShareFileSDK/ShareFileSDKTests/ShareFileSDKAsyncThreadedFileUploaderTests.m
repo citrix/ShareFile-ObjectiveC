@@ -76,11 +76,11 @@
     SFAUploadSpecificationRequest *req = [SFAUploadSpecificationRequest new];
     req.destinationURI = [NSURL URLWithString:@"http://tests/someparentfolder"];
     SFAAsyncThreadedFileUploader *uploader = [[SFAAsyncThreadedFileUploader alloc] initWithSFAClient:self.client uploadSpecificationRequest:req filePath:path];
-    SFUploadSpecification *uploadSpec = [[SFUploadSpecification alloc] init];
+    SFIUploadSpecification *uploadSpec = [[SFIUploadSpecification alloc] init];
     uploadSpec.IsResume = [NSNumber numberWithBool:YES];
     uploadSpec.ResumeOffset = [NSNumber numberWithUnsignedLongLong:10];
     uploadSpec.ResumeIndex = [NSNumber numberWithUnsignedLongLong:1];
-    uploadSpec.ResumeFileHash = @"13ad68f3850bc971d64c9e85581b9b5d"; // Hash after first 10 bytes calculated offline.
+    uploadSpec.ResumeFileHash = @"b9618d25d35b99e270b860f2c1bf10aa"; // Hash after first 10 bytes calculated offline.
     uploadSpec.ChunkUri = [NSURL URLWithString:@"http://sub.domain.com?q=1"];
     NSNumber *prevIndex = uploadSpec.ResumeIndex;
     XCTAssertFalse(uploader.prepared, @"*1 uploader should not be prepared.");
@@ -141,7 +141,7 @@
     NSMutableDictionary *contextObject = [NSMutableDictionary new];
     contextObject[SFAFilePartString] = part;
     NSURLRequest *request = [uploader task:nil needsRequestForQuery:nil usingContextObject:&contextObject];
-    NSString *url = [NSString stringWithFormat:@"%@&index=2&byteOffset=10&hash=badb5f0bfc4d95621be159eb88f1d939", part.uploadUrl];
+    NSString *url = [NSString stringWithFormat:@"%@&index=2&byteOffset=10&hash=fd934581ae048724c4cab39b142ce18c", part.uploadUrl];
     XCTAssertTrue([request.URL.absoluteString isEqualToString:url], @"*1 Unexpected request url");
     XCTAssertTrue([request.HTTPMethod isEqualToString:SFAPost], @"*1 Expected method to be post");
     XCTAssertTrue(request.HTTPBody.length == (fileInfo.fileSize.unsignedIntegerValue - 10), @"*1 Unexpected body length.");
@@ -150,14 +150,14 @@
     XCTAssertTrue([request.allHTTPHeaderFields[SFAContentLength] isEqualToString:len], @"*1 Unexpected header value for content-length.");
     XCTAssertTrue([request.allHTTPHeaderFields[SFAContentType] isEqualToString:@"application/octet-stream"], @"*1 Unexpected header value for content-type.");
     XCTAssertTrue([request.allHTTPHeaderFields[@"Expect"] isEqualToString:@"100-continue"], @"*1 Unexpected header value for Expect.");
-    XCTAssertTrue([part.filePartHash isEqualToString:@"badb5f0bfc4d95621be159eb88f1d939"], @"*1 Unexpected value for file hash.");
-    XCTAssertTrue([[SFACryptoUtils md5StringWithData:request.HTTPBody] isEqualToString:@"badb5f0bfc4d95621be159eb88f1d939"], @"*1 Unexpected data hash.");
+    XCTAssertTrue([part.filePartHash isEqualToString:@"fd934581ae048724c4cab39b142ce18c"], @"*1 Unexpected value for file hash.");
+    XCTAssertTrue([[SFACryptoUtils md5StringWithData:request.HTTPBody] isEqualToString:@"fd934581ae048724c4cab39b142ce18c"], @"*1 Unexpected data hash.");
     // Test Again
     part.offset = 0;
     part.length = 10;
     part.index = 0;
     request = [uploader task:nil needsRequestForQuery:nil usingContextObject:&contextObject];
-    url = [NSString stringWithFormat:@"%@&index=0&byteOffset=0&hash=13ad68f3850bc971d64c9e85581b9b5d", part.uploadUrl];
+    url = [NSString stringWithFormat:@"%@&index=0&byteOffset=0&hash=b9618d25d35b99e270b860f2c1bf10aa", part.uploadUrl];
     XCTAssertTrue([request.URL.absoluteString isEqualToString:url], @"*2 Unexpected request url");
     XCTAssertTrue([request.HTTPMethod isEqualToString:SFAPost], @"*2 Expected method to be post");
     XCTAssertTrue(request.HTTPBody.length == 10, @"*2 Unexpected body length.");
@@ -166,15 +166,15 @@
     XCTAssertTrue([request.allHTTPHeaderFields[SFAContentLength] isEqualToString:len], @"*2 Unexpected header value for content-length.");
     XCTAssertTrue([request.allHTTPHeaderFields[SFAContentType] isEqualToString:@"application/octet-stream"], @"*2 Unexpected header value for content-type.");
     XCTAssertTrue([request.allHTTPHeaderFields[@"Expect"] isEqualToString:@"100-continue"], @"*2 Unexpected header value for Expect.");
-    XCTAssertTrue([part.filePartHash isEqualToString:@"13ad68f3850bc971d64c9e85581b9b5d"], @"*2 Unexpected value for file hash.");
-    XCTAssertTrue([[SFACryptoUtils md5StringWithData:request.HTTPBody] isEqualToString:@"13ad68f3850bc971d64c9e85581b9b5d"], @"*2 Unexpected data hash.");
+    XCTAssertTrue([part.filePartHash isEqualToString:@"b9618d25d35b99e270b860f2c1bf10aa"], @"*2 Unexpected value for file hash.");
+    XCTAssertTrue([[SFACryptoUtils md5StringWithData:request.HTTPBody] isEqualToString:@"b9618d25d35b99e270b860f2c1bf10aa"], @"*2 Unexpected data hash.");
     
     // Test Finish Call
-    uploader.uploadSpecification = [SFUploadSpecification new];
+    uploader.uploadSpecification = [SFIUploadSpecification new];
     uploader.uploadSpecification.FinishUri = [NSURL URLWithString:@"http://www.xyz.abc?k=1"];
     [contextObject removeAllObjects];
     request = [uploader task:nil needsRequestForQuery:nil usingContextObject:&contextObject];
-    url = [NSString stringWithFormat:@"%@&respformat=json&filehash=d8936427816095cbd3ff828de522743d&details=A%%20Detail&title=A%%20Title&fileSize=45", uploader.uploadSpecification.FinishUri.absoluteString];
+    url = [NSString stringWithFormat:@"%@&respformat=json&filehash=7490f606e5bc65995e248d5d058a49e9&details=A%%20Detail&title=A%%20Title&fileSize=56", uploader.uploadSpecification.FinishUri.absoluteString];
     XCTAssertTrue([request.URL.absoluteString isEqualToString:url], @"*3 Unexpected request url");
     XCTAssertTrue([request.HTTPMethod isEqualToString:SFAGet], @"*3 Expected method to be get");
     XCTAssertTrue([request.allHTTPHeaderFields[SFAccept] isEqualToString:SFAApplicationJson], @"*3 Unexpected header value for accept.");
@@ -216,7 +216,7 @@
     NSMutableDictionary *contextObject = [NSMutableDictionary new];
     contextObject[SFAFilePartString] = part;
     NSURLRequest *request = [uploader task:nil needsRequestForQuery:nil usingContextObject:&contextObject];
-    NSString *url = [NSString stringWithFormat:@"%@&index=2&byteOffset=10&hash=badb5f0bfc4d95621be159eb88f1d939", part.uploadUrl];
+    NSString *url = [NSString stringWithFormat:@"%@&index=2&byteOffset=10&hash=fd934581ae048724c4cab39b142ce18c", part.uploadUrl];
     XCTAssertTrue([request.URL.absoluteString isEqualToString:url], @"*1 Unexpected request url");
     XCTAssertTrue([request.HTTPMethod isEqualToString:SFAPost], @"*1 Expected method to be post");
     XCTAssertTrue(request.HTTPBody.length == (fileInfo.fileSize.unsignedIntegerValue - 10), @"*1 Unexpected body length.");
@@ -225,15 +225,15 @@
     XCTAssertTrue([request.allHTTPHeaderFields[SFAContentLength] isEqualToString:len], @"*1 Unexpected header value for content-length.");
     XCTAssertTrue([request.allHTTPHeaderFields[SFAContentType] isEqualToString:@"application/octet-stream"], @"*1 Unexpected header value for content-type.");
     XCTAssertTrue([request.allHTTPHeaderFields[@"Expect"] isEqualToString:@"100-continue"], @"*1 Unexpected header value for Expect.");
-    XCTAssertTrue([part.filePartHash isEqualToString:@"badb5f0bfc4d95621be159eb88f1d939"], @"*1 Unexpected value for file hash.");
-    XCTAssertTrue([[SFACryptoUtils md5StringWithData:request.HTTPBody] isEqualToString:@"badb5f0bfc4d95621be159eb88f1d939"], @"*1 Unexpected data hash.");
+    XCTAssertTrue([part.filePartHash isEqualToString:@"fd934581ae048724c4cab39b142ce18c"], @"*1 Unexpected value for file hash.");
+    XCTAssertTrue([[SFACryptoUtils md5StringWithData:request.HTTPBody] isEqualToString:@"fd934581ae048724c4cab39b142ce18c"], @"*1 Unexpected data hash.");
     // Test Again
     part.offset = 0;
     part.length = 10;
     part.index = 0;
     [OCMStub([mockRep getBytes:[OCMArg anyPointer] fromOffset:part.offset length:part.length error:NULL]) andDo:blockCB];
     request = [uploader task:nil needsRequestForQuery:nil usingContextObject:&contextObject];
-    url = [NSString stringWithFormat:@"%@&index=0&byteOffset=0&hash=13ad68f3850bc971d64c9e85581b9b5d", part.uploadUrl];
+    url = [NSString stringWithFormat:@"%@&index=0&byteOffset=0&hash=b9618d25d35b99e270b860f2c1bf10aa", part.uploadUrl];
     XCTAssertTrue([request.URL.absoluteString isEqualToString:url], @"*2 Unexpected request url");
     XCTAssertTrue([request.HTTPMethod isEqualToString:SFAPost], @"*2 Expected method to be post");
     XCTAssertTrue(request.HTTPBody.length == 10, @"*2 Unexpected body length.");
@@ -242,17 +242,17 @@
     XCTAssertTrue([request.allHTTPHeaderFields[SFAContentLength] isEqualToString:len], @"*2 Unexpected header value for content-length.");
     XCTAssertTrue([request.allHTTPHeaderFields[SFAContentType] isEqualToString:@"application/octet-stream"], @"*2 Unexpected header value for content-type.");
     XCTAssertTrue([request.allHTTPHeaderFields[@"Expect"] isEqualToString:@"100-continue"], @"*2 Unexpected header value for Expect.");
-    XCTAssertTrue([part.filePartHash isEqualToString:@"13ad68f3850bc971d64c9e85581b9b5d"], @"*2 Unexpected value for file hash.");
-    XCTAssertTrue([[SFACryptoUtils md5StringWithData:request.HTTPBody] isEqualToString:@"13ad68f3850bc971d64c9e85581b9b5d"], @"*2 Unexpected data hash.");
+    XCTAssertTrue([part.filePartHash isEqualToString:@"b9618d25d35b99e270b860f2c1bf10aa"], @"*2 Unexpected value for file hash.");
+    XCTAssertTrue([[SFACryptoUtils md5StringWithData:request.HTTPBody] isEqualToString:@"b9618d25d35b99e270b860f2c1bf10aa"], @"*2 Unexpected data hash.");
     // Test Finish Call
     part.offset = 0;
     part.length = fileInfo.fileSize.unsignedIntegerValue;
     [OCMStub([mockRep getBytes:[OCMArg anyPointer] fromOffset:0 length:SFAMaxBufferLength error:[OCMArg anyObjectRef]]) andDo:blockCB];
-    uploader.uploadSpecification = [SFUploadSpecification new];
+    uploader.uploadSpecification = [SFIUploadSpecification new];
     uploader.uploadSpecification.FinishUri = [NSURL URLWithString:@"http://www.xyz.abc?k=1"];
     [contextObject removeAllObjects];
     request = [uploader task:nil needsRequestForQuery:nil usingContextObject:&contextObject];
-    url = [NSString stringWithFormat:@"%@&respformat=json&filehash=d8936427816095cbd3ff828de522743d&details=A%%20Detail&title=A%%20Title&fileSize=45", uploader.uploadSpecification.FinishUri.absoluteString];
+    url = [NSString stringWithFormat:@"%@&forceunique=1&respformat=json&filehash=7490f606e5bc65995e248d5d058a49e9&details=A%%20Detail&title=A%%20Title&fileSize=45", uploader.uploadSpecification.FinishUri.absoluteString];
     XCTAssertTrue([request.URL.absoluteString isEqualToString:url], @"*3 Unexpected request url");
     XCTAssertTrue([request.HTTPMethod isEqualToString:SFAGet], @"*3 Expected method to be get");
     XCTAssertTrue([request.allHTTPHeaderFields[SFAccept] isEqualToString:SFAApplicationJson], @"*3 Unexpected header value for accept.");

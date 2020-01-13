@@ -232,6 +232,8 @@
 
 #pragma mark - Private
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (void)makeConnection {
     // Need this so that no thread can change the state while connection is being
     // setup.
@@ -267,6 +269,7 @@
         }
     }
 }
+#pragma clang diagnostic pop
 
 #pragma mark - NSURLConnectionDataDelegate NSURLConnectionDelegate Methods
 
@@ -312,18 +315,18 @@
     [self handleCompletion];
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
+- (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
     SFAHttpRequestResponseDataContainer *container = [[SFAHttpRequestResponseDataContainer alloc] initWithRequest:self.request response:self.response data:[self.data copy] error:self.error];
     id contextObject = self.contextObject;
     
     // Call out so we can parse this challenge
-    [self.delegate task:self receivedAuthChallenge:challenge httpRequestResponseDataContainer:container usingContextObject:&contextObject completionHandler: ^(SFURLAuthChallengeDisposition disp, NSURLCredential *cred) {
+    [self.delegate task:self receivedAuthChallenge:challenge httpRequestResponseDataContainer:container usingContextObject:&contextObject completionHandler: ^(SFIURLAuthChallengeDisposition disp, NSURLCredential *cred) {
          switch (disp) {
-             case SFURLAuthChallengeUseCredential:
+             case SFIURLAuthChallengeUseCredential:
                  [challenge.sender useCredential:cred forAuthenticationChallenge:challenge];
                  break;
                  
-             case SFURLAuthChallengeCancelAuthenticationChallenge:
+             case SFIURLAuthChallengeCancelAuthenticationChallenge:
                  [challenge.sender cancelAuthenticationChallenge:challenge];
                  break;
                  

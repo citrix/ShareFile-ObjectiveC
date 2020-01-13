@@ -1,6 +1,6 @@
 @implementation SFAEventHandlerResponse
 
-+ (SFAEventHandlerResponse *)eventHandlerResponseWithRedirection:(SFRedirection *)redir {
++ (SFAEventHandlerResponse *)eventHandlerResponseWithRedirection:(SFIRedirection *)redir {
     SFAEventHandlerResponse *response = [[SFAEventHandlerResponse alloc] init];
     [response setAction:SFAEventHandlerResponseActionRedirect];
     [response setRedirection:redir];

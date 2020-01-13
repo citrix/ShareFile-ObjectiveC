@@ -26,45 +26,45 @@
 #endif
 
 #if ShareFile
-@class SFAccountsEntityInternal;
-@class SFOAuthClientsEntityInternal;
-@class SFDevicesEntityInternal;
-@class SFConfigsEntityInternal;
-@class SFFileLockEntityInternal;
+@class SFIAccountsEntityInternal;
+@class SFIOAuthClientsEntityInternal;
+@class SFIDevicesEntityInternal;
+@class SFIConfigsEntityInternal;
+@class SFIFileLockEntityInternal;
 #endif
-@class SFItem;
-@class SFAccountsEntity;
-@class SFAccessControlsEntity;
-@class SFAsyncOperationsEntity;
-@class SFCapabilitiesEntity;
-@class SFConnectorGroupsEntity;
-@class SFFavoriteFoldersEntity;
-@class SFGroupsEntity;
-@class SFMetadataEntity;
-@class SFSessionsEntity;
-@class SFSharesEntity;
-@class SFUsersEntity;
-@class SFItemsEntity;
-@class SFStorageCentersEntity;
-@class SFZonesEntity;
-@class SFZonesEntity;
+@class SFIItem;
+@class SFIAccountsEntity;
+@class SFIAccessControlsEntity;
+@class SFIAsyncOperationsEntity;
+@class SFICapabilitiesEntity;
+@class SFIConnectorGroupsEntity;
+@class SFIFavoriteFoldersEntity;
+@class SFIGroupsEntity;
+@class SFIMetadataEntity;
+@class SFISessionsEntity;
+@class SFISharesEntity;
+@class SFIUsersEntity;
+@class SFIItemsEntity;
+@class SFIStorageCentersEntity;
+@class SFIZonesEntity;
+@class SFIZonesEntity;
 
 @protocol SFAClient <NSObject>
 
 #if ShareFile
 /**
- *  A SFAccountEntityInternal/SFAccountsEntity readonly object.
+ *  A SFIAccountEntityInternal/SFIAccountsEntity readonly object.
  *
  *  @warning The type of this property depends on:
  *
- *  - if #define ShareFile is set to 1 in 'SFAConfig.h': SFAccountEntityInternal
- *  - else  SFAccountsEntity.
+ *  - if #define ShareFile is set to 1 in 'SFAConfig.h': SFIAccountEntityInternal
+ *  - else  SFIAccountsEntity.
  *
  *  Simply changing #define ShareFile will cause run-time exception if the code is not recompiled. You should only do this if you have access to the code.
  */
-@property (strong, nonatomic, readonly) SFAccountsEntityInternal *accounts;
+@property (strong, nonatomic, readonly) SFIAccountsEntityInternal *accounts;
 /**
- *  A SFOAuthClientsEntityInternal readonly object.
+ *  A SFIOAuthClientsEntityInternal readonly object.
  *
  *  @warning The property is only available if:
  *
@@ -72,65 +72,65 @@
  *
  *  Simply changing #define ShareFile will cause run-time exception if the code is not recompiled. You should only do this if you have access to the code.
  */
-@property (strong, nonatomic, readonly) SFOAuthClientsEntityInternal *oAuthClients;
+@property (strong, nonatomic, readonly) SFIOAuthClientsEntityInternal *oAuthClients;
 #else
 
-@property (strong, nonatomic, readonly) SFAccountsEntity *accounts;
+@property (strong, nonatomic, readonly) SFIAccountsEntity *accounts;
 
 #endif
 /**
- *  A SFAccessControlsEntity readonly object.
+ *  A SFIAccessControlsEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFAccessControlsEntity *accessControls;
+@property (strong, nonatomic, readonly) SFIAccessControlsEntity *accessControls;
 /**
- *  A SFAsyncOperationsEntity readonly object.
+ *  A SFIAsyncOperationsEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFAsyncOperationsEntity *asyncOperations;
+@property (strong, nonatomic, readonly) SFIAsyncOperationsEntity *asyncOperations;
 /**
- *  A SFCapabilitiesEntity readonly object.
+ *  A SFICapabilitiesEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFCapabilitiesEntity *capabilities;
+@property (strong, nonatomic, readonly) SFICapabilitiesEntity *capabilities;
 /**
- *  A SFConnectorGroupsEntity readonly object.
+ *  A SFIConnectorGroupsEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFConnectorGroupsEntity *connectorGroups;
+@property (strong, nonatomic, readonly) SFIConnectorGroupsEntity *connectorGroups;
 /**
- *  A SFFavoriteFoldersEntity readonly object.
+ *  A SFIFavoriteFoldersEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFFavoriteFoldersEntity *favoriteFolders;
+@property (strong, nonatomic, readonly) SFIFavoriteFoldersEntity *favoriteFolders;
 /**
- *  A SFGroupsEntity readonly object.
+ *  A SFIGroupsEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFGroupsEntity *groups;
+@property (strong, nonatomic, readonly) SFIGroupsEntity *groups;
 /**
- *  A SFMetadataEntity readonly object.
+ *  A SFIMetadataEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFMetadataEntity *metadata;
+@property (strong, nonatomic, readonly) SFIMetadataEntity *metadata;
 /**
- *  A SFSessionsEntity readonly object.
+ *  A SFISessionsEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFSessionsEntity *sessions;
+@property (strong, nonatomic, readonly) SFISessionsEntity *sessions;
 /**
- *  A SFSharesEntity readonly object.
+ *  A SFISharesEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFSharesEntity *shares;
+@property (strong, nonatomic, readonly) SFISharesEntity *shares;
 /**
- *  A SFUsersEntity readonly object.
+ *  A SFIUsersEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFUsersEntity *users;
+@property (strong, nonatomic, readonly) SFIUsersEntity *users;
 
 /**
- *  A SFItemsEntity readonly object.
+ *  A SFIItemsEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFItemsEntity *items;
+@property (strong, nonatomic, readonly) SFIItemsEntity *items;
 /**
- *  A SFStorageCentersEntity readonly object.
+ *  A SFIStorageCentersEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFStorageCentersEntity *storageCenters;
+@property (strong, nonatomic, readonly) SFIStorageCentersEntity *storageCenters;
 /**
- *  A SFZonesEntity readonly object.
+ *  A SFIZonesEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFZonesEntity *zones;
+@property (strong, nonatomic, readonly) SFIZonesEntity *zones;
 /**
  *  A base url of ShareFile client.
  */
@@ -152,19 +152,19 @@
 
 #if ShareFile
 /**
- *  A SFConfigsEntity readonly object.
+ *  A SFIConfigsEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFConfigsEntityInternal *configs;
+@property (strong, nonatomic, readonly) SFIConfigsEntityInternal *configs;
 
 /**
- *  A SFDevicesEntity readonly object.
+ *  A SFIDevicesEntity readonly object.
  */
-@property (strong, nonatomic, readonly) SFDevicesEntityInternal *devices;
+@property (strong, nonatomic, readonly) SFIDevicesEntityInternal *devices;
 
 /**
- *  A SFFileLockEntity readonly object
+ *  A SFIFileLockEntity readonly object
  */
-@property (strong, nonatomic, readonly) SFFileLockEntityInternal *fileLocks;
+@property (strong, nonatomic, readonly) SFIFileLockEntityInternal *fileLocks;
 
 /**
  *  A SFAZoneAuthentication object.
@@ -286,7 +286,7 @@
  *  @return Intantiated HTTP delegate for URLSessionTask(upload).
  *  @warning This method is only available if #define ShareFile is set to 1 in 'SFAConfig.h'. See recreateURLSessionTaskHttpDelegateWithUploadSpecificationRequest:filePath:fileUploaderConfig:uploadSpecification: if #define ShareFile is set to 0. Simply changing #define ShareFile will cause run-time exception if the code is not recompiled. You should only do this if you have access to the code.
  */
-- (id <SFAURLSessionTaskHttpDelegate> )recreateURLSessionTaskHttpDelegateWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config expirationDays:(int)expirationDays uploadSpecification:(SFUploadSpecification *)uploadSpecification;
+- (id <SFAURLSessionTaskHttpDelegate> )recreateURLSessionTaskHttpDelegateWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config expirationDays:(int)expirationDays uploadSpecification:(SFIUploadSpecification *)uploadSpecification;
 #if TARGET_OS_IPHONE
 /**
  *  Creates uploader with provided parameters.
@@ -304,9 +304,12 @@
 #endif
 #else
 - (SFAAsyncUploaderBase *)asyncFileUploaderWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config;
-- (id <SFAURLSessionTaskHttpDelegate> )recreateURLSessionTaskHttpDelegateWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config uploadSpecification:(SFUploadSpecification *)uploadSpecification;
+- (id <SFAURLSessionTaskHttpDelegate> )recreateURLSessionTaskHttpDelegateWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest filePath:(NSString *)filePath fileUploaderConfig:(SFAFileUploaderConfig *)config uploadSpecification:(SFIUploadSpecification *)uploadSpecification;
 #if TARGET_OS_IPHONE
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (SFAAsyncUploaderBase *)asyncFileUploaderWithUploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest asset:(ALAsset *)asset fileUploaderConfig:(SFAFileUploaderConfig *)config;
+#pragma clang diagnostic pop
 #endif
 #endif
 /**
@@ -317,7 +320,7 @@
  *
  *  @return Returns SFAAsyncFileDownloader for given item.
  */
-- (SFAAsyncFileDownloader *)asyncFileDownloaderForItem:(SFItem *)item withDownloaderConfig:(SFADownloaderConfig *)config;
+- (SFAAsyncFileDownloader *)asyncFileDownloaderForItem:(SFIItem *)item withDownloaderConfig:(SFADownloaderConfig *)config;
 /**
  *  Recreate HTTP delegate for URLSessionTask(download). This can be needed at app-relaunch.
  *
@@ -326,7 +329,7 @@
  *
  *  @return Intantiated HTTP delegate for URLSessionTask(download).
  */
-- (SFAAsyncFileDownloader *)recreateURLSessionTaskHttpDelegateForDownloadingItem:(SFItem *)item withDownloaderConfig:(SFADownloaderConfig *)config;
+- (SFAAsyncFileDownloader *)recreateURLSessionTaskHttpDelegateForDownloadingItem:(SFIItem *)item withDownloaderConfig:(SFADownloaderConfig *)config;
 /**
  *  Adds change domain handler to changeDomainHandlers.
  *
@@ -368,11 +371,11 @@
  *  Notify domain change handlers with request and redirection.
  *
  *  @param requestMessage A URL request for which domain change event occured.
- *  @param redirection    A SFRedirection object.
+ *  @param redirection    A SFIRedirection object.
  *
  *  @return Returns appropiate SFAEventHandlerResponse. For default SFAClient: SFAEventHandlerResponse returned by first handler that does not return SFAEventHandlerResponse with action equal to SFAEventHandlerResponseActionIgnore. If all handlers returned SFAEventHandlerResponseActionIgnore or no handlers were available SFAEventHandlerResponse with action equal to SFAEventHandlerResponseActionRedirect and given redirection is returned.
  */
-- (SFAEventHandlerResponse *)onChangeDomainWithRequest:(NSURLRequest *)requestMessage redirection:(SFRedirection *)redirection;
+- (SFAEventHandlerResponse *)onChangeDomainWithRequest:(NSURLRequest *)requestMessage redirection:(SFIRedirection *)redirection;
 /**
  *  Change async request provider used to setup task from query.
  *

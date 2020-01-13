@@ -18,6 +18,8 @@
 }
 
 #if TARGET_OS_IPHONE
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (instancetype)initWithSFAClient:(SFAClient *)client uploadSpecificationRequest:(SFAUploadSpecificationRequest *)uploadSpecificationRequest asset:(ALAsset *)asset fileUploaderConfig:(SFAFileUploaderConfig *)config andExpirationDays:(int)expirationDays {
     self = [super initWithSFAClient:client uploadSpecificationRequest:uploadSpecificationRequest asset:asset fileUploaderConfig:config andExpirationDays:expirationDays];
     if (self) {
@@ -32,6 +34,7 @@
     return [self initWithSFAClient:client uploadSpecificationRequest:uploadSpecificationRequest asset:asset fileUploaderConfig:nil andExpirationDays:-1];
 }
 
+#pragma clang diagnostic pop
 #endif
 
 @end

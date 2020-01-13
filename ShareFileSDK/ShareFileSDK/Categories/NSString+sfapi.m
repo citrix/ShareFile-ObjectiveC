@@ -54,7 +54,7 @@
     NSURL *url = nil;
     @try {
         url = [NSURL URLWithString:self];
-        if (!url || !url.host.length > 0 || !url.scheme.length > 0) {
+		if (!url || !(url.host.length > 0) || !(url.scheme.length > 0)) {
             url = nil;
         }
     }

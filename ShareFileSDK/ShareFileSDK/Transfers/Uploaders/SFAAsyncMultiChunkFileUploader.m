@@ -1,3 +1,6 @@
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 #import "SFAAsyncMultiChunkFileUploader.h"
 #import "SFAAsyncUploaderBaseProtected.h"
 #import "SFAUploaderBaseProtected.h"
@@ -9,7 +12,7 @@
 #import "NSString+sfapi.h"
 #import "SFACompositeUploaderTaskInternal.h"
 #import "SFAUtils.h"
-#import "SFModelConstants.h"
+#import "SFIModelConstants.h"
 
 @interface SFAAsyncMultiChunkFileUploader () <SFACompositeTaskDelegate>
 
@@ -160,14 +163,14 @@
 }
 
 #endif
-    unsigned long long numberOfParts;
+    NSUInteger numberOfParts;
     NSUInteger effectivePartSize = self.config.partSize;
     if (!fileLength) {
         numberOfParts = 0;
         [task taskCompletedWithError:[SFAError errorWithMessage:SFAFileReadError type:SFAErrorTypeUploadError]];
     }
     else {
-        numberOfParts = (unsigned long long)ceil((fileLength - [self.uploadSpecification.ResumeOffset unsignedLongValue]) / (effectivePartSize * 1.f));
+        numberOfParts = (NSUInteger)ceil((fileLength - [self.uploadSpecification.ResumeOffset unsignedLongValue]) / (effectivePartSize * 1.f));
     }
     if (numberOfParts > 1 && numberOfParts < self.config.numberOfThreads) {
         numberOfParts = self.config.numberOfThreads;
@@ -178,7 +181,7 @@
     unsigned long long index = self.uploadSpecification.ResumeIndex ?[self.uploadSpecification.ResumeIndex unsignedLongLongValue] : 0;
     
     NSMutableArray *fileParts = [[NSMutableArray alloc] initWithCapacity:(NSUInteger)numberOfParts];
-    for (unsigned long long i = 0; i < numberOfParts; i++) {
+    for (NSUInteger i = 0; i < numberOfParts; i++) {
         SFAFilePart *part = [[SFAFilePart alloc] init];
         part.index = index;
         part.length = effectivePartSize;
@@ -313,7 +316,7 @@
     return [request copy];
 }
 
-- (void)compositeTask:(SFACompositeUploaderTask *)task finishedSpecificationTaskWithUploadSpec:(SFUploadSpecification *)val {
+- (void)compositeTask:(SFACompositeUploaderTask *)task finishedSpecificationTaskWithUploadSpec:(SFIUploadSpecification *)val {
     if (!self.prepared) {
         self.uploadSpecification = val;
         [self checkResumeAsync];
@@ -324,3 +327,5 @@
 }
 
 @end
+
+#pragma clang diagnostic pop

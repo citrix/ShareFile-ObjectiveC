@@ -21,7 +21,7 @@ typedef void (^SFATaskCompletionCallback)(id returnValue, SFAError *error, NSDic
 /**
  *  Cancel callback is called when a task gets cancelled i.e. finishes due to cancellation.
  */
-typedef void (^SFATaskCancelCallback)();
+typedef void (^SFATaskCancelCallback)(void);
 
 static NSString *const kSFATaskCompleteNotification = @"SFATaskCompleteNotification";
 static NSString *const kSFATaskCancelNotification = @"SFATaskCancelNotification";

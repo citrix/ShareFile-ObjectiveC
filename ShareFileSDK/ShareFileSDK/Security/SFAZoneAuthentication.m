@@ -17,7 +17,7 @@
     if (self) {
         self.opId = opId;
         self.userId = userId;
-        SFZone *zone = [[SFZone alloc] init];
+        SFIZone *zone = [[SFIZone alloc] init];
         zone.Id = zoneId;
         zone.Secret = zoneSecret;
         self.zone = zone;

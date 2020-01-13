@@ -197,20 +197,20 @@
 - (void)handleAuthChallenge:(NSURLAuthenticationChallenge *)challenge
               httpContainer:(SFAHttpRequestResponseDataContainer *)container
                 authContext:(SFAuthenticationContext *)authContext
-          completionHandler:(void (^)(SFURLAuthChallengeDisposition, NSURLCredential *))completionHandler {
+          completionHandler:(void (^)(SFIURLAuthChallengeDisposition, NSURLCredential *))completionHandler {
     authContext.authenticationChallenge = [[SFAHTTPAuthenticationChallenge alloc] initWithChallenge:challenge withURL:container.request.URL originalRequestURL:authContext.originalRequestURL];
     
     void (^finishBlock)(SFAAuthHandling_ResponseResult result) = ^(SFAAuthHandling_ResponseResult result) {
         NSURLCredential *cred = nil;
-        SFURLAuthChallengeDisposition disposition = SFURLAuthChallengePerformDefaultHandling;
+        SFIURLAuthChallengeDisposition disposition = SFIURLAuthChallengePerformDefaultHandling;
         
         if (result == SFAAuthHandling_Retry) {
             cred = [self credentialForRequest:container.request authContext:authContext wasChallenged:YES includeInvalid:NO];
-            disposition = SFURLAuthChallengeUseCredential;
+            disposition = SFIURLAuthChallengeUseCredential;
             authContext.lastAppliedCredential = [cred copy];
         }
         else if (result == SFAAuthHandling_Cancel) {
-            disposition = SFURLAuthChallengeCancelAuthenticationChallenge;
+            disposition = SFIURLAuthChallengeCancelAuthenticationChallenge;
             authContext.lastAppliedCredential = nil;
         }
         

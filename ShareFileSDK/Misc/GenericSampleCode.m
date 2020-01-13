@@ -1,7 +1,7 @@
 #import "GenericSampleCode.h"
 #if TARGET_OS_IPHONE
 
-#import "AppDelegate.h"
+#import "iOSSample/AppDelegate.h"
 #import "ViewController.h"
 #endif
 
@@ -11,9 +11,9 @@
 
 @property (nonatomic) BOOL ranSampleOnce;
 @property (strong, nonatomic) id <SFATransferTask> task;
-@property (strong, nonatomic) SFFolder *folder;
+@property (strong, nonatomic) SFIFolder *folder;
 @property (strong, nonatomic) NSDictionary *credDictionary;
-@property (strong, nonatomic) SFItem *backgroundDownloadItem;
+@property (strong, nonatomic) SFIItem *backgroundDownloadItem;
 @property (strong, atomic) NSString *backgroundDownloadFilePath;
 
 #if TARGET_OS_IPHONE
@@ -121,10 +121,10 @@ static BOOL useBackgroundUploadDownload = NO;
                      if (error) {
                          NSLog(@"Error Is:%@", error);
                      }
-                     else if ([returnValue isKindOfClass:[SFSession class]]) {
+                     else if ([returnValue isKindOfClass:[SFISession class]]) {
                          NSLog(@"*********************Session "
                                "Started**********************************");
-                         NSLog(@"Authenticated as:%@", ((SFSession *)returnValue).Principal.Email);
+                         NSLog(@"Authenticated as:%@", ((SFISession *)returnValue).Principal.Email);
                          NSLog(@"***************************************************************"
                                "*******");
                          [self defaultFolder];
@@ -144,24 +144,24 @@ static BOOL useBackgroundUploadDownload = NO;
                      if (error) {
                          NSLog(@"Error Is:%@", error);
                      }
-                     else if ([returnValue isKindOfClass:[SFFolder class]]) {
-                         SFFolder *folder = (SFFolder *)returnValue;
+                     else if ([returnValue isKindOfClass:[SFIFolder class]]) {
+                         SFIFolder *folder = (SFIFolder *)returnValue;
                          NSLog(@"*********************Folder "
                                "Info**********************************");
                          NSLog(@"FileCount:%@", folder.FileCount);
                          NSLog(@"Info.IsSharedFolder:%@", folder.Info.IsSharedFolder);
                          NSLog(@"Info.IsAHomeFolder:%@", folder.Info.IsAHomeFolder);
                          for (id child in folder.Children) {
-                             if ([child isKindOfClass:[SFFile class]]) {
+                             if ([child isKindOfClass:[SFIFile class]]) {
                                  NSLog(@"***************File Info*********************");
-                                 SFFile *file = (SFFile *)child;
+                                 SFIFile *file = (SFIFile *)child;
                                  NSLog(@"File's FileName:%@", file.FileName);
                                  NSLog(@"File's Name:%@", file.Name);
                                  NSLog(@"File's Hash:%@", file.Hash);
                                  NSLog(@"*********************************************");
                              }
-                             else if ([child isKindOfClass:[SFFolder class]]) {
-                                 SFFolder *childFolder = child;
+                             else if ([child isKindOfClass:[SFIFolder class]]) {
+                                 SFIFolder *childFolder = child;
                                  NSLog(@"Child Folder File Count:%@", childFolder.FileCount);
                                  NSLog(@"Child Folder Info.IsSharedFolder:%@", childFolder.Info.IsSharedFolder);
                                  NSLog(@"Child Folder Info.IsAHomeFolder:%@", childFolder.Info.IsAHomeFolder);
@@ -177,8 +177,8 @@ static BOOL useBackgroundUploadDownload = NO;
                  } cancelCallback:nil];
 }
 
-- (void)createFolder:(SFFolder *)parentFolder {
-    SFFolder *newFolder = [[SFFolder alloc] init];
+- (void)createFolder:(SFIFolder *)parentFolder {
+    SFIFolder *newFolder = [[SFIFolder alloc] init];
     newFolder.Name = @"Sample Folder";
     newFolder.Description = @"Created by SF Client SDK";
     
@@ -190,8 +190,8 @@ static BOOL useBackgroundUploadDownload = NO;
                      if (error) {
                          NSLog(@"Error Is:%@", error);
                      }
-                     else if ([returnValue isKindOfClass:[SFFolder class]]) {
-                         SFFolder *folder = (SFFolder *)returnValue;
+                     else if ([returnValue isKindOfClass:[SFIFolder class]]) {
+                         SFIFolder *folder = (SFIFolder *)returnValue;
                          self.folder = folder;
                          NSLog(@"*********************Create Folder "
                                "Info**********************************");
@@ -206,7 +206,7 @@ static BOOL useBackgroundUploadDownload = NO;
                  } cancelCallback:nil];
 }
 
-- (void)uploadToFolder:(SFFolder *)destinationFolder useAsset:(BOOL)useAsset {
+- (void)uploadToFolder:(SFIFolder *)destinationFolder useAsset:(BOOL)useAsset {
 #if TARGET_OS_IPHONE
     if (useAsset) {
         self.lib = [[ALAssetsLibrary alloc] init];
@@ -238,7 +238,7 @@ static BOOL useBackgroundUploadDownload = NO;
 #endif
 }
 
-- (void)uploadToFolder:(SFFolder *)destinationFolder {
+- (void)uploadToFolder:(SFIFolder *)destinationFolder {
     SFAUploadSpecificationRequest *request = nil;
     NSString *path = @"";
     SFAUploadMethod method = SFAUploadMethodStandard;
@@ -384,8 +384,8 @@ static BOOL useBackgroundUploadDownload = NO;
                      if (error) {
                          NSLog(@"Error Is:%@", error);
                      }
-                     else if ([returnValue isKindOfClass:[SFFile class]]) {
-                         SFFile *file = (SFFile *)returnValue;
+                     else if ([returnValue isKindOfClass:[SFIFile class]]) {
+                         SFIFile *file = (SFIFile *)returnValue;
                          NSLog(@"*********************File "
                                "Info**********************************");
                          NSLog(@"File Id:%@", file.Id);
@@ -402,10 +402,10 @@ static BOOL useBackgroundUploadDownload = NO;
                  } cancelCallback:nil];
 }
 
-- (void)downloadItem:(SFItem *)downloadItem {
+- (void)downloadItem:(SFIItem *)downloadItem {
     NSString *dirPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     NSString *filePath = [dirPath stringByAppendingPathComponent:downloadItem.Name];
-    if ([downloadItem isKindOfClass:[SFFolder class]]) {
+    if ([downloadItem isKindOfClass:[SFIFolder class]]) {
         filePath = [dirPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.zip", downloadItem.Name]];
     }
     SFAFileInfo *info = [[SFAFileInfo alloc] initWithFilePath:filePath];
@@ -440,7 +440,7 @@ static BOOL useBackgroundUploadDownload = NO;
 #endif
 }
 
-- (void)handleDownloadResponseWithFilePath:(id)filePath downloadItem:(SFItem *)downloadItem error:(SFAError *)error {
+- (void)handleDownloadResponseWithFilePath:(id)filePath downloadItem:(SFIItem *)downloadItem error:(SFAError *)error {
     if (error) {
         NSLog(@"Error Is:%@", error);
     }
@@ -472,8 +472,8 @@ static BOOL useBackgroundUploadDownload = NO;
     }
 }
 
-- (void)shareViaLinkItem:(SFItem *)itemToShare {
-    SFShare *share = [[SFShare alloc] init];
+- (void)shareViaLinkItem:(SFIItem *)itemToShare {
+    SFIShare *share = [[SFIShare alloc] init];
     share.Items = [[NSMutableArray alloc] initWithObjects:itemToShare, nil];
     SFApiQuery *query = [self.client.shares createWithShare:share andNotify:@1];
     self.task = [self.client executeQueryAsync:query
@@ -483,9 +483,9 @@ static BOOL useBackgroundUploadDownload = NO;
                      if (error) {
                          NSLog(@"Error Is:%@", error);
                      }
-                     else if ([returnValue isKindOfClass:[SFShare class]]) {
+                     else if ([returnValue isKindOfClass:[SFIShare class]]) {
                          NSLog(@"*********************Share Link*********************");
-                         SFShare *share = (SFShare *)returnValue;
+                         SFIShare *share = (SFIShare *)returnValue;
                          NSLog(@"Share Link: %@", share.Uri);
                          NSLog(@"****************************************************");
                          // Un-comment to test cancel
@@ -497,8 +497,8 @@ static BOOL useBackgroundUploadDownload = NO;
                  } cancelCallback:nil];
 }
 
-- (void)shareViaEmailItem:(SFItem *)itemToShare {
-    SFShareSendParams *sendParams = [[SFShareSendParams alloc] init];
+- (void)shareViaEmailItem:(SFIItem *)itemToShare {
+    SFIShareSendParams *sendParams = [[SFIShareSendParams alloc] init];
     sendParams.Emails = [[NSMutableArray alloc] initWithObjects:self.credDictionary[@"shareEmail"], nil];
     sendParams.Items = [[NSMutableArray alloc] initWithObjects:itemToShare.Id, nil];
     sendParams.Subject = @"Sample SDK Share";

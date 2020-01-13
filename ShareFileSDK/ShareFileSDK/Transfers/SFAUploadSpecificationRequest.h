@@ -22,7 +22,7 @@ typedef NS_ENUM (NSInteger, SFAUploadMethod) {
  */
 @interface SFAUploadSpecificationRequest : NSObject
 /**
- *  DestinationURI for upload. Commonly, this will be a parent SFFolder URI, or a SFShare request.
+ *  DestinationURI for upload. Commonly, this will be a parent SFIFolder URI, or a SFIShare request.
  *  Note: This property was previously named "parent" and was renamed for clarity.
  */
 @property (nonatomic, strong) NSURL *destinationURI;

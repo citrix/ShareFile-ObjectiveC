@@ -10,7 +10,7 @@
 
 /**
  *  Handle a given authentication challenge for a connection. We are using our own
- *  SFHTTPAuthChallenge and SFCredential objects here rather than defaults because we
+ *  SFIHTTPAuthChallenge and SFICredential objects here rather than defaults because we
  *  support more forms of auth, such as OAuth and PCC.
  *
  *  @param container         Current HTTP response container
@@ -23,7 +23,7 @@
                                      
 /**
  *  Handle a given authentication challenge for a connection. We are using our own
- *  SFHTTPAuthChallenge and SFCredential objects here rather than defaults because we
+ *  SFIHTTPAuthChallenge and SFICredential objects here rather than defaults because we
  *  support more forms of auth, such as OAuth and PCC.
  *
  *  @param container         Current HTTP response container
@@ -34,6 +34,6 @@
  */
 - (BOOL)handleInteractiveUnauthorizedResponse:(SFAHttpRequestResponseDataContainer *)container
                                   authContext:(SFAuthenticationContext *)authContext
-                            completionHandler:(void (^)(SFURLAuthChallengeDisposition disposition, NSURLCredential *credential))completionHandler;
+                            completionHandler:(void (^)(SFIURLAuthChallengeDisposition disposition, NSURLCredential *credential))completionHandler;
                             
 @end

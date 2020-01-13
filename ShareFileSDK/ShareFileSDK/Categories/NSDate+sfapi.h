@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-typedef unsigned long long SFTick;
+typedef unsigned long long SFITick;
 
 @interface NSDate (sfapi)
 
@@ -28,8 +28,8 @@ typedef unsigned long long SFTick;
 + (NSDate *)dateWithString:(NSString *)dateString;
 - (NSString *)UTCStringRepresentation;
 + (NSDate *)dateWithUTCStringRepresentation:(NSString *)utcDate;
-+ (SFTick)UTCTicks;
-+ (SFTick)nowTicks;
-+ (SFTick)ticksFromEpochSeconds:(NSInteger)epochSeconds;
++ (SFITick)UTCTicks;
++ (SFITick)nowTicks;
++ (SFITick)ticksFromEpochSeconds:(NSInteger)epochSeconds;
 
 @end

@@ -4,11 +4,11 @@ NSString *const kSFAErrorScheduledAsyncOperation = @"scheduledAsyncOperation";
 
 @implementation SFAAsyncOperationScheduledError
 
-- (SFAsyncOperation *)scheduledAsyncOperation {
+- (SFIAsyncOperation *)scheduledAsyncOperation {
     return self.userInfo[kSFAErrorScheduledAsyncOperation];
 }
 
-+ (instancetype)errorWithScheduleAsyncOperation:(SFAsyncOperation *)asyncOperation {
++ (instancetype)errorWithScheduleAsyncOperation:(SFIAsyncOperation *)asyncOperation {
     NSMutableDictionary *dictionary = [NSMutableDictionary new];
     dictionary[kSFAErrorMessage] = SFAAsyncOperationSchedule;
     dictionary[kSFAErrorType] = [NSNumber numberWithInteger:SFAErrorTypeAsyncOperationScheduledError];

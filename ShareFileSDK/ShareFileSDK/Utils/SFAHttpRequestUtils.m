@@ -121,6 +121,8 @@
 }
 
 #pragma mark - Helpers
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 + (NSString *)unescape:(NSString *)string {
     return CFBridgingRelease(CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL, (__bridge CFStringRef)string, CFSTR(""), kCFStringEncodingUTF8));
@@ -129,6 +131,8 @@
 + (NSString *)escape:(NSString *)string {
     return CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)string, NULL, CFSTR("*'();:@&=+$,/?!%#[]"), kCFStringEncodingUTF8));
 }
+
+#pragma clang diagnostic pop
 
 + (NSArray *)flatten:(NSDictionary *)dictionary {
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:dictionary.count];

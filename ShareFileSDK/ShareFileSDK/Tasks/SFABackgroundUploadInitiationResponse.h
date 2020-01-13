@@ -8,7 +8,7 @@
 /**
  *  Upload specification received. May be needed for re-creation of HTTP delegate.
  */
-@property (strong, nonatomic) SFUploadSpecification *uploadSpecification;
+@property (strong, nonatomic) SFIUploadSpecification *uploadSpecification;
 /**
  *  Upload task that is performing the background upload.
  */

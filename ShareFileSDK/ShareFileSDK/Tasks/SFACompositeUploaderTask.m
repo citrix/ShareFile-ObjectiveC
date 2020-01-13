@@ -101,7 +101,7 @@
     if ([self isFinished]) {
         return; // Incase there is previously queued callback. We don't need to handle it.
     }
-    if ([returnValue isKindOfClass:[SFUploadSpecification class]]) {
+    if ([returnValue isKindOfClass:[SFIUploadSpecification class]]) {
         // Specification Task Done. Setup Delegate and Start Uploading
         [self.delegate compositeTask:self finishedSpecificationTaskWithUploadSpec:returnValue];
         [self startUploaders];

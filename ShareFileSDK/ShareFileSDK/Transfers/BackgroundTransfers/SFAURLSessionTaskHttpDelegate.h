@@ -42,6 +42,6 @@
  *  @param contextObject                    Context object to be used for makingd decisions.
  *  @param completionHandler                Completion handler to be called when delegate has handled challenge.
  */
-- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task receivedAuthChallenge:(NSURLAuthenticationChallenge *)challenge httpRequestResponseDataContainer:(SFAHttpRequestResponseDataContainer *)httpRequestResponseDataContainer usingContextObject:(NSMutableDictionary **)contextObject completionHandler:(void (^)(SFURLAuthChallengeDisposition, NSURLCredential *))completionHandler;
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task receivedAuthChallenge:(NSURLAuthenticationChallenge *)challenge httpRequestResponseDataContainer:(SFAHttpRequestResponseDataContainer *)httpRequestResponseDataContainer usingContextObject:(NSMutableDictionary **)contextObject completionHandler:(void (^)(SFIURLAuthChallengeDisposition, NSURLCredential *))completionHandler;
 
 @end
